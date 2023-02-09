@@ -6,16 +6,15 @@ public class ItemPickup : MonoBehaviour
 {
     public Items items;
 
-    void Pickup()
+    public float looterRadius;
+
+    public void Pickup()
     {
         InventoryManager.Instance.Add(items);
         //Destroy(gameObject);
         ZombieController.Instance.dropItemSpawner.Despawn(transform);
-        
+
     }
 
-    private void OnMouseDown()
-    {
-        Pickup();
-    }
+
 }

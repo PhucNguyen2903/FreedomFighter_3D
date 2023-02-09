@@ -12,7 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28d34b5e822936c4c90a37aaed43c612, type: 3}
   m_Name: HealthBox
   m_EditorClassIdentifier: 
-  id: 1
+  id: 2
   itemName: HealthBox
   value: 50
+  count: 0
+  amount: 1
   icon: {fileID: 21300000, guid: 7c024f346a2d34249902e8a47874ca43, type: 3}
+  itemType: 0

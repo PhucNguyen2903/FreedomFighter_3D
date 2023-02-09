@@ -29,7 +29,7 @@ public class InventoryItemController : MonoBehaviour
                 Player.Instance.PlayerHealth.IncreaseHP(items.value);
                 break;
             case Items.ItemType.Bullet:
-                Debug.Log("You have ever set used-Bullet Item");
+                GunAmmo.Instance.IncreasenNumofMag();
                 break;
             case Items.ItemType.Weapons:
                 Debug.Log("You have ever set used-Weapon Item");

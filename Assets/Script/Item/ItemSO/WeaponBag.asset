@@ -12,8 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28d34b5e822936c4c90a37aaed43c612, type: 3}
   m_Name: WeaponBag
   m_EditorClassIdentifier: 
-  id: 1
+  id: 3
   itemName: 
   value: 0
+  count: 0
+  amount: 1
   icon: {fileID: 21300000, guid: 6286ef1e7d5097a4d9cb0e87e5d2548d, type: 3}
   itemType: 2

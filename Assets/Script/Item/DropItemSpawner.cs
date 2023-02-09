@@ -6,6 +6,7 @@ public class DropItemSpawner : Spawner
 {
     //public string healthBox = "HealthBox";
     public string newHealthBox = "NewHealthBox";
+    public string bullet = "BulletBox";
    
 
     protected override void LoadPrefabs()

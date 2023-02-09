@@ -15,7 +15,6 @@ public class GunRaycaster : MonoBehaviour
         Ray aimingRay = new Ray(aimingCamera.transform.position, aimingCamera.transform.forward);
         if (Physics.Raycast(aimingRay, out RaycastHit hitInfo, float.PositiveInfinity, layerMask))
         {
-            Debug.Log("=================== Hit gameoject" + hitInfo);
             ShowHieffect(hitInfo);
             DeliverDamage(hitInfo);
         }

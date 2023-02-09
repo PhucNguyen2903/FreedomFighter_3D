@@ -125,3 +125,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   items: {fileID: 11400000, guid: a74fbd98322dc944ea58ab9d0bb02649, type: 2}
+  looterRadius: 10

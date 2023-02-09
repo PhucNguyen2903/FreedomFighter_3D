@@ -90,6 +90,10 @@ public class Health : MonoBehaviour
         {
             itemSpawnerName = ZombieController.Instance.dropItemSpawner.newHealthBox;
         }
+        else if(zombieName == "ZombieBoom")
+        {
+            itemSpawnerName = ZombieController.Instance.dropItemSpawner.bullet;
+        }
         else
         {
             itemSpawnerName = "";

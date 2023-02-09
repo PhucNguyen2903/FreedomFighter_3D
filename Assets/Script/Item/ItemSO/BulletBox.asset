@@ -15,5 +15,7 @@ MonoBehaviour:
   id: 1
   itemName: BulletBox
   value: 30
+  count: 0
+  amount: 1
   icon: {fileID: 21300000, guid: 0ebba9a833013314fae521ba9c44e09b, type: 3}
   itemType: 1
