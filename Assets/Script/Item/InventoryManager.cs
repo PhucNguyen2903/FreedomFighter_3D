@@ -33,7 +33,8 @@ public class InventoryManager : MonoBehaviour
         if (itemExistInlist == null)
         {
             items.Add(item);
-            item.count += item.amount;
+            item.count = item.amount;
+            //item.count += item.amount;
         }
         else
         {

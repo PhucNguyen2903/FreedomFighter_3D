@@ -17,13 +17,13 @@ public class ZombieManager : MonoBehaviour
 
     private void Update()
     {
-        //CreatingZombie();
+        CreatingZombie();
     }
     private void Awake()
     {
 
         FirstTurn();
-        ThirdTurn();
+        //ThirdTurn();
 
     }
 
