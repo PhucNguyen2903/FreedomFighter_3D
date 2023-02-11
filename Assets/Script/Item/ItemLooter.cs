@@ -8,19 +8,17 @@ public class ItemLooter : MonoBehaviour
     public float looterRadius;
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E))
-        {
-            Looter();
-        }
+        Looter();
     }
 
     public void Looter()
     {
-        if (Input.GetKey(KeyCode.E))
+        if (Input.GetKeyDown(KeyCode.E))
         {
             CheckLooter();
         }
     }
+
 
     private void CheckLooter()
     {

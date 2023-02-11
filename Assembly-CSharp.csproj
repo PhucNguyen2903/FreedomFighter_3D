@@ -105,6 +105,7 @@
     <Compile Include="Assets\GUI PRO Kit - Fantasy RPG\Extensions\UIParticle\UIParticleSystem.cs" />
     <Compile Include="Assets\JMO Assets\WarFX\Scripts\CFX_AutoDestructShuriken.cs" />
     <Compile Include="Assets\Script\Spawner\EnemySpawner.cs" />
+    <Compile Include="Assets\Script\Controller\WeaponController.cs" />
     <Compile Include="Assets\ThirdWeapons\PBRMeleeWeaponsPack\Scripts\WeaponsChanger.cs" />
     <Compile Include="Assets\Script\Zombie\ZombieAttack.cs" />
     <Compile Include="Assets\SciFi Warehouse Kit\Demo\Scripts\MouseComponent.cs" />
@@ -162,6 +163,7 @@
     <Compile Include="Assets\ThirdWeapons\PBRMeleeWeaponsPack\Scripts\SphericalRotation.cs" />
     <Compile Include="Assets\Animated FPS Weapons Part 2\Scripts\DestroyExplosion.cs" />
     <Compile Include="Assets\Script\UI\MainMenu\UIManager.cs" />
+    <Compile Include="Assets\Script\Item\ItemLooter.cs" />
     <Compile Include="Assets\Script\Spawner\ZombieDespawn.cs" />
     <Compile Include="Assets\SMC Pack 1\Demo\DemoAssets\V_SMC_Camera.cs" />
     <Compile Include="Assets\Script\Player\PlayerJump.cs" />
@@ -173,8 +175,6 @@
     <Compile Include="Assets\Script\Weapon\Pistol\GunAmmoPistol.cs" />
     <Compile Include="Assets\JMO Assets\WarFX\Demo\Assets\WFX_Demo_New.cs" />
     <Compile Include="Assets\Animated FPS Weapons Part 2\Scripts\Gun_Controller.cs" />
-    <Compile Include="Assets\Script\Item\ItemLooter.cs" />
-    <Compile Include="Assets\Script\Controller\WeaponController.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
