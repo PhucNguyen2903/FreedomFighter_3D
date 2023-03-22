@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using Photon.Pun;
 
 public class FiringZombie : MonoBehaviour
 {
@@ -10,6 +11,8 @@ public class FiringZombie : MonoBehaviour
     private Vector3 attackRadiusVector;
     private Vector3 attackRadiusEndVector;
     public int damage;
+    public PhotonView PV;
+    public ScoreText scoreText;
    
     [SerializeField] private ParticleSystem isfiredZombie;
 
@@ -40,19 +43,24 @@ public class FiringZombie : MonoBehaviour
     private void DeliverDamage(Collider victim)
     {
         Health health = victim.GetComponentInParent<Health>();
-        if (health != null && !oldVictims.Contains(health))
+        PhotonView PVzombieTakedame = victim.GetComponentInParent<PhotonView>();
+        if (health != null && !oldVictims.Contains(health) && PVzombieTakedame != null)
         {
-            
-            effectFiredZombie(victim);
-            health.TakeDamage(damage);
+            if (health.HealthPoint < 1) return;        
+            // effectFiredZombie(victim);
+            PV.RPC("effectFiredZombie",RpcTarget.All, victim.transform.position, victim.transform.rotation);
+            PVzombieTakedame.RPC("TakeDamage", RpcTarget.All, damage);
+            scoreText.Score += damage;
+            //health.TakeDamage(damage);
             oldVictims.Add(health);
         }
        
     }
 
-    private void effectFiredZombie(Collider victim)
+    [PunRPC]
+    private void effectFiredZombie(Vector3 hitPos, Quaternion hitRos)
     {
-        Instantiate(isfiredZombie,victim.transform.position, victim.transform.rotation);
+        Instantiate(isfiredZombie,hitPos, hitRos);
     }
 
    

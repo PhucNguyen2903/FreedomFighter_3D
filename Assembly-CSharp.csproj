@@ -22,7 +22,7 @@
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
     <OutputPath>Temp\Bin\Debug\</OutputPath>
-    <DefineConstants>UNITY_2021_3_17;UNITY_2021_3;UNITY_2021;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_2_OR_NEWER;UNITY_2018_3_OR_NEWER;UNITY_2018_4_OR_NEWER;UNITY_2019_1_OR_NEWER;UNITY_2019_2_OR_NEWER;UNITY_2019_3_OR_NEWER;UNITY_2019_4_OR_NEWER;UNITY_2020_1_OR_NEWER;UNITY_2020_2_OR_NEWER;UNITY_2020_3_OR_NEWER;UNITY_2021_1_OR_NEWER;UNITY_2021_2_OR_NEWER;UNITY_2021_3_OR_NEWER;PLATFORM_ARCH_64;UNITY_64;UNITY_INCLUDE_TESTS;ENABLE_AR;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_EVENT_QUEUE;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_TEXTURE_STREAMING;ENABLE_VIRTUALTEXTURING;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_UNITYWEBREQUEST;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_MANAGED_JOBS;ENABLE_MANAGED_TRANSFORM_JOBS;ENABLE_MANAGED_ANIMATION_JOBS;ENABLE_MANAGED_AUDIO_JOBS;ENABLE_MANAGED_UNITYTLS;INCLUDE_DYNAMIC_GI;ENABLE_SCRIPTING_GC_WBARRIERS;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;ENABLE_VIDEO;ENABLE_ACCELERATOR_CLIENT_DEBUGGING;PLATFORM_STANDALONE;TEXTCORE_1_0_OR_NEWER;PLATFORM_STANDALONE_WIN;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_NVIDIA;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITY_GAME_SERVICES_ANALYTICS_SUPPORT;ENABLE_OUT_OF_PROCESS_CRASH_HANDLER;ENABLE_CLUSTER_SYNC;ENABLE_CLUSTERINPUT;PLATFORM_UPDATES_TIME_OUTSIDE_OF_PLAYER_LOOP;GFXDEVICE_WAITFOREVENT_MESSAGEPUMP;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;NET_STANDARD_2_0;NET_STANDARD;NET_STANDARD_2_1;NETSTANDARD;NETSTANDARD2_1;ENABLE_PROFILER;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_UNITY_COLLECTIONS_CHECKS;ENABLE_BURST_AOT;UNITY_TEAM_LICENSE;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_DIRECTOR;ENABLE_LOCALIZATION;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_TILEMAP;ENABLE_TIMELINE;ENABLE_LEGACY_INPUT_MANAGER;TEXTCORE_FONT_ENGINE_1_5_OR_NEWER;CSHARP_7_OR_LATER;CSHARP_7_3_OR_NEWER</DefineConstants>
+    <DefineConstants>UNITY_2021_3_17;UNITY_2021_3;UNITY_2021;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_2_OR_NEWER;UNITY_2018_3_OR_NEWER;UNITY_2018_4_OR_NEWER;UNITY_2019_1_OR_NEWER;UNITY_2019_2_OR_NEWER;UNITY_2019_3_OR_NEWER;UNITY_2019_4_OR_NEWER;UNITY_2020_1_OR_NEWER;UNITY_2020_2_OR_NEWER;UNITY_2020_3_OR_NEWER;UNITY_2021_1_OR_NEWER;UNITY_2021_2_OR_NEWER;UNITY_2021_3_OR_NEWER;PLATFORM_ARCH_64;UNITY_64;UNITY_INCLUDE_TESTS;ENABLE_AR;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_EVENT_QUEUE;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_TEXTURE_STREAMING;ENABLE_VIRTUALTEXTURING;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_UNITYWEBREQUEST;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_MANAGED_JOBS;ENABLE_MANAGED_TRANSFORM_JOBS;ENABLE_MANAGED_ANIMATION_JOBS;ENABLE_MANAGED_AUDIO_JOBS;ENABLE_MANAGED_UNITYTLS;INCLUDE_DYNAMIC_GI;ENABLE_SCRIPTING_GC_WBARRIERS;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;ENABLE_VIDEO;ENABLE_ACCELERATOR_CLIENT_DEBUGGING;PLATFORM_STANDALONE;TEXTCORE_1_0_OR_NEWER;PLATFORM_STANDALONE_WIN;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_NVIDIA;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITY_GAME_SERVICES_ANALYTICS_SUPPORT;ENABLE_OUT_OF_PROCESS_CRASH_HANDLER;ENABLE_CLUSTER_SYNC;ENABLE_CLUSTERINPUT;PLATFORM_UPDATES_TIME_OUTSIDE_OF_PLAYER_LOOP;GFXDEVICE_WAITFOREVENT_MESSAGEPUMP;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;NET_STANDARD_2_0;NET_STANDARD;NET_STANDARD_2_1;NETSTANDARD;NETSTANDARD2_1;ENABLE_PROFILER;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_UNITY_COLLECTIONS_CHECKS;ENABLE_BURST_AOT;UNITY_TEAM_LICENSE;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_DIRECTOR;ENABLE_LOCALIZATION;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_TILEMAP;ENABLE_TIMELINE;ENABLE_LEGACY_INPUT_MANAGER;TEXTCORE_FONT_ENGINE_1_5_OR_NEWER;PHOTON_UNITY_NETWORKING;PUN_2_0_OR_NEWER;PUN_2_OR_NEWER;PUN_2_19_OR_NEWER;CSHARP_7_OR_LATER;CSHARP_7_3_OR_NEWER</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <NoWarn>0169</NoWarn>
@@ -56,36 +56,56 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Photon\PhotonRealtime\Demos\DemoLoadBalancing\ConnectAndJoinRandomLb.cs" />
     <Compile Include="Assets\Script\Zombie\BoomZombieAttack.cs" />
     <Compile Include="Assets\Script\Zombie\GunRaycaster.cs" />
     <Compile Include="Assets\Script\Player\PlayerHealthBar.cs" />
     <Compile Include="Assets\Script\Weapon\Bullpup_Assault_Rifle\AutomaticShooting.cs" />
     <Compile Include="Assets\Script\Singleton.cs" />
     <Compile Include="Assets\JMO Assets\WarFX\Scripts\CFX_LightIntensityFade.cs" />
+    <Compile Include="Assets\ChangeScriptInPrefab.cs" />
+    <Compile Include="Assets\Photon\PhotonLibs\WebSocket\SocketWebTcp.cs" />
     <Compile Include="Assets\ThirdWeapons\PBRMeleeWeaponsPack\Scripts\Weapon.cs" />
+    <Compile Include="Assets\Script\Photon\GameSetUpController.cs" />
+    <Compile Include="Assets\Script\Photon\PlayerManagerInGame.cs" />
     <Compile Include="Assets\Joystick Pack\Scripts\Joysticks\FixedJoystick.cs" />
+    <Compile Include="Assets\Script\Item\StorageManager.cs" />
     <Compile Include="Assets\Joystick Pack\Scripts\Joysticks\VariableJoystick.cs" />
     <Compile Include="Assets\Script\Player\PlayerUi.cs" />
     <Compile Include="Assets\Animated FPS Weapons Part 2\Scripts\WeaponSelection.cs" />
     <Compile Include="Assets\JMO Assets\WarFX\Demo\Assets\WFX_Demo.cs" />
+    <Compile Include="Assets\Photon\PhotonChat\Demos\DemoChat\ChatAppIdCheckerUI.cs" />
+    <Compile Include="Assets\Photon\PhotonChat\Demos\DemoChat\AppSettingsExtensions.cs" />
     <Compile Include="Assets\Script\Controller\ZombieController.cs" />
+    <Compile Include="Assets\Script\Photon\PhotonChatManager.cs" />
+    <Compile Include="Assets\Script\Item\QuickItems.cs" />
     <Compile Include="Assets\Script\Zombie\RagdollSwitcher.cs" />
     <Compile Include="Assets\SMC Pack 1\Demo\DemoAssets\V_Text.cs" />
     <Compile Include="Assets\Script\Weapon\4_Weapons\SmokingBooming.cs" />
     <Compile Include="Assets\Animated FPS Weapons Part 2\Scripts\Crosshair.cs" />
     <Compile Include="Assets\Script\Weapon\FlameThrower\FLamethrower.cs" />
+    <Compile Include="Assets\UITabs\scripts\TabsUIHorizontal.cs" />
     <Compile Include="Assets\JMO Assets\WarFX\Spawn System\CFX_SpawnSystem.cs" />
+    <Compile Include="Assets\Script\Photon\SetPlayerInfo.cs" />
     <Compile Include="Assets\Script\Weapon\Bolt_Action_Sniper\Sniper.cs" />
+    <Compile Include="Assets\Script\Photon\RoomProfile.cs" />
     <Compile Include="Assets\Script\Weapon\4_Weapons\ThrowingGrenade.cs" />
     <Compile Include="Assets\GUI PRO Kit - Fantasy RPG\Scripts\PanelFantasyRPG.cs" />
     <Compile Include="Assets\Script\Zombie\ZombieManager.cs" />
     <Compile Include="Assets\Script\Item\InventoryItemController.cs" />
     <Compile Include="Assets\Script\GameFlow.cs" />
+    <Compile Include="Assets\Script\EventDispatcher.cs" />
     <Compile Include="Assets\JMO Assets\WarFX\Demo\Assets\CFX_AutoStopLoopedEffect.cs" />
+    <Compile Include="Assets\Script\EventId.cs" />
+    <Compile Include="Assets\Photon\PhotonChat\Demos\DemoChat\ChannelSelector.cs" />
     <Compile Include="Assets\Script\Spawner\Spawner.cs" />
+    <Compile Include="Assets\Script\Player\PlayerInfo.cs" />
+    <Compile Include="Assets\ZoombieCreatingDemo.cs" />
     <Compile Include="Assets\Animated FPS Weapons Part 2\Scripts\BlinkingText.cs" />
     <Compile Include="Assets\JMO Assets\WarFX\Scripts\WFX_BulletHoleDecal.cs" />
     <Compile Include="Assets\JMO Assets\WarFX\Demo\Assets\CFX_Demo_RandomDir.cs" />
+    <Compile Include="Assets\ScoreText.cs" />
+    <Compile Include="Assets\Photon\PhotonChat\Demos\Common\EventSystemSpawner.cs" />
     <Compile Include="Assets\Script\Weapon\MleeWeapon\MleeEffectTrigger.cs" />
     <Compile Include="Assets\Animated FPS Weapons Part 2\Scripts\LightFlickering.cs" />
     <Compile Include="Assets\Animated FPS Weapons Part 2\Scripts\PlayerMovement.cs" />
@@ -97,12 +117,15 @@
     <Compile Include="Assets\Animated FPS Weapons Part 2\Scripts\ControlsInfo.cs" />
     <Compile Include="Assets\Script\Weapon\FlameThrower\FlameAmmo.cs" />
     <Compile Include="Assets\Script\Player\RotateByMouse.cs" />
+    <Compile Include="Assets\Script\Item\StorageItemController.cs" />
+    <Compile Include="Assets\Script\Photon\PhotonLogin.cs" />
     <Compile Include="Assets\SMC Pack 1\Demo\DemoAssets\V_SMC_Handler.cs" />
     <Compile Include="Assets\Joystick Pack\Examples\JoystickPlayerExample.cs" />
     <Compile Include="Assets\Script\Item\ItemPickup.cs" />
     <Compile Include="Assets\Script\Weapon\Grenade_launcher\GrenadeBullet.cs" />
     <Compile Include="Assets\Script\UI\MainMenu\ProgressBar.cs" />
     <Compile Include="Assets\GUI PRO Kit - Fantasy RPG\Extensions\UIParticle\UIParticleSystem.cs" />
+    <Compile Include="Assets\Script\Photon\UIRoomProfile.cs" />
     <Compile Include="Assets\JMO Assets\WarFX\Scripts\CFX_AutoDestructShuriken.cs" />
     <Compile Include="Assets\Script\Spawner\EnemySpawner.cs" />
     <Compile Include="Assets\Script\Controller\WeaponController.cs" />
@@ -116,11 +139,16 @@
     <Compile Include="Assets\Animated FPS Weapons Part 2\Scripts\WeaponSway.cs" />
     <Compile Include="Assets\JMO Assets\WarFX\Demo\Assets\WFX_Demo_DeleteAfterDelay.cs" />
     <Compile Include="Assets\Animated FPS Weapons Part 2\Scripts\ThrowGrenade.cs" />
+    <Compile Include="Assets\Script\Photon\PlayerListItem.cs" />
     <Compile Include="Assets\Script\Spawner\SaiMono.cs" />
+    <Compile Include="Assets\Photon\PhotonLibs\WebSocket\WebSocket.cs" />
     <Compile Include="Assets\GUI PRO Kit - Fantasy RPG\Scripts\PanelControlFantasyRPG.cs" />
+    <Compile Include="Assets\Photon\PhotonChat\Demos\Common\TextButtonTransition.cs" />
     <Compile Include="Assets\Joystick Pack\Scripts\Base\Joystick.cs" />
+    <Compile Include="Assets\Script\Item\ShopItemController.cs" />
     <Compile Include="Assets\Script\Minimap\FollowObject.cs" />
     <Compile Include="Assets\JMO Assets\WarFX\Demo\Assets\CFX_Demo_RotateCamera.cs" />
+    <Compile Include="Assets\UITabs\scripts\TabsUI.cs" />
     <Compile Include="Assets\JMO Assets\WarFX\Demo\Assets\WFX_Demo_RandomDir.cs" />
     <Compile Include="Assets\Script\Weapon\Grenade_launcher\GrenadeLauncher.cs" />
     <Compile Include="Assets\SciFi Warehouse Kit\Demo\Scripts\PlayRandomSound.cs" />
@@ -132,12 +160,19 @@
     <Compile Include="Assets\Script\Zombie\ZombieMovement.cs" />
     <Compile Include="Assets\Animated FPS Weapons Part 2\Scripts\Collimator.cs" />
     <Compile Include="Assets\Script\HitSurface.cs" />
+    <Compile Include="Assets\PlayerInPlay.cs" />
+    <Compile Include="Assets\Script\Observer.cs" />
     <Compile Include="Assets\JMO Assets\WarFX\Scripts\WFX_LightFlicker.cs" />
+    <Compile Include="Assets\Photon\PhotonChat\Demos\DemoChat\NamePickGui.cs" />
+    <Compile Include="Assets\Script\Photon\StutusPhoton.cs" />
     <Compile Include="Assets\Script\UI\MainMenu\AsyncSceneLoader.cs" />
     <Compile Include="Assets\Script\Spawner\DeSpawn.cs" />
     <Compile Include="Assets\Animated FPS Weapons Part 2\Scripts\FadeAway.cs" />
     <Compile Include="Assets\SciFi Warehouse Kit\Demo\Scripts\LightFlicker.cs" />
     <Compile Include="Assets\Animated FPS Weapons Part 2\Scripts\ShellEject.cs" />
+    <Compile Include="Assets\Script\UI\Spin.cs" />
+    <Compile Include="Assets\Script\Item\BlackMarketItemController.cs" />
+    <Compile Include="Assets\Script\Item\BlackMarketManager.cs" />
     <Compile Include="Assets\Script\Weapon\Pistol\Pistol.cs" />
     <Compile Include="Assets\Joystick Pack\Examples\JoystickSetterExample.cs" />
     <Compile Include="Assets\Script\Zombie\HitEffectManager.cs" />
@@ -149,76 +184,196 @@
     <Compile Include="Assets\Script\Zombie\Health.cs" />
     <Compile Include="Assets\Script\Weapon\4_Weapons\FlashBang.cs" />
     <Compile Include="Assets\Animated FPS Weapons Part 2\Scripts\Destroy.cs" />
+    <Compile Include="Assets\Photon\PhotonChat\Demos\DemoChat\IgnoreUiRaycastWhenInactive.cs" />
     <Compile Include="Assets\Animated FPS Weapons Part 2\Scripts\Exit.cs" />
+    <Compile Include="Assets\Script\Photon\PhotonZombie.cs" />
     <Compile Include="Assets\Animated FPS Weapons Part 2\Scripts\CameraController.cs" />
     <Compile Include="Assets\Script\Player\PlayerController.cs" />
+    <Compile Include="Assets\Script\Photon\PhotonPlayer.cs" />
     <Compile Include="Assets\Script\Zombie\ZombieHealthBar.cs" />
+    <Compile Include="Assets\TimeCount.cs" />
     <Compile Include="Assets\Script\Shooting.cs" />
     <Compile Include="Assets\Script\Zombie\FiringZombie.cs" />
     <Compile Include="Assets\Joystick Pack\Scripts\Joysticks\FloatingJoystick.cs" />
+    <Compile Include="Assets\Script\Photon\RoomManager.cs" />
+    <Compile Include="Assets\Script\Item\ItemShop.cs" />
     <Compile Include="Assets\JMO Assets\WarFX\Demo\Assets\CFX_Demo_Translate.cs" />
     <Compile Include="Assets\Animated FPS Weapons Part 2\Scripts\ProjectileDestoy.cs" />
+    <Compile Include="Assets\Photon\PhotonChat\Demos\DemoChat\FriendItem.cs" />
+    <Compile Include="Assets\Script\Item\ItemShopController.cs" />
     <Compile Include="Assets\Script\Weapon\MleeWeapon\MleeWeapons.cs" />
     <Compile Include="Assets\Script\UI\MainMenu\SceneLoader.cs" />
+    <Compile Include="Assets\Script\UI\UILobby\ShopManager.cs" />
     <Compile Include="Assets\ThirdWeapons\PBRMeleeWeaponsPack\Scripts\SphericalRotation.cs" />
     <Compile Include="Assets\Animated FPS Weapons Part 2\Scripts\DestroyExplosion.cs" />
     <Compile Include="Assets\Script\UI\MainMenu\UIManager.cs" />
     <Compile Include="Assets\Script\Item\ItemLooter.cs" />
+    <Compile Include="Assets\Photon\PhotonChat\Demos\DemoChat\ChatGui.cs" />
+    <Compile Include="Assets\Script\Photon\TMP_Inputfield.cs" />
+    <Compile Include="Assets\Script\Photon\PhotonRoom.cs" />
+    <Compile Include="Assets\Script\Photon\UINameProfile.cs" />
+    <Compile Include="Assets\UITabs\scripts\TabButtonUI.cs" />
     <Compile Include="Assets\Script\Spawner\ZombieDespawn.cs" />
     <Compile Include="Assets\SMC Pack 1\Demo\DemoAssets\V_SMC_Camera.cs" />
     <Compile Include="Assets\Script\Player\PlayerJump.cs" />
+    <Compile Include="Assets\Script\Player\PlayeSO.cs" />
+    <Compile Include="Assets\Photon\PhotonChat\Demos\Common\TextToggleIsOnTransition.cs" />
     <Compile Include="Assets\Script\Weapon\Grenade_launcher\AmmoText.cs" />
-    <Compile Include="Assets\Script\Player\Player.cs" />
+    <Compile Include="Assets\Script\Player\PlayerSingleton.cs" />
     <Compile Include="Assets\Script\Zombie\AutoFade.cs" />
     <Compile Include="Assets\Animated FPS Weapons Part 2\Scripts\Projectile.cs" />
+    <Compile Include="Assets\Photon\PhotonChat\Demos\Common\OnStartDelete.cs" />
     <Compile Include="Assets\Script\Weapon\Grenade_launcher\DetroyExplosion.cs" />
+    <Compile Include="Assets\UITabs\scripts\TabsUIVertical.cs" />
     <Compile Include="Assets\Script\Weapon\Pistol\GunAmmoPistol.cs" />
     <Compile Include="Assets\JMO Assets\WarFX\Demo\Assets\WFX_Demo_New.cs" />
+    <Compile Include="Assets\Script\Item\PointMallManager.cs" />
+    <Compile Include="Assets\Script\Item\PointMallItemController.cs" />
     <Compile Include="Assets\Animated FPS Weapons Part 2\Scripts\Gun_Controller.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
+    <None Include="Assets\newUI\Shader\Hidden_Internal-DeferredReflections.shader" />
+    <None Include="Assets\newUI\Shader\UI_DefaultETC1.shader" />
+    <None Include="Assets\newUI\Shader\Hidden_Internal-CombineDepthNormals.shader" />
     <None Include="Assets\JMO Assets\WarFX\Shaders\WFX_S Multiply Soft.shader" />
+    <None Include="Assets\Photon\PhotonLibs\netstandard2.0\Photon3Unity3D.xml" />
+    <None Include="Assets\newUI\Shader\TextMeshPro_Bitmap Custom Atlas.shader" />
+    <None Include="Assets\newUI\Shader\Hidden_Internal-ODSWorldTexture.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
     <None Include="Assets\JMO Assets\WarFX\Shaders\WFX_S Multiply Soft Scroll.shader" />
+    <None Include="Assets\newUI\Shader\Hidden_BlitToDepth_MSAA.shader" />
+    <None Include="Assets\newUI\Shader\Hidden_Internal-Halo.shader" />
+    <None Include="Assets\newUI\Shader\Legacy Shaders_Transparent_VertexLit.shader" />
+    <None Include="Assets\newUI\Shader\UGM_Unlit_Transparent.shader" />
+    <None Include="Assets\newUI\Shader\Skybox_Procedural.shader" />
+    <None Include="Assets\Photon\PhotonUnityNetworking\changelog.txt" />
+    <None Include="Assets\newUI\Shader\Hidden_TextCore_Distance Field SSD.shader" />
+    <None Include="Assets\newUI\Shader\Mobile_Diffuse.shader" />
+    <None Include="Assets\newUI\Shader\Hidden_Internal-PrePassLighting.shader" />
     <None Include="Assets\Animated FPS Weapons Part 2\Muzzle Flashes\Materials\GlassStainedBumpDistort.shader" />
+    <None Include="Assets\newUI\Shader\Legacy Shaders_Transparent_Cutout_Diffuse.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
+    <None Include="Assets\newUI\Shader\Legacy Shaders_Diffuse.shader" />
     <None Include="Assets\JMO Assets\WarFX\_Effects\MuzzleFlashes\!MuzzleFlash Differences.txt" />
+    <None Include="Assets\newUI\Shader\Legacy Shaders_Particles_Alpha Blended Premultiply.shader" />
+    <None Include="Assets\newUI\Shader\LTFramework_Sprites_Fill.shader" />
+    <None Include="Assets\Fantasy Skybox FREE\Readme.txt" />
+    <None Include="Assets\newUI\Shader\Hidden_Internal-GUIRoundedRectWithColorPerBorder.shader" />
     <None Include="Assets\JMO Assets\WarFX\Shaders\WFX_S Alpha-Specular TintColor.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Mobile.cginc" />
+    <None Include="Assets\newUI\Shader\Legacy Shaders_Particles_Additive (Soft).shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF SSD.shader" />
+    <None Include="Assets\newUI\Shader\Sprites_Mask.shader" />
     <None Include="Assets\JMO Assets\WarFX\Shaders\WFX_S Add Scroll.shader" />
+    <None Include="Assets\Photon\PhotonLibs\WebSocket\websocket-sharp.dll" />
+    <None Include="Assets\newUI\Shader\Custom_SurfaceShader_VC.shader" />
+    <None Include="Assets\newUI\Shader\Legacy Shaders_Particles_Additive.shader" />
+    <None Include="Assets\newUI\Shader\UI Extensions_Particles_Additive.shader" />
+    <None Include="Assets\Fantasy Skybox FREE\ReleaseNotes.txt" />
+    <None Include="Assets\newUI\Shader\Hidden_Internal-GUITextureClipText.shader" />
+    <None Include="Assets\newUI\Shader\Particles_Standard Unlit.shader" />
     <None Include="Assets\JMO Assets\Cartoon FX Easy Editor\CartoonFX Easy Editor Readme.txt" />
+    <None Include="Assets\newUI\Shader\Hidden_Internal-UIRAtlasBlitCopy.shader" />
+    <None Include="Assets\newUI\Shader\TextMeshPro_Mobile_Distance Field Overlay.shader" />
+    <None Include="Assets\photon-chat-readme.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />
+    <None Include="Assets\newUI\Shader\Mobile_VertexLit.shader" />
     <None Include="Assets\GUI PRO Kit - Fantasy RPG\Extensions\UIParticle\hidden particle.shader" />
     <None Include="Assets\JMO Assets\WarFX\_Effects (Mobile)\MuzzleFlashes\!MuzzleFlash Differences.txt" />
     <None Include="Assets\Animated FPS Weapons Part 2\Particles\Shaders\Smoke.shader" />
     <None Include="Assets\JMO Assets\WarFX\Shaders\WFX_S Particle Add A8.shader" />
+    <None Include="Assets\newUI\Shader\Hidden_VR_BlitFromTex2DToTexArraySlice.shader" />
+    <None Include="Assets\newUI\Shader\TextMeshPro_Distance Field (Surface).shader" />
+    <None Include="Assets\newUI\Shader\Hidden_FrameDebuggerRenderTargetDisplay.shader" />
+    <None Include="Assets\newUI\Shader\Hidden_Internal-Flare.shader" />
     <None Include="Assets\JMO Assets\WarFX\Shaders\WFX_S Smoke Scroll.shader" />
+    <None Include="Assets\newUI\Shader\Hidden_VideoComposite.shader" />
     <None Include="Assets\JMO Assets\WarFX\Shaders\WFX_S Particle Multiply A8.shader" />
+    <None Include="Assets\newUI\Shader\Hidden_Internal-MotionVectors.shader" />
+    <None Include="Assets\newUI\Shader\Legacy Shaders_Transparent_Diffuse.shader" />
+    <None Include="Assets\newUI\Shader\Hidden_BlitCopy.shader" />
+    <None Include="Assets\newUI\Shader\Hidden_BlitCopyDepth.shader" />
+    <None Include="Assets\newUI\Shader\Hidden_Internal-DepthNormalsTexture.shader" />
+    <None Include="Assets\newUI\Shader\Hidden_InternalClear.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface.shader" />
+    <None Include="Assets\newUI\Shader\E3D_Actor_PBR-Albedo-Normal.shader" />
+    <None Include="Assets\newUI\Shader\Hidden_Internal-Loading.shader" />
+    <None Include="Assets\newUI\Shader\Hidden_Internal-CubemapToEquirect.shader" />
+    <None Include="Assets\newUI\Shader\Hidden_VideoDecodeAndroid.shader" />
     <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
+    <None Include="Assets\newUI\Shader\Hidden_BlitToDepth.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF.shader" />
+    <None Include="Assets\newUI\Shader\Sprites_Default.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile SSD.shader" />
+    <None Include="Assets\Photon\PhotonLibs\changes-library.txt" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
+    <None Include="Assets\newUI\Shader\Hidden_Internal-Colored.shader" />
+    <None Include="Assets\newUI\Shader\Skybox_Cubemap.shader" />
     <None Include="Assets\JMO Assets\WarFX\Shaders\WFX_S AlphaBlend Scroll.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Properties.cginc" />
+    <None Include="Assets\newUI\Shader\Effects_FPS_Pack_GlowAdditiveNoFade.shader" />
+    <None Include="Assets\newUI\Shader\TextMeshPro_Sprite.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Surface.cginc" />
     <None Include="Assets\ThirdWeapons\PBRMeleeWeaponsPack\Shaders\PBR Bloody Surface.shader" />
+    <None Include="Assets\Photon\PhotonUnityNetworking\readme.txt" />
+    <None Include="Assets\Photon\PhotonChat\Demos\DemoChat\Files\eurof_tt.txt" />
     <None Include="Assets\Fonts\zombie3_fonts\More Info.txt" />
+    <None Include="Assets\newUI\Shader\TextMeshPro_Mobile_Distance Field.shader" />
+    <None Include="Assets\newUI\Shader\TextMeshPro_Distance Field.shader" />
+    <None Include="Assets\newUI\Shader\TextMeshPro_Mobile_Distance Field (Surface).shader" />
+    <None Include="Assets\newUI\Shader\MyShader_RimLight.shader" />
+    <None Include="Assets\newUI\Shader\Hidden_Internal-GUITextureClip.shader" />
+    <None Include="Assets\Photon\PhotonLibs\netstandard2.0\Photon3Unity3D.dll" />
+    <None Include="Assets\newUI\Shader\Hidden_InternalErrorShader.shader" />
+    <None Include="Assets\newUI\Shader\LTFramework_BlingBling.shader" />
+    <None Include="Assets\newUI\Shader\Hidden_Internal-GUIRoundedRect.shader" />
+    <None Include="Assets\newUI\Shader\GUI_Text Shader.shader" />
+    <None Include="Assets\newUI\Shader\Hidden_ConvertTexture.shader" />
+    <None Include="Assets\newUI\Shader\Standard.shader" />
+    <None Include="Assets\newUI\Shader\Hidden_Internal-UIRDefaultWorld.shader" />
+    <None Include="Assets\Photon\PhotonLibs\Photon3Unity3D.dll" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
+    <None Include="Assets\Photon\PhotonLibs\Metro\Photon3Unity3D.dll" />
+    <None Include="Assets\newUI\Shader\Hidden_Internal-UIRDefault.shader" />
+    <None Include="Assets\newUI\Shader\Mobile_Skybox.shader" />
+    <None Include="Assets\newUI\Shader\UI_Default.shader" />
+    <None Include="Assets\newUI\Shader\TextMeshPro_Distance Field Overlay.shader" />
+    <None Include="Assets\newUI\Shader\Legacy Shaders_Transparent_Specular.shader" />
+    <None Include="Assets\newUI\Shader\Mobile_Particles_Additive.shader" />
+    <None Include="Assets\newUI\Shader\Hidden_VideoDecode.shader" />
+    <None Include="Assets\newUI\Shader\Legacy Shaders_VertexLit.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
+    <None Include="Assets\newUI\Shader\Hidden_Internal-GUITextureBlit.shader" />
+    <None Include="Assets\newUI\Shader\Effects_FPS_Pack_AlphaBlended.shader" />
     <None Include="Assets\JMO Assets\WarFX\Shaders\WFX_S Particle AddSoft A8.shader" />
+    <None Include="Assets\newUI\Shader\Hidden_VR_BlitTexArraySlice.shader" />
     <None Include="Assets\JMO Assets\WarFX\!WarFX Readme.txt" />
+    <None Include="Assets\Photon\PhotonLibs\Photon3Unity3D.xml" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF Overlay.shader" />
     <None Include="Assets\JMO Assets\WarFX\Shaders\WFX_S Alpha-Diffuse TintColor.shader" />
+    <None Include="Assets\newUI\Shader\TextMeshPro_Bitmap.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Mobile.shader" />
+    <None Include="Assets\newUI\Shader\Mobile_Particles_Alpha Blended.shader" />
+    <None Include="Assets\newUI\Shader\Hidden_Compositing.shader" />
     <None Include="Assets\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
+    <None Include="Assets\newUI\Shader\Hidden_Internal-StencilWrite.shader" />
+    <None Include="Assets\newUI\Shader\Legacy Shaders_Transparent_Cutout_VertexLit.shader" />
+    <None Include="Assets\newUI\Shader\Legacy Shaders_Particles_Alpha Blended.shader" />
+    <None Include="Assets\Photon\PhotonUnityNetworking\link.xml" />
+    <None Include="Assets\newUI\Shader\UGM_Particle Additive.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile.shader" />
+    <None Include="Assets\newUI\Shader\TextMeshPro_Mobile_Bitmap.shader" />
+    <None Include="Assets\newUI\Shader\Hidden_Internal-ScreenSpaceShadows.shader" />
     <None Include="Assets\JMO Assets\WarFX\Shaders\WFX_S AlphaBlend NoSoftParticles.shader" />
+    <None Include="Assets\newUI\Shader\Hidden_Internal-GUITexture.shader" />
     <None Include="Assets\MaGuns\FlameThrowerInstructions.txt" />
+    <None Include="Assets\newUI\Shader\TextMeshPro_Mobile_Distance Field - Masking.shader" />
+    <None Include="Assets\newUI\Shader\Mobile_Bumped Specular + Cube.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Sprite.shader" />
+    <None Include="Assets\newUI\Shader\Hidden_BlitCopyWithDepth.shader" />
+    <None Include="Assets\newUI\Shader\Hidden_BlitCopyHDRTonemap.shader" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
@@ -466,6 +621,12 @@
     </Reference>
     <Reference Include="UnityEditor.UnityConnectModule">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2021.3.17f1\Editor\Data\Managed\UnityEngine\UnityEditor.UnityConnectModule.dll</HintPath>
+    </Reference>
+    <Reference Include="websocket-sharp">
+      <HintPath>Assets\Photon\PhotonLibs\WebSocket\websocket-sharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Photon3Unity3D">
+      <HintPath>Assets\Photon\PhotonLibs\netstandard2.0\Photon3Unity3D.dll</HintPath>
     </Reference>
     <Reference Include="DOTween">
       <HintPath>Assets\Plugins\Demigiant\DOTween\DOTween.dll</HintPath>
@@ -890,23 +1051,23 @@
     <Reference Include="UnityEditor.UI">
       <HintPath>Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.PlasticSCM.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll</HintPath>
-    </Reference>
     <Reference Include="Unity.Rider.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.Rider.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
       <HintPath>Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.PlasticSCM.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.Services.Core">
       <HintPath>Library\ScriptAssemblies\Unity.Services.Core.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.VisualScripting.Core">
-      <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.Core.dll</HintPath>
-    </Reference>
     <Reference Include="Unity.EditorCoroutines.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.EditorCoroutines.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VisualScripting.Core">
+      <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.Core.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Services.Core.Analytics">
       <HintPath>Library\ScriptAssemblies\Unity.Services.Core.Analytics.dll</HintPath>
@@ -931,6 +1092,46 @@
     <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
       <Project>{94CA85DA-904F-060D-9FA7-05ED9B5100DA}</Project>
       <Name>Assembly-CSharp-firstpass</Name>
+    </ProjectReference>
+    <ProjectReference Include="PhotonChat.csproj">
+      <Project>{BBB99356-F217-63B6-AFDE-5B1220C4DA3D}</Project>
+      <Name>PhotonChat</Name>
+    </ProjectReference>
+    <ProjectReference Include="PhotonUnityNetworking.Utilities.Culling.Editor.csproj">
+      <Project>{46467E65-AC17-A4E2-2403-16E37EB9641D}</Project>
+      <Name>PhotonUnityNetworking.Utilities.Culling.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="PhotonUnityNetworking.Editor.csproj">
+      <Project>{376C801B-B4CC-340B-8AD6-7F7D62EB68A2}</Project>
+      <Name>PhotonUnityNetworking.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="PhotonUnityNetworking.Utilities.PhotonPlayer.Editor.csproj">
+      <Project>{C6128F95-3B25-A2A3-FA94-667433C9EB2A}</Project>
+      <Name>PhotonUnityNetworking.Utilities.PhotonPlayer.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="PunDemos.DemoHubEditor.csproj">
+      <Project>{2A79483A-E7FA-40AF-89F2-3BAA9F01E788}</Project>
+      <Name>PunDemos.DemoHubEditor</Name>
+    </ProjectReference>
+    <ProjectReference Include="PhotonRealtime.csproj">
+      <Project>{15510C78-9988-D038-B9F4-784DCB4B0B64}</Project>
+      <Name>PhotonRealtime</Name>
+    </ProjectReference>
+    <ProjectReference Include="PhotonUnityNetworking.Utilities.csproj">
+      <Project>{CB2C1BFC-5436-EAA9-9FDF-07ED163E6DF7}</Project>
+      <Name>PhotonUnityNetworking.Utilities</Name>
+    </ProjectReference>
+    <ProjectReference Include="PhotonUnityNetworking.csproj">
+      <Project>{416D388C-D461-CA14-4E7F-9ED051F2203E}</Project>
+      <Name>PhotonUnityNetworking</Name>
+    </ProjectReference>
+    <ProjectReference Include="PhotonUnityNetworking.Demos.csproj">
+      <Project>{5D779084-6354-ACD1-216F-C2DB8862519B}</Project>
+      <Name>PhotonUnityNetworking.Demos</Name>
+    </ProjectReference>
+    <ProjectReference Include="PunDemos.DemoSlotcarEditor.csproj">
+      <Project>{136A6B14-891F-DD87-967A-4E04031539CE}</Project>
+      <Name>PunDemos.DemoSlotcarEditor</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

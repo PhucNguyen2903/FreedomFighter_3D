@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Photon.Pun;
 
 public class ZombieManager : MonoBehaviour
 {
@@ -8,36 +9,37 @@ public class ZombieManager : MonoBehaviour
     protected string zombieAdvance = "ZombieAdvance";
     protected string zombieBoom = "ZombieBoom";
     protected string zombieGhoul = "ZombieGhoul";
-    [SerializeField] private Transform CaveFirst;
+    [SerializeField] public Transform CaveFirst;
     public int numOfDeath;
-    private int turn = 1;
-    private int turnComplete;
+    public int turn = 1;
+    public int turnComplete;
 
 
 
     private void Update()
     {
-        CreatingZombie();
+        //CreatingZombie();
     }
     private void Awake()
     {
 
-        FirstTurn();
+        //FirstTurn();
         //ThirdTurn();
+        //FourTurn();
 
     }
 
-    private void CreatingZombie()
+    public virtual void CreatingZombie()
     {
         CheckTurn();
 
-        if ( turn == 2 && turnComplete == 0)
+        if (turn == 2 && turnComplete == 0)
         {
             FirstTurn();
             SecondTurn();
             turnComplete = 1;
         }
-        else if ( turn == 3 && turnComplete == 1)
+        else if (turn == 3 && turnComplete == 1)
         {
             FirstTurn();
             SecondTurn();
@@ -52,12 +54,13 @@ public class ZombieManager : MonoBehaviour
             FourTurn();
             turnComplete = 3;
         }
-        
+
 
 
     }
 
 
+    [PunRPC]
     private void FirstTurn()
     {
         for (int i = 0; i < 5; i++)
@@ -66,7 +69,7 @@ public class ZombieManager : MonoBehaviour
 
             newZombie.gameObject.SetActive(true);
         }
-          
+
     }
     private void SecondTurn()
     {
@@ -95,7 +98,7 @@ public class ZombieManager : MonoBehaviour
     }
 
 
-    private void CheckTurn()
+    public virtual void CheckTurn()
     {
         numOfDeath = ZombieController.Instance.enemySpawner.count;
 
@@ -111,11 +114,11 @@ public class ZombieManager : MonoBehaviour
         {
             turn = 4;
         }
-            
+
     }
 
-   
-    
+
+
 
 
 

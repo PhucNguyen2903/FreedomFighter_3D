@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 using UnityEngine.Events;
+using Photon.Pun;
 
 public class ZombieMovement : MonoBehaviour
 {
@@ -13,6 +14,11 @@ public class ZombieMovement : MonoBehaviour
     public Health health;
     public UnityEvent onDesternationReached;
     public UnityEvent onStartMoving;
+    public float explosionRadius = 200;
+    Transform Player_Foot;
+
+
+
 
     private bool _isMovingValue;
 
@@ -31,20 +37,20 @@ public class ZombieMovement : MonoBehaviour
     }
     private void Awake()
     {
-         PlayerFoot = Player.Instance.PlayerFoot;   
+        FindObject();
     }
 
 
     private void Update()
     {
-        float distance = Vector3.Distance(transform.position, PlayerFoot.position);
+        float distance = Vector3.Distance(transform.position, Player_Foot.position);
             IsMoving = distance > reachingRadius;
 
 
         if (IsMoving)
         {
             agent.isStopped = false;
-            agent.SetDestination(PlayerFoot.position);
+            agent.SetDestination(Player_Foot.position);
             anim.SetBool("isWalking", true);
         }
         else 
@@ -83,6 +89,23 @@ public class ZombieMovement : MonoBehaviour
         else
         {
             onDesternationReached.Invoke();
+        }
+    }
+
+    public void FindObject()
+    {
+
+        Collider[] affectedObjects = Physics.OverlapSphere(transform.position, explosionRadius);
+        for (int i = 0; i < affectedObjects.Length; i++)
+        {
+            PhotonView playerPhotonView = affectedObjects[i].gameObject.GetComponent<PhotonView>();
+            PlayerSingleton Player = affectedObjects[i].gameObject.GetComponent<PlayerSingleton>();
+            if (playerPhotonView != null && Player != null)
+            {
+                //Player_Foot = affectedObjects[i].gameObject.GetComponent<Player>().PlayerFoot;
+                 Player_Foot = Player.PlayerFoot;
+            }
+
         }
     }
 }

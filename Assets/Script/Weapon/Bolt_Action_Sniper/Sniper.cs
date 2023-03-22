@@ -13,18 +13,38 @@ public class Sniper : Shooting
     private bool isScoped = false;
     [SerializeField] protected GameObject scopeOverlay;
     [SerializeField] protected GameObject SniperCamera;
-    [SerializeField] protected Camera MainCamera;
+     Camera MainCamera;
+    public GameObject camera;
+    //[SerializeField] protected PlayerSingleton playerSingleton;
 
     public UnityEvent onFire;
     private float lastShot;
     private float interval;
     public int rpm;
+    public GunAmmo gunAmmo;
+
+
     private void Start()
     {
         interval = 60f / rpm;
+        MainCamera = camera.GetComponent<Camera>();
+
     }
     // Update is called once per frame
     void Update()
+    {
+        //if (Input.GetMouseButtonDown(1))
+        //{
+        //    Zoom();
+        //}
+        //if (Input.GetMouseButtonDown(0))
+        //{
+        //    updateFiring();
+        //}
+        
+    }
+
+    public void SnipperButton()
     {
         if (Input.GetMouseButtonDown(1))
         {
@@ -34,7 +54,6 @@ public class Sniper : Shooting
         {
             updateFiring();
         }
-        
     }
 
     //public void PlayRetrieveSound()
@@ -48,6 +67,8 @@ public class Sniper : Shooting
     public void PlayFireSound() => fireSound.Play();
     private void Fire()
     {
+        bool isShooting = gunAmmo.isShooting();
+        if (!isShooting) return;
         anim.Play("Fire", layer: -1, normalizedTime: 0);
         onFire.Invoke();
     }

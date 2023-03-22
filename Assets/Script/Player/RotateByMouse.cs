@@ -23,9 +23,14 @@ public class RotateByMouse : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //UpdateYaw();
+        //updatePitch();
+        
+    }
+    public void MouseRotating()
+    {
         UpdateYaw();
         updatePitch();
-        
     }
     private void UpdateYaw()
     {

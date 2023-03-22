@@ -13,7 +13,7 @@ public class ItemLooter : MonoBehaviour
 
     public void Looter()
     {
-        if (Input.GetKeyDown(KeyCode.E))
+        if (Input.GetKey(KeyCode.E))
         {
             CheckLooter();
         }

@@ -2,11 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using Photon.Pun;
 
 public class GunAmmo : Shooting
 {
     private static GunAmmo instance;
     public static GunAmmo Instance => instance;
+
+    public PhotonView PV;
 
 
     [SerializeField] public Animator anim;
@@ -30,12 +33,9 @@ public class GunAmmo : Shooting
         {
             _loadAmmo = value;
             loadAmmoChanged.Invoke();
-            if (_loadAmmo <= 0)
+            if (_loadAmmo < 1 )
             {
                 Reload();
-                // LockShooting();
-                //CtrlNumOfMag();
-                
             }
             else
             {
@@ -79,17 +79,18 @@ public class GunAmmo : Shooting
     }
     public virtual void  Reload()
     {
-        if (!CanReload()) return;
+        if (!PV.IsMine) return;
 
-        SetLoadAmmo();
+        if (!CanReload()) return;
         anim.SetTrigger("Reload");
+      // SetLoadAmmo();
        // RefillAmmo();
              
    
     }
     public virtual void  AddAmmo()
     {
-       // RefillAmmo();
+        Debug.Log("AddAmmo");
     }
 
     private void RefillAmmo() 
@@ -100,14 +101,17 @@ public class GunAmmo : Shooting
 
     public bool CanReload()
     {
-        if (numOfMag >0)
-        {
-            
+        if (numOfMag > 0)
+        {          
             return true;
         }
-        if (LoadAmmo < 1)
+        return false;
+    }
+    public bool isShooting()
+    {
+        if (LoadAmmo > 0)
         {
-        LockShooting();
+            return true;
         }
         return false;
     }
@@ -136,7 +140,6 @@ public class GunAmmo : Shooting
             {
                 LoadAmmo += numOfMag;
                 numOfMag = 0;
-                Debug.Log(" numOfMag + LoadAmmo < magSize");
             }
             else if (numOfMag + LoadAmmo == magSize)
             {
@@ -157,19 +160,10 @@ public class GunAmmo : Shooting
 
     public virtual void IncreasenNumofMag()
     {
+        Debug.Log(transform.name + "IncGunAAMo");
         numOfMag += magSize;
         ammoText.UpdateGunAmmo();
     }
-
-  
-
-    //private void CtrlNumOfMag()
-    //{
-    //    if (CanReload()) return;
-    //    LockShooting();
-
-    //}
-
 
     public void PlayReloadPart1Sound() => reloadSounds[0].Play();
     public void PlayReloadPart2Sound() => reloadSounds[1].Play();

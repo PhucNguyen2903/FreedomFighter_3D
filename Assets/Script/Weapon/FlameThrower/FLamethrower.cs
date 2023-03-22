@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using Photon.Pun;
 
 public class FLamethrower : Shooting
 {
@@ -11,40 +12,71 @@ public class FLamethrower : Shooting
     public Animator anim;
     [SerializeField] public UnityEvent onfire;
     [SerializeField] protected AudioSource fireSound;
-  
+    public PhotonView PV;
+    public FlameAmmo flameAmmo;
 
-   
+
+
     void Update()
+    {
+        //if (Input.GetMouseButton(0))
+        //{
+        //    Fire();
+        //    OnFire();
+
+        //}
+        //else
+        //{
+        //    UnFire();   
+        //}
+    }
+
+    public void FlameButton()
     {
         if (Input.GetMouseButton(0))
         {
             Fire();
             OnFire();
-            
+
         }
         else
         {
-            UnFire();   
+            UnFire();
         }
     }
 
     private void Fire()
     {
-        anim.Play("Fire", layer: -1, normalizedTime: 0);
-        Instantiate(fireWave,firePos.transform.position, firePos.transform.rotation);
+        bool isShooting = flameAmmo.isShooting();
+        if (!isShooting) return;
+        // anim.Play("Fire", layer: -1, normalizedTime: 0);
+        // Instantiate(fireWave,firePos.transform.position, firePos.transform.rotation);
+        PV.RPC("CallAnim", RpcTarget.All);
+        PV.RPC("RPC_Prefab", RpcTarget.All);
         onfire.Invoke();
     }
 
     private void OnFire()
     {
         fireSound.Play();
-        
+
     }
 
     private void UnFire()
     {
         fireSound.Stop();
     }
-    
-   
+
+    [PunRPC]
+    void RPC_Prefab()
+    {
+        Instantiate(fireWave, firePos.transform.position, firePos.transform.rotation);
+    }
+
+    [PunRPC]
+    public void CallAnim()
+    {
+        anim.Play("Fire", layer: -1, normalizedTime: 0);
+    }
+
 }

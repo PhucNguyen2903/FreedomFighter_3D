@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: e62636dadcbf7884a9cec9924dddf779
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Avalon
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 11041280674ca4f439930ae7d9c9ab47, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

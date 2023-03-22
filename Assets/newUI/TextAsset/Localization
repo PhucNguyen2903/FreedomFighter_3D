@@ -1,0 +1,322 @@
+KEY,English,Chinese,ChineseSimplified,ChineseTraditional,Korean,Japanese,Arabic,Portuguese,Spanish,Russian,French,Vietnamese
+//------prop------------,,,,,,,,,,,,
+Soft,CREDIT,现金,现金,现金,,,,CRÉDITO,,,,TIỀN
+Hard,KEY,钥匙,钥匙,钥匙,,,,CHAVE,,,,CHÌA KHÓA
+Common,COMMON,普通,普通,普通,,,,COMUM,,,,PHỔ THÔNG
+Rare,RARE,精品,精品,精品,,,,CRU,,,,HIẾM
+Legendary,LEGENDARY,传说,传说,傳說,,,,LENDÁRIO,,,,HUYỀN THOẠI
+Supreme,SUPREME,至尊,至尊,至尊,,,,SUPREMO,,,,SUPREME
+loading_step1_title,BATTLE SEARCHING(<color=#F66F09>ESTIMATE {0:00}:{1:00}</color>),战斗匹配中(<color=#F66F09>预计{0:00}:{1:00}</color>),战斗匹配中(<color=#F66F09>预计{0:00}:{1:00}</color>),戰鬥匹配中（<color=#F66F09>預計{0:00}{1:00}</color>）,,,,BATALHA PROCURANDO(<color=#F66F09>ESPERADO {0:00}:{1:00}</color>),,,,TÌM KIẾM TRẬN ĐẤU (<color=#F66F09> DỰ ĐOÁN {0:00}: {1:00} </color>)
+loading_step2_title,BATTLE FOUND!,发现战斗!,发现战斗!,發現戰鬥！,,,,BATALHA ENCONTRADA!,,,,TRẬN ĐẤU ĐÃ TÌM THẤY!
+prop_free,FREE,免费,免费,免費,,,,LIVRE,,,,MIỄN PHÍ
+prop_health,HEALTH,血量,血量,血量,,,,SAÚDE,,,,SỨC KHỎE
+prop_coin,COIN,金币,金币,金幣,,,,MOEDA,,,,TIỀN
+prop_full,is Full!,已满!,已满!,已滿!,,,,está cheio!,,,,là đầy đủ!
+prop_common_back,BACK,返回,返回,返回,,,,VOLTAR,,,,TRỞ LẠI
+prop_common_ok,OK,确定,打开,確定,,,,OK,,,,VÂNG
+prop_common_open_next,OPEN NEXT,打开下一个,打开下一个,打開下一個,,,,ABRIR PRÓXIMO,,,,MỞ TIẾP THEO
+prop_common_open,OPEN,打开,开启,打開,,,,ABRIR,,,,MỞ
+prop_common_cancle,CANCEL,取消,取消,取消,,,,CANCELAR,,,,HỦY BỎ
+prop_common_submit,SUBMIT,提交,提交,提交,,,,ENVIAR,,,,GỬI ĐI
+prop_common_confirm,CONFIRM,确认,确认,確認,,,,CONFIRME,,,,XÁC NHẬN
+prop_common_eq,EQUIP,立即装备,立即装备,立即裝備,,,,EQUIPAR,,,,THIẾT BỊ
+prop_common_skin,SKIN,皮肤,皮肤,皮膚,,,,PELE,,,,LÀN DA
+prop_common_incases,IN CASES,在补给箱中,在补给箱中,在補給箱中,,,,EM CASOS,,,,TRONG HỢP
+prop_common_yes,YES,是,是,是,,,,SIM,,,,VÂNG
+prop_common_no,NO,否,否,否,,,,NÃO,,,,KHÔNG
+prop_common_take,TAKE,领取,领取,领取,,,,RECEBER,,,,LẤY
+prop_common_collect,COLLECT,领取,领取,领取,,,,COLETAR,,,,SƯU TẦM
+prop_common_hide_pannel,HIDE PANELS,隐藏面板,隐藏面板,隱藏面板,,,,OCULTAR PAINÉIS,,,,ẨN PANELS
+prop_common_show_pannel,SHOW PANELS,显示面板,显示面板,顯示面板,,,,MOSTRAR PAINÉIS,,,,HIỂN THỊ PANELS
+prop_common_congr,CONGRATULATIONS!,恭喜你!,恭喜你!,恭喜你!,,,,PARABÉNS!,,,,XIN CHÚC MỪNG!
+prop_itemtype_weapon,WEAPON,武器,武器,武器,,,,ARMA,,,,VŨ KHÍ
+prop_itemtype_helmet,HELMET,头盔,头盔,頭盔,,,,CAPACETE,,,,MŨ BẢO HIỂM
+prop_itemtype_Skin,SKIN,皮肤,皮肤,皮膚,,,,PELE,,,,LÀN DA
+prop_itemtype_blueprint,BLURPRINT,蓝图,蓝图,藍圖,,,,BLUEPRINT,,,,BLUEPRINT
+prop_itemtype_talnet,TALENT,天赋,天赋,天賦,,,,TALENTOS,,,,TÀI NĂNG
+prop_itemtype_currency,CURRENCY,货币,货币,貨幣,,,,MOEDA,,,,TIỀN TỆ
+prop_itemtype_armor,ARMOR,护甲,护甲,護甲,,,,ARMADURAS,,,,ÁO GIÁP
+prop_itemtype_explosive,EXPLOSIVE,手雷,手雷,手雷,,,,EXPLOSIVO,,,,BÙNG NỔ
+prop_itemtype_aidkit,AIDKIT,医疗包,医疗包,醫療包,,,,AIDKIT,,,,AIDKIT
+prop_main_daily_next,{0},{0},{0},{0},,,,{0},,,,{0}
+prop_main_daily,DAILY BONUS,每日奖励,每日奖励,每日獎勵,,,,BÔNUS DIÁRIO,,,,THƯỞNG HÀNG NGÀY
+prop_main_daily_unlock,COMPLETED LEVEL 1-5 TO UNLOCK !!!,完成关卡1-5后解锁！,完成关卡1-5后解锁！,完成關卡1-5後解鎖！,,,,CONCLUÍDO NÍVEL 1-5 PARA DESBLOQUEAR !!!,,,,ĐÃ HOÀN THÀNH MỨC 1-5 ĐỂ MỞ KHÓA !!!
+prop_main_talents,TALENTS,天赋,天赋,天賦,,,,TALENTOS,,,,TÀI NĂNG
+prop_main_talents_unlock,COMPLETED LEVEL 1-3 TO UNLOCK !!!,完成关卡1-3后解锁！,完成关卡1-3后解锁！,完成關卡1-3後解鎖！,,,,CONCLUÍDO NÍVEL 1-3 PARA DESBLOQUEAR !!!,,,,ĐÃ HOÀN THÀNH CẤP ĐỘ 1-3 ĐỂ MỞ KHÓA !!!
+prop_main_offer_unlock,Unlock after {0} battles !!!,完成{0}场战斗后解锁!,完成{0}场战斗后解锁!,完成{0}場戰鬥後解鎖!,,,,Desbloqueie após {0} batalhas !!!,,,,Mở khóa sau {0} trận chiến !!!
+prop_main_offer_refresh,REFRESH IN: {0},{0}后刷新,{0}后刷新,{0}後刷新,,,,ATUALIZAR EM: {0},,,,LÀM MỚI TRONG: {0}
+prop_main_shop,SHOP,商店,商店,商店,,,,LOJA,,,,CỬA TIỆM
+prop_main_weapon,EQUIPMENT,武器库,武器库,武器庫,,,,EQUIPAMENTO,,,,TRANG THIẾT BỊ
+prop_main_compain,CAMPAIGN,关卡选择,关卡选择,關卡選擇,,,,CAMPANHA,,,,CHIẾN DỊCH
+prop_main_start,BATTLE,快速开始,快速开始,快速開始,,,,BATALHA,,,,CHIẾN ĐẤU
+prop_main_quest,QUESTS,每日任务,每日任务,每日任務,,,,MISSÕES,,,,CÂU HỎI
+prop_main_cases,CASES,补给箱,补给箱,補給箱,,,,CASOS,,,,HỢP
+prop_rank_title,RANKING,排行榜,排行榜,排行榜,,,,RANKING,,,,RANKING
+prop_rank_view_more,VIEW MORE,查看更多,查看更多,查看更多,,,,VEJA MAIS,,,,XEM THÊM
+prop_main_free_credits,FREE CREDITS,免费现金,免费现金,免費現金,,,,CRÉDITOS LIVRE,,,,TÍN DỤNG MIỄN PHÍ
+prop_main_free_keys,FREE CREDITS,免费现金,免费现金,免費現金,,,,CRÉDITOS LIVRE,,,,TÍN DỤNG MIỄN PHÍ
+prop_main_uaw,UNLOCK ALL WEAPONS,解锁所有武器,解锁所有武器,解鎖所有武器,,,,DESBLOQUEAR TODAS AS ARMAS,,,,MỞ KHÓA TẤT CẢ CÁC VŨ KHÍ
+prop_main_unlock_all_weapon,UNLOCK\nALL WEAPONS,解锁所有武器,解锁所有武器,解鎖所有武器,,,,DESBLOQUEAR\nTODAS AS ARMAS,,,,MỞ KHÓA \nALL VŨ KHÍ
+prop_shop_weapon_type,WEAPON TYPE,武器类型,武器类型,武器類型,,,,ARMA TIPO,,,,KIỂU VŨ KHÍ
+prop_shop_weapon_mods,MODS,增幅器,增幅器,增幅器,,,,MODS,,,,MODS
+prop_shop_weapon_stats,STATS,属性,属性,屬性,,,,ATRIBUTOS,,,,THUỘC TÍNH
+prop_shop_eq,EQUIP,装备,装备,裝備,,,,EQUIPAR,,,,THIẾT BỊ
+prop_shop_eqd,EQUIPPED,已装备,已装备,已裝備,,,,EQUIPADO,,,,ĐÃ TRANG BỊ
+prop_shop_upgr,UPGRADE,升  级,升  级,升  級,,,,MELHORAR,,,,NÂNG CẤP
+prop_shop_chip_cost,"<color=""#F7C652"">{0}</color>/{1}","<color=""#F7C652"">{0}</color>/{1}","<color=""#F7C652"">{0}</color>/{1}","<color=""#F7C652"">{0}</color>/{1}",,,,"<color=""#F7C652"">{0}</color>/{1}",,,,"<color=""#F7C652"">{0}</color>/{1}"
+prop_mod_clip_size,Clip Size,弹匣容量,弹匣容量,彈匣容量,,,,Magazine,,,,Kích cở clip
+prop_mod_power,Damage,火力值,火力值,火力值,,,,Dano,,,,Hư hại
+prop_mod_fire_rate,Fire Rate,射速,射速,射速,,,,Velo. de tiro,,,,Tốc độ bắn
+prop_mod_reload,Reload Time,换弹时间,换弹时间,換彈時間,,,,Recarregar Tempo,,,,Thời gian tải lại
+prop_weapon_power,DAMAGE,火力,火力,火力,,,,DANO,,,,HƯ HẠI
+prop_weapon_fire_rate,FIRE RATE,射速,射速,射速,,,,VELO. DE TIRO,,,,TỶ LỆ CHÁY
+prop_weapon_clip_size,CLIP SIZE,弹匣容量,弹匣容量,彈匣容量,,,,MAGAZINE,,,,KÍCH CỞ CLIP
+prop_weapon_reload,RELOAD TIME,换弹时间,换弹时间,換彈時間,,,,RECARREGAR TEMPO,,,,THỜI GIAN TẢI LẠI
+Pistol,Pistol,手枪,手枪,手槍,,,,Pistola,,,,Súng lục
+Assault,Assault Rifle,突击步枪,突击步枪,突擊步槍,,,,Assalto,,,,Súng trường tấn công
+Sniper,Sniper Rifle,狙击枪,狙击枪,狙擊槍,,,,Sniper,,,,SÚNG BẮN TỈA
+Shotgun,Shotgun,散弹枪,散弹枪,散彈槍,,,,Espingarda,,,,Khẩu súng ngắn
+Submachine,Machine Gun,冲锋枪,冲锋枪,衝鋒槍,,,,Submáquina,,,,Súng máy
+Melee,Melee,近战,近战,近戰,,,,Refrega,,,,Cận chiến
+prop_game_mode_ffa,          FREE FOR ALL             ,个人竞技,个人竞技,個人競技,,,,          FREE FOR ALL             ,,,,THỂ THAO CÁ NHÂN
+prop_game_mode_tdm,TEAM DEATH MATCH,团队竞赛,团队竞赛,團隊競賽,,,,TEAM DEATH MATCH,,,,TRẬN ĐẤU CHẾT CỦA ĐỘI
+prop_map_region_num,Episode {0:N0},第{0:N0}章,第{0:N0}章,第{0:N0}章,,,,Episódio {0: N0},,,,Tập {0: N0}
+prop_map_region_locked,COMPLETED EPISODE {0} LEVEL {1},完成第{0}章第{1}关后解锁,完成第{0}章第{1}关后解锁,完成第{0}章第{1}關後解鎖,,,,EPISÓDIO CONCLUÍDO {0} NÍVEL {1},,,,EPISODE {0} LEVEL {1} đã HOÀN THÀNH
+prop_map_region_coming,COMING SOON...,即将到来...,即将到来...,即將到來...,,,,EM BREVE...,,,,SẮP CÓ...
+prop_map_region_unlock,UNLOCK,立即解锁,立即解锁,立即解鎖,,,,DESBLOQUEAR,,,,MỞ KHÓA
+prop_map_region_start,START,开始游戏,开始游戏,開始遊戲,,,,COMEÇAR,,,,KHỞI ĐẦU
+prop_map_region_cmp,COMPLETED,已完成,已完成,已完成,,,,COMPLETADO,,,,HOÀN THÀNH
+prop_opt_ctls,CONTROLS,操控,操控,操控,,,,CONTROLES,,,,ĐIỀU KHIỂN
+prop_opt_media,MEDIAS,媒体,媒体,媒體,,,,MÍDIA,,,,MEDIAS
+prop_opt_title,OPTIONS,设置,设置,設置,,,,OPÇÕES,,,,TÙY CHỌN
+prop_opt_privacy,PRIVACY POLICY,隐私政策,隐私政策,隱私政策,,,,POLÍTICA DE PRIVACIDADE,,,,CHÍNH SÁCH BẢO MẬT
+prop_opt_report,REPORT A PROBLEM,报告问题,报告问题,報告問題,,,,REPORTAR UM PROBLEMA,,,,BÁO CÁO MỘT VẤN ĐỀ
+prop_opt_sensitivity,SENSITIVITY:,灵敏度：,灵敏度：,靈敏度：,,,,SENSIBILIDADE:,,,,NHẠY CẢM:
+prop_opt_music,MUSIC:,音乐：,音乐：,音樂：,,,,MÚSICA:,,,,ÂM NHẠC:
+prop_opt_sound,SOUND EFFECTS:,音效：,音效：,音效：,,,,EFEITOS SONOROS:,,,,HIỆU ỨNG ÂM THANH:
+prop_opt_target,AIM:,自动瞄准：,自动瞄准：,自動瞄準：,,,,MIRAR:,,,,MỤC TIÊU:
+prop_opt_autofire,AUTO-FIRE:,自动射击：,自动射击：,自動射擊：,,,,FOGO AUTOMÁTICO:,,,,LỬA TỰ ĐỘNG:
+prop_opt_autopick,AUTO PICKUP WEAPON:,自动拾取武器：,自动拾取武器：,自動拾取武器：,,,,AUTO PICKUP ARMA:,,,,TỰ ĐỘNG NHẶT VŨ KHÍ:
+prop_opt_ci,CUSTOMIZE INTERFACE:,自定义界面：,自定义界面：,自定義界面：,,,,CUSTOMIZAR INTERFACE:,,,,GIAO DIỆN TÙY CHỈNH:
+prop_opt_customize,CUSTOMIZATION,定制,定制,定制,,,,COSTUMIZAÇÃO,,,,TÙY BIẾN
+prop_opt_vibrate,VIBRATE:,振动:,振动:,振動:,,,,VIBRAÇÃO:,,,,RUNG ĐỘNG:
+prop_opt_target_frame,TARGET FRAME RATE:,目标帧率:,目标帧率:,目標幀率:,,,,TAXA DE QUADRO ALVO:,,,,TỶ LỆ KHUNG MỤC TIÊU:
+prop_opt_quality,GRAPHICS QUALITY:,画质:,画质:,畫質:,,,,QUALIDADE GRAFICA:,,,,CHẤT LƯỢNG ĐỒ HỌA:
+prop_opt_off,OFF,关,关,關,,,,FORA,,,,TẮT
+prop_opt_on,ON,开,开,開,,,,SOBRE,,,,BẬT
+prop_opt_qlt_low,LOW,低,低,低,,,,BAIXO,,,,THẤP
+prop_opt_qlt_medium,MEDIUM,中,中等,中等,,,,MÉDIO,,,,TRUNG BÌNH
+prop_opt_qlt_high,HIGH,高,高,高,,,,ALTO,,,,CAO
+prop_opt_qlt_ultra,ULTRA,超高,超高,超高,,,,ULTRA,,,,CỰC KỲ
+prop_pkg_tips,Purchase any product will remove ads.,购买任意商品将去广告.,购买任意商品将去广告.,購買任意商品將去廣告.,,,,A compra de qualquer produto removerá os anúncios.,,,,Mua bất kỳ sản phẩm nào sẽ loại bỏ quảng cáo.
+prop_pkg_free_coins,FREE CREDITS,免费现金,免费现金,免費現金,,,,Moedas grátis,,,,TÍN DỤNG MIỄN PHÍ
+prop_pkg_free_keys,FREE KEYS,免费钥匙,免费钥匙,免费钥匙,,,,Moedas grátis,,,,CHÌA KHÓA MIỄN PHÍ
+prop_pkg_loading,Loading...,加载中...,加载中...,加载中...,,,,Carregando...,,,,Đang tải...
+prop_pkg_unlock_all,Unlock All Weapons,解锁所有武器,解锁所有武器,解鎖所有武器,,,,Desbloquear todas as armas,,,,Mở khóa tất cả vũ khí
+prop_pkg_unlock_all_tip,Contains new weapons,包含新增的武器,包含新增的武器,包含新增的武器,,,,Contém novas armas,,,,Chứa vũ khí mới
+prop_pkg_coin_bag,BAG OF CREDITS,一袋现金,一大袋现金,一大袋現鈔,,,,Saco De Créditos,,,,TÚI TÍN DỤNG
+prop_pkg_coin_pile,PILE OF CREDITS,一堆现金,一堆现金,一堆現鈔,,,,Pilha De Créditos,,,,CỌC TÍN DỤNG
+prop_pkg_coin_handful,HADNFUL OF CREDITS,一把现金,一把现金,一把現鈔,,,,Punhado De Créditos,,,,XỬ LÝ TÍN DỤNG
+prop_pkg_keys_bag,BAG OF KEYS,一袋钥匙,一大袋钥匙,一大袋鑰匙,,,,Saco De Chaves,,,,TÚI CHÌA KHÓA
+prop_pkg_keys_pile,PILE OF KEYS,一堆钥匙,一堆钥匙,一堆鑰匙,,,,Pilha De Chaves,,,,CỌC CHÌA KHÓA
+prop_pkg_keys_handful,HANDFUL OF KEYS,一把钥匙,一把钥匙,一把鑰匙,,,,Punhado de Chaves,,,,XỬ LÝ CÁC CHÌA KHÓA
+prop_pkg_no_ads,Remove Ads,去广告,去广告,去廣告,,,,Remover propagandas,,,,Loại bỏ các quảng cáo
+prop_pkg_starter,STARTER PACK,新手礼包,新手礼包,新手禮包,,,,PACOTE DE INICIANTE,,,,GÓI KHỞI ĐỘNG
+prop_pkg_powerup10,POWERUP PACK,道具礼包,道具礼包,道具禮包,,,,ENERGIZAR PACOTE,,,,GÓI POWERUP
+prop_pkg_medkit,MEDKIT,医疗包,医疗包,醫療包,,,,MEDKIT,,,,BỘ DỤNG CỤ Y TẾ
+prop_pkg_grenade,GRENADE,手榴弹,手榴弹,手榴彈,,,,GRENADE,,,,LỰU ĐẠN
+prop_pkg_more,{0}% MORE,加量{0}%,加量{0}%,加量{0}%,,,,{0}% MAIS,,,,THÊM {0}%
+prop_pkg_off,{0:F0}% OFF,{0:F0}% 折扣,{0:F0}% 折扣,{0:F0}% 折扣,,,,{0:F0}% OFF,,,,GIẢM GIÁ {0:F0}%
+prop_daily_next,NEXT BONUS:,距离下次奖励:,距离下次奖励:,距離下次獎勵:,,,,PRÓXIMO BÔNUS:,,,,THƯỞNG TIẾP THEO:
+prop_daily_day,DAY {0},第{0}天,第{0}天,第{0}天,,,,DIA {0},,,,NGÀY {0}
+prop_player_name,NAME,昵称,昵称,暱稱,,,,NOME,,,,TÊN
+prop_player_tips,Only allowed letters and numbers!,只允许英文字母和数字!,只允许英文字母和数字!,只允許英文字母和數字!,,,,Somente letras e números permitidos!,,,,Chỉ cho phép các chữ cái và số!
+prop_player_stat,STATISTIC,状态,状态,狀態,,,,ESTATÍSTICO,,,,THỐNG KÊ
+prop_player_rank,RANKING,排名,排名,排名,,,,RANKING,,,,RANKING
+prop_player_weapons,WEAPONS,武器库,武器库,武器庫,,,,ARMAS,,,,KHO VŨ KHÍ
+prop_player_total_battles,Total battles:,总战斗数：,总战斗数：,總戰斗數：,,,,Batalhas totais:,,,,Tổng số trận:
+prop_player_max_kill,Max Kills:,最大击杀:,最大击杀:,最大击杀:,,,,Max Kills:,,,,Số giết tối đa:
+prop_player_total_vic,Total Victories:,胜场数:,胜场数:,勝場數：,,,,Total de vitórias:,,,,Tổng số Victories:
+prop_player_kills,Kills,击杀数,击杀数,擊殺數,,,,Mata,,,,Giết
+prop_player_hdshots,Headshots,爆头数,爆头数,爆頭數,,,,Headshots,,,,Headshots
+prop_player_deaths,Deaths,死亡数,死亡数,死亡數,,,,Mortes,,,,Những cái chết
+prop_player_hdshots_rate,Headshots %,爆头率(%),爆头率(%),爆頭率(%),,,,Headshots %,,,,Headshots %
+prop_player_dbkills,Double Kills,双杀,双杀,雙殺,,,,Duplo Matar,,,,Giết đôi
+prop_player_tpkills,Triple Kills,三杀,三杀,三殺,,,,Matança Tripla,,,,Giết ba
+prop_player_frkills,Quadra Kills,四杀,四杀,四殺,,,,Quadra Matar,,,,Giết bốn
+prop_player_fvkills,Penta Kills,五杀,五杀,五殺,,,,Penta Matar,,,,Giết năm
+prop_player_rampage,Rampages,所向披靡,所向披靡,所向披靡,,,,Rampages,,,,Rampages
+prop_rank_vic,VICTORIES,胜场榜,胜场榜,勝場榜,,,,VITÓRIAS,,,,VICTORIES
+prop_rank_talents,TALENTS,天赋榜,天赋榜,天賦榜,,,,TALENTOS,,,,TÀI NĂNG
+prop_rank_kills,KILLS,击杀榜,击杀榜,擊殺榜,,,,KILLS,,,,GIẾT
+prop_rank_headshots,HEADSHOTS,爆头榜,爆头榜,爆頭榜,,,,HEADSHOTS,,,,HEADSHOTS
+prop_rank_refresh,REFRESH,刷新,刷新,刷新,,,,ATUALIZAR,,,,LÀM TƯƠI
+prop_rank_tlt_rank,Rank,排名,排名,排名,,,,Classificação,,,,Cấp bậc
+prop_rank_tlt_name,Name,昵称,昵称,暱稱,,,,Nome,,,,Tên
+prop_rank_user_info_loading,User Info Loading...,用户信息加载中...,用户信息加载中...,用戶信息加載中...,,,,Carregando informações do usuário ...,,,,Đang tải thông tin người dùng ...
+prop_rank_tlt_point,Point,分数,分数,分數,,,,Apontar,,,,Chỉ
+prop_pop_qst_title,DAILY QUEST,每日任务,每日任务,每日任務,,,,MISSÃO DIÁRIA,,,,NHIỆM VỤ HẰNG NGÀY
+prop_pop_qst_change,QUEST CHANGE,任务变更,任务变更,任務變更,,,,MISSÃO DE MUDANÇA,,,,THAY ĐỔI CÂU HỎI
+prop_pop_qst_desc,"To change daily quest,you need to watch short video ad.",要变更每日任务，你需要观看简短的视频广告。,要变更每日任务，你需要观看简短的视频广告。,要更改每日任務，你需要觀看視頻廣告。,,,,"Para mudar a missão diária, você precisa assistir a um pequeno anúncio em vídeo.",,,,"Để thay đổi nhiệm vụ hàng ngày, bạn cần xem quảng cáo video ngắn."
+prop_pop_qst_btn_change,CHANGE,变更,变更,变更,,,,MUDANÇA,,,,THAY ĐỔI
+prop_pop_buy_title,YOU GOT ,你获得,你获得,你獲得,,,,VOCÊ TEM,,,,BẠN CÓ
+prop_pop_buy_noads,Complete ad-free,去广告,去广告,去廣告,,,,Completo sem anúncios,,,,Complete ad-free
+prop_pop_buy_processing,PROCESSING...,处理中...,处理中...,處理中...,,,,EM PROCESSAMENTO...,,,,CHẾ BIẾN...
+prop_pop_buy_failed,FAILED!!!,失败!!!,失败!!!,失敗!!!,,,,FRACASSADO!!!,,,,THẤT ​​BẠI!!!
+prop_pop_exit_title,Would you like to exit game?,你确认要退出游戏吗?,你确认要退出游戏吗?,你確認要退出遊戲嗎?,,,,Você gostaria de sair do jogo?,,,,Bạn có muốn thoát khỏi trò chơi không?
+prop_pop_exit_no,NO,在浪一会,在浪一会,再玩一會,,,,NÃO,,,,KHÔNG
+prop_po_exit_yes,YES,残忍离去,残忍离去,離開,,,,SIM,,,,VÂNG
+prop_pop_rate_title,"Tell us what you think about FPS Online Strike?
+",你觉得游戏怎么样?,你觉得游戏怎么样?,你覺得遊戲怎麼樣?,,,,Diga-nos o que você acha do FPS Online Strike?,,,,Hãy cho chúng tôi biết bạn nghĩ gì về FPS Online Strike?
+prop_pop_rate_report_title,"Thanks very much for your feedback!
+",非常感谢你的反馈!,非常感谢你的反馈!,非常感謝你的反饋!,,,,Muito obrigado pelo seu feedback!,,,,Cảm ơn rất nhiều vì phản hồi của bạn!
+prop_pop_rate_report_tip,if you have any problem please feel free to let me know,"如果你有任何问题,请随时告诉我们!","如果你有任何问题,请随时告诉我们!","如果你有任何問題,請隨時告訴我們!",,,,se você tiver algum problema sinta-se à vontade para me avisar,,,,nếu bạn có bất kỳ vấn đề xin vui lòng cho tôi biết
+prop_pop_rate_problem,REPORT PROBLEM,反馈问题,反馈问题,反饋問題,,,,REPORTAR PROBLEMA,,,,BÁO CÁO VẤN ĐỀ
+prop_pop_unlocked_title,"CONGRATULATIONS,YOU UNLOCKED ","恭喜你,解锁了","恭喜你,解锁了","恭喜你,解鎖了",,,,"PARABÉNS, VOCÊ DESBLOQUEIO",,,,XIN CHÚC MỪNG BẠN ĐÃ MỞ KHÓA
+prop_pop_unlocked_continue,CONTINUE,继续游戏,继续游戏,繼續遊戲,,,,CONTINUAR,,,,TIẾP TỤC
+prop_pop_unlocked_check,CHECK NOW,立即查看,立即查看,立即查看,,,,VERIFIQUE AGORA,,,,KIỂM TRA NGAY
+prop_pop_open_case_more,CARD +1,卡片+1,卡片+1,卡片+1,,,,CARTÃO +1,,,,THẺ +1
+prop_pop_open_case_subt,CHANCE TO GET UNIQUE ITEM,有机会或者唯一道具,有机会或者唯一道具,有機會獲得獨特的物品,,,,CHANCE DE OBTER ITEM ÚNICO,,,,CƠ HỘI NHẬN HÀNG ĐỘC ĐÁO
+prop_pause_title,PAUSE,暂停,暂停,暫停,,,,PAUSA,,,,TẠM NGỪNG
+prop_common_in_resume,RESUME,继续,继续,繼續,,,,RETOMAR,,,,TIẾP TỤC
+prop_common_in_main,MAIN MENU,主菜单,主菜单,主菜單,,,,MENU,,,,CHÍNH MENU
+prop_common_in_next,NEXT,下一关,下一关,下一關,,,,NEXT,,,,KẾ TIẾP
+prop_common_in_back,BACK,返回,返回,返回,,,,VOLTAR,,,,TRỞ LẠI
+prop_common_in_up,SHOP,商店,商店,商店,,,,LOJA,,,,CỬA TIỆM
+prop_common_in_retry,RETRY,重试,重试,重試,,,,RETRY,,,,THỬ LẠI
+prop_end_title_success,MISSION COMPLETED,任务完成,任务完成,任務完成,,,,MISSÃO COMPLETADA,,,,NHIỆM VỤ HOÀN THÀNH
+prop_end_title_failed,MISSION FAILED,任务失败,任务失败,任務失敗,,,,MISSÃO FRACASSADA,,,,NHIỆM VỤ THẤT BẠI
+prop_end_total,TOTAL,总计,总计,總計,,,,TOTAL,,,,TOÀN BỘ
+prop_try_weapon,TRY NOW,试用,试用,試用,,,,TENTE AGORA,,,,THỬ NGAY
+prop_end_try_weapon,Try weapon?,试试新武器?,试试新武器?,試試新武器?,,,,Tentar arma?,,,,Thử vũ khí?
+prop_end_continue,CONTINUE <color=#B7B7B7>{0}</color>,继续游戏 <color=#B7B7B7>{0}</color>,继续游戏 <color=#B7B7B7>{0}</color>,繼續遊戲 <color=#B7B7B7>{0}</color>,,,,CONTINUAR <color=#B7B7B7>{0}</color>,,,,TIẾP TỤC<color=#B7B7B7> {0} </color>
+prop_end_gift_title,"CONGRATULATIONS,YOU GOT A GIFT","恭喜你,收到一份礼物","恭喜你,收到一份礼物","恭喜你,收到一份禮物",,,,"PARABÉNS, VOCÊ RECEBEU UM PRESENTE",,,,XIN KÍNH CHÚC QUÝ KHÁCH ĐƯỢC QUÀ TẶNG
+prop_end_gift_no,"NO,THANKS",丑拒,丑拒,醜拒,,,,"NÃO, OBRIGADO",,,,"KHÔNG, CÁM ƠN"
+prop_end_gift_yes,GET IT NOW,立即获取,立即获取,立即獲取,,,,OBTÊ-LO AGORA,,,,LẤY NÓ NGAY
+prop_ingame_ffa_1stKillStr,1st {0},第一名 {0},第一名 {0},第一名 {0},,,,1st {0},,,,1st {0}
+prop_map_rt,~{0} MINUTES,~{0}分钟,~{0}分钟,~{0}分鐘,,,,~{0} MINUTOS,,,,~{0} PHÚT
+prop_map_mp,{0} vs {0},{0} vs {0},{0} vs {0},{0} vs {0},,,,{0} vs {0},,,,{0} vs {0}
+prop_map_mp_ffa,{0} PLAYERS,{0} 个玩家,{0} 个玩家,{0} 個玩家,,,,{0} JOGADORES,,,,{0} NGƯỜI CHƠI
+prop_map_rdm,RANDOM,随机地图,随机地图,隨機地圖,,,,ALEATÓRIO,,,,NGẪU NHIÊN
+prop_map_rwd,REWARDS:,奖励:,奖励:,獎勵：,,,,RECOMPENSAS:,,,,PHẦN THƯỞNG:
+prop_map_md_tdm,TEAM DEATH MATCH,团队竞技,团队竞技,團隊競技,,,,EQUIPE DEATHMATCH,,,,TRẬN ĐẤU CHẾT CỦA ĐỘI
+prop_map_md_ffa,FREE FOR ALL,个人竞技,个人竞技,個人競技,,,,EQUIPE DEATHMATCH,,,,THỂ THAO CÁ NHÂN
+prop_map_info_tdm_win,● Team with most kills wins,●杀死人数最多的团队获胜,●杀死人数最多的团队获胜,●殺死人數最多的團隊獲勝,,,,● Equipe com mais vitórias de mortes,,,,● Đội có nhiều điểm hạ gục nhất sẽ thắng
+prop_map_info_ffa_win,● Player with most kills wins,●杀死人数最多的玩家获胜,●杀死人数最多的玩家获胜,●殺死人數最多的玩家獲勝,,,,● Jogador com mais vitórias de mortes,,,,● Người chơi có nhiều điểm hạ gục nhất thắng
+prop_map_info_rt,● 3~8 minutes time limit,●3~8分钟的时间限制,●3~8分钟的时间限制,●3~8分鐘的時間限制,,,,● limite de tempo 3~8 minutos,,,,● Giới hạn thời gian 3 ~ 8 phút
+prop_map_into_mp,● Max 10 players,●最多10位玩家,●最多10位玩家,●最多10位玩家,,,,● Máximo de 10 jogadores,,,,● Tối đa 10 người chơi
+prop_map_ld_title,{1} / <Color=#FF6500>{0}</Color>,{1} / <Color=#FF6500>{0}</Color>,{1} / <Color=#FF6500>{0}</Color>,{1} / <Color=#FF6500>{0}</Color>,,,,{1} / <color=#FF6500>{0}</color>,,,,{1} / <Color=#FF6500>{0}</Color>
+prop_eqp_primary,PRIMARY,主武器,主武器,主武器,,,,PRIMÁRIO,,,,SƠ CẤP
+prop_eqp_secondary,SECONDARY,副武器,副武器,副武器,,,,SECUNDÁRIO,,,,THỨ CẤP
+prop_eqp_melee,MELEE,刀具,刀具,刀具,,,,FACAS,,,,Cận
+prop_eqp_head,HEAD,头盔,头盔,头盔,,,,HEAD,,,,ĐẦU
+prop_eqp_armor,ARMOR,护甲,护甲,护甲,,,,ARMADURAS,,,,ARMOR
+prop_uiref_pause_setting,SETTING,设置,设置,設置,,,,CONFIGURAÇÃO,,,,TÙY CHỌN
+prop_uiref_pause_sb,SCOREBOARD,记分板,记分板,記分板,,,,PLACAR,,,,BẢNG ĐIỂM
+prop_uiref_pause_leave,LEAVE BATTLE,离开战斗,离开战斗,離開戰鬥,,,,SAIR DA BATALHA,,,,RỜI BỎ
+prop_offer_time_remain,TIME REMAINING {0},优惠剩余{0},优惠剩余{0},優惠剩餘{0},,,,TEMPO RESTANTE{0},,,,THỜI GIAN CÒN LẠI {0}
+prop_offer_starter,STARTER PACK,新手礼包,新手礼包,新手禮包,,,,PACOTE DE INICIANTE,,,,GÓI KHỞI ĐỘNG
+//------Weapon----------,,,,,,,,,,,,
+wpn_prop_damage,DAMAGE,火力,火力,火力,,,,DANO,,,,HƯ HẠI
+wpn_prop_fireRate,FIRE RATE,射速,射速,射速,,,,TAXA DE FOGO,,,,TỶ LỆ CHÁY
+wpn_prop_clipSize,CLIP SIZE,弹匣容量,弹匣容量,彈匣容量,,,,TAMANHO DO CLIP,,,,KÍCH CỞ CLIP
+wpn_prop_reloadTime,RELOAD TIME,换弹时间,换弹时间,換彈時間,,,,TEMPO DE RECARGA,,,,THỜI GIAN TẢI LẠI
+wpn_prop_health,HEALTH POINT,生命值,生命值,生命值,,,,PONTO SAÚDE,,,,ĐIỂM Y TẾ
+//------Talents---------,,,,,,,,,,,,
+prop_tls_upd,UPGRADE,升级,升级,升級,,,,MELHORIA,,,,NÂNG CẤP
+prop_tls_locked,NOT FOUND,未拥有,未拥有,未拥有,,,,NÃO ENCONTRADO,,,,KHÔNG TÌM THẤY
+prop_tls_lckd,NOT FOUND,未拥有,未拥有,未拥有,,,,NÃO ENCONTRADO,,,,KHÔNG TÌM THẤY
+tls_pin_unlock,COMPLETED LEVEL {0}-{1},完成关卡{0}-{1}后解锁,完成关卡{0}-{1}后解锁,完成關卡{0}-{1}後解鎖,,,,NÍVEL CONCLUÍDO {0}-{1},,,,CẤP ĐỘ ĐÃ HOÀN THÀNH {0}-{1}
+tls_prop_cl,COMBAT LEVEL,天赋评分,天赋评分,天賦評分,,,,NÍVEL DE COMBATE,,,,ĐIỂM TÀI
+tls_cl_f,+{0:N0},+{0:N0},+{0:N0},+{0:N0},,,,+{0:N0},,,,+{0:N0}
+tls_lvl_f,LEVEL {0},等级{0},等级{0},等級{0},,,,NÍVEL {0},,,,CẤP {0}
+tls_lvl_f_s,Lv {0},Lv {0},Lv {0},Lv {0},,,,Lv {0},,,,Lv {0}
+tls_lvl_max,Max,满级,满级,滿級,,,,Máx.,,,,Max
+tls_lvl_maxed,MAXED,已满级,已满级,已滿級,,,,MÁXIMO,,,,TỐI ĐA
+tls_mb_title,MORE BULLETS,更多子弹,更多子弹,更多子彈,,,,MAIS BALAS,,,,NHIỀU ĐẠN HƠN
+tls_mb_desc,Increase the magazine capacity,增加弹匣容量,增加弹匣容量,增加彈匣容量,,,,Aumente a capacidade da revista,,,,Tăng dung lượng tạp chí
+tls_mb_vf,+{0:P0},+{0:P0},+{0:P0},+{0:P0},,,,+{0:P0},,,,+{0:P0}
+tls_mp_title,MORE POWER,更强火力,更强火力,更強火力,,,,MAIS PODER,,,,NHIỀU HỎA LỰC HƠN
+tls_mp_desc,Increase the damage of each bullet,增加每颗子弹的伤害,增加每颗子弹的伤害,增加每顆子彈的傷害,,,,Aumente o dano de cada bala,,,,Tăng sát thương của mỗi viên đạn
+tls_mp_vf,+{0:P0},+{0:P0},+{0:P0},+{0:P0},,,,+{0:P0},,,,+{0:P0}
+tls_rf_title,RAPID FIRE,速射,速射,速射,,,,FOGO RÁPIDO,,,,CHÁY NHANH
+tls_rf_desc,Increase the fire rate of weapons,提高武器的射速,提高武器的射速,提高武器的射速,,,,Aumente a cadência de tiro das armas,,,,Tăng tốc độ bắn của vũ khí
+tls_rf_vf,+{0:P0},+{0:P0},+{0:P0},+{0:P0},,,,+{0:P0},,,,+{0:P0}
+tls_rr_title,RAPID RELOAD,快速装弹,快速装弹,快速裝彈,,,,RECARGA RÁPIDA,,,,TẢI LẠI NHANH
+tls_rr_desc,You'll be faster reloading,减少换弹时间,减少换弹时间,減少換彈時間,,,,Você estará recarregando mais rápido,,,,Bạn sẽ tải lại nhanh hơn
+tls_rr_vf,-{0:P0},-{0:P0},-{0:P0},-{0:P0},,,,-{0:P0},,,,-{0:P0}
+tls_sh_title,STRONG HEALTH,强健,强健,強健,,,,FORTE SAÚDE,,,,SỨC KHỎE TỐT
+tls_sh_desc,Increase initial health for each battle,提升每场战斗的初始血量,提升每场战斗的初始血量,提升每場戰鬥的初始血量,,,,Aumente a saúde inicial para cada batalha,,,,Tăng lượng máu ban đầu cho mỗi trận chiến
+tls_sh_vf,+{0},+{0},+{0},+{0},,,,+{0},,,,+ {0}
+tls_vc_title,MORE CREDITS,金币升值,金币升值,金幣升值,,,,MAIS CRÉDITOS,,,,NHIỀU TIỀN HƠN
+tls_vc_desc,You'll get more coins for each mission,每个任务您将获得更多金币,每个任务您将获得更多金币,每個任務您將獲得更多金幣,,,,Você receberá mais moedas para cada missão,,,,Bạn sẽ nhận được nhiều tiền hơn cho mỗi nhiệm vụ
+tls_vc_vf,+{0:P0},+{0:P0},+{0:P0},+{0:P0},,,,+{0:P0},,,,+{0:P0}
+tls_pop_close,TAP ANYWHERE TO CLOSE,点击任意位置关闭,点击任意位置关闭,點擊任意位置關閉,,,,TOQUE EM QUALQUER LUGAR PARA FECHAR,,,,BẤM VÀO BẤT CỨ NƠI NÀO ĐỂ ĐÓNG
+tls_pop_level,LEVEL,等级,等级,等級,,,,NÍVEL,,,,CẤP
+tlt_pop_combat_level,COMBAT LEVEL:,天赋评分:,天赋评分:,天賦評分:,,,,NÍVEL DE COMBATE:,,,,ĐIỂM TÀI
+//------popup-----------,,,,,,,,,,,,
+popNotEngTitle,NOT ENOUGH CURRENCY,货币不足,货币不足,货币不足,,,,MOEDA NÃO SUFICIENTE,,,,KHÔNG ĐỦ TIỀN TỆ
+popNotEngTxt,You still need {0},你还需要 {0} ,你还需要 {0},你還需要 {0},"You need {0} {1}s,would you like to get more ?","You need {0} {1}s,would you like to get more ?","You need {0} {1}s,would you like to get more ?","Você precisa de {0} {1} s, gostaria de obter mais?","You need {0} {1}s,would you like to get more ?","You need {0} {1}s,would you like to get more ?","You need {0} {1}s,would you like to get more ?",Bạn vẫn cần {0}
+pop_not_eng_earn,GET MORE,立即获取,立即获取,立即获取,,,,PEGUE MAIS,,,,NHẬN THÊM
+pop_no_ads_now,NO VIDEO NOW!,当前没有视频!,当前没有视频!,當前沒有視頻!,,,,NENHUM VÍDEO AGORA!,,,,KHÔNG CÓ VIDEO NGAY BÂY GIỜ!
+pop_videobonus_title,FREE GIFT!,免费礼物!,免费礼物!,免费礼物!,,,,PRESENTE GRATUITO!,,,,QUÀ MIỄN PHÍ!
+pop_videobonus_desc,"To take this gift,you need to watch short video ad.",要接受这份礼物，您需要观看短视频广告。,要接受这份礼物，您需要观看短视频广告。,要接受这份礼物，您需要观看短视频广告。,,,,"Para levar este presente, você precisa assistir a um pequeno anúncio em vídeo.",,,,"Để nhận món quà này, bạn cần xem video quảng cáo ngắn."
+pop_social_logout_title,LOG OUT,登出账号,登出账号,登出賬號,,,,SAIR,,,,ĐĂNG XUẤT
+pop_social_logout_content,Are you sure you want to log out your account?,你确定要登出你的账号吗?,你确定要登出你的账号吗?,你確定要登出你的賬號嗎?,,,,Tem certeza que deseja sair da sua conta?,,,,Bạn có chắc chắn muốn đăng xuất tài khoản của mình không?
+pop_victorybox_title,VICTORY BOX,胜利宝箱,胜利宝箱,勝利寶箱,,,,CAIXA DA VITÓRIA,,,,HỘP VICTORY
+pop_victorybox_draw,DRAW,抽奖,抽奖,抽獎,,,,SORTEIO,,,,VÉ SỐ
+pop_upgrade_title,UPGRADE CONFIRMATION,升级确认,升级确认,升級確認,,,,CONFIRMAÇÃO DE MELHORIA,,,,NÂNG CẤP XÁC NHẬN
+pop_upgrade_upr2,Upgrade to rank {0},升级到等级{0},升级到等级{0},升級到等級{0},,,,Melhoria para o ranque {0},,,,Nâng cấp để xếp hạng {0}
+pop_upgrade_val_upgr,+{0},+{0},+{0},+{0},,,,+{0},,,,+{0}
+pop_upgrade_upgr,UPGRADE,升级,升级,升級,,,,MELHORIA,,,,NÂNG CẤP
+//---retention ---//,,,,,,,,,,,,
+ComeBackNotificationTitle0,Top secret,最高机密,最高机密,最高機密,일급 비밀,極秘,سري للغاية,Ultra secreto,Ultra secreto,Совершенно секретно,Top secret,Tuyệt mật
+ComeBackNotificationMessage0,A vicious terrorists is after you!\n 🔫 Kill or be killed 🔫!,一个穷凶极恶的恐怖份子盯上你了！\n 🔫先下手为强，后下手遭殃 🔫！,一个穷凶极恶的恐怖份子盯上你了！\n 🔫先下手为强，后下手遭殃 🔫！,一班邪惡的恐怖份子盯上你了！\n 🔫 不是你死就是我亡 🔫！,악의적 인 테러리스트가 당신을 쫓고 있습니다!\n 🔫 살해하거나 살해하십시오 🔫!,悪質なテロリストがあなたの後にいます！\n 🔫殺すか殺される🔫！,إرهابيون شريرون بعدك!\n ill اقتل أو تقتل 🔫!,Um terrorista cruel está atrás de você!\n 🔫 Matar ou ser morto 🔫!,Un terrorista vicioso te persigue!\n 🔫 Mata o muere 🔫!,Злые террористы за тобой!\n 🔫 убить или быть убитым 🔫!,Un vicieux terroristes est après vous!\n 🔫 Tuer ou être tué!,Những kẻ khủng bố độc ác đang truy đuổi bạn! \n 🔫 Giết hoặc bị giết 🔫!
+ComeBackNotificationTitle1,Weapon is ready ✊✊,武器已就位 ✊✊,武器已就位 ✊✊,武器已就位 ✊✊,무기 준비 완료 ✊✊,武器は準備ができて ✊✊,سلاح جاهز ✊✊,A arma está pronta ✊✊,El arma esta lista ✊✊,Оружие готово ✊✊,L'arme est prête ✊✊,Vũ khí đã sẵn sàng ✊✊
+ComeBackNotificationMessage1,🔫A terrorist group is planning an attack tonight! Go Fighting!,🔫恐怖组织计划今晚进行一次袭击！ 去战斗！,🔫恐怖组织计划今晚进行一次袭击！ 去战斗！,🔫恐怖組織計劃今晚進行一次襲擊！ 去戰鬥！,🔫테러리스트 그룹은 오늘 밤 공격을 계획하고 있습니다! 싸우라!,🔫テロリストグループは今夜攻撃を計画しています！ 戦いに行きます！,🔫جماعة ارهابية تخطط لهجوم الليلة! الذهاب القتال!,🔫Um grupo terrorista está planejando um ataque hoje à noite! Vá lutar!,🔫¡Un grupo terrorista está planeando un ataque esta noche! ¡Sigue luchando!,🔫Террористическая группа планирует нападение сегодня вечером! Сражайся!,🔫Un groupe terroriste prépare une attaque ce soir! Aller se battre!,🔫Một nhóm khủng bố đang lên kế hoạch tấn công tối nay! Hãy chiến đấu!
+ComeBackNotificationTitle2,🎁Daily Rewards🎁,🎁每日奖励🎁,🎁每日奖励🎁,🎁每日獎勵🎁,🎁 매일 보상 🎁,🎁毎日の報酬🎁,🎁مكافأة يومية🎁,🎁Recompensa diária🎁,🎁Recompensa diaria🎁,🎁Ежедневная награда🎁,🎁Récompense quotidienne🎁,🎁 Phần thưởng hàng ngày🎁
+ComeBackNotificationMessage2,🎁🎁 Come back to claim your reward now ! 🎁🎁,🎁🎁立即领取你的专属礼物！🎁🎁,🎁🎁立即领取你的专属礼物！🎁🎁,🎁🎁立即領取你的專屬禮物.🎁🎁,🎁🎁 지금 당신 만의 독점 선물을 받으세요.🎁🎁, 🎁🎁すぐにあなたの排他的な贈り物を受け取ります🎁🎁！,🎁🎁 على الفور الحصول على هدية حصرية الخاص بك! 🎁🎁,🎁🎁 Receba seu presente exclusivo imediatamente! 🎁🎁,🎁🎁 ¡Recibe tu regalo exclusivo de inmediato! 🎁🎁,Immediately Получи свой эксклюзивный подарок немедленно! 🎁🎁,🎁🎁 Recevez votre cadeau exclusif immédiatement! 🎁🎁,🎁🎁 Hãy quay lại để nhận phần thưởng của bạn ngay bây giờ! 🎁🎁
+ComeBackNotificationTitle3,Can you do it? 🤔🤔,你能做到吗？🤔🤔,你能做到吗？🤔🤔,你做到嗎？ 🤔🤔,당신은 그것을 할 수 있습니다? 🤔🤔,それできますか？ 🤔🤔,يمكنك أن تفعل ذلك؟ 🤔🤔,Será que você consegue? 🤔🤔,¿Puedes hacerlo? 🤔🤔,Ты можешь сделать это? 🤔🤔,Pouvez-vous le faire? 🤔🤔,Bạn có thể làm được không? 🤔🤔
+ComeBackNotificationMessage3,👊👊 Time to kill the bad guys 👊👊,👊👊是时候干掉坏蛋了👊👊,👊👊是时候干掉坏蛋了👊👊,👊👊 是時候消滅壞人 👊👊,👊👊 나쁜 놈을 죽일 시간이야. 👊👊,👊👊悪者を殺すための時間👊👊,👊👊 وقت لقتل الأشرار 👊👊,👊👊 Hora de matar os bandidos 👊👊,👊👊 Tiempo para matar a los malos 👊👊,👊👊 Время убивать плохих парней 👊👊, 👊👊 Il est temps de tuer les méchants 👊👊,👊👊 Đã đến lúc giết kẻ xấu 👊👊
+//-----Tips ---/,,,,,,,,,,,,
+tip_1,"Tips for Sniper: hold the fire button to aim ,release to shoot!","狙击手小提示:按住开火键瞄准,松开射击!","狙击手小提示:按住开火键瞄准,松开射击!","狙擊手小提示:按住開火鍵瞄準,鬆開射擊!",,,,"Dicas para Sniper: segure o botão de tiro para mirar, solte para atirar!",,,,"Lời khuyên cho Sniper: giữ nút lửa để nhắm, thả để bắn!"
+tip_2,"Tips:Daily Bonus contains many free weapons,don't forget to claim!","小提示:每日奖励里有大量免费的武器,记得来领取哦!","小提示:每日奖励里有大量免费的武器,记得来领取哦!","小提示:每日獎勵裡有大量免費的武器,記得來領取哦!",,,,"Dicas: O bônus diário contém muitas armas gratuitas, não se esqueça de reivindicar!",,,,"Lời khuyên: Tiền thưởng hàng ngày chứa nhiều vũ khí miễn phí, đừng quên yêu cầu!"
+tip_3,Tips: You can adjust the sensitivity in the settings or game pause.,小提示:你可以在游戏暂停或者设置界面调整灵敏度!,小提示:你可以在游戏暂停或者设置界面调整灵敏度!,小提示:你可以在遊戲暫停或者設置界面調整靈敏度!,,,,Dicas: Você pode ajustar a sensibilidade nas configurações ou pausar o jogo.,,,,Lời khuyên: Bạn có thể điều chỉnh độ nhạy trong phần cài đặt hoặc tạm dừng trò chơi.
+tip_4,Tips: Purchase any product can remove ads.,小提示:购买任意内购商品可以去广告哦!,小提示:购买任意内购商品可以去广告哦!,小提示:購買任意內購商品可以去廣告哦!,,,,Dicas: A compra de qualquer produto pode remover anúncios.,,,,Lời khuyên: Mua bất kỳ sản phẩm nào cũng có thể loại bỏ quảng cáo.
+tip_5,"Tips: Options contains many useful settings,please take a look.","小提示:设置界面有很多有用的功能,去看一眼吧!","小提示:设置界面有很多有用的功能,去看一眼吧!","小提示:設置界面有很多有用的功能,去看一眼吧!",,,,"Dicas: Opções contém muitas configurações úteis, por favor, dê uma olhada.",,,,"Mẹo: Các tùy chọn chứa nhiều cài đặt hữu ích, vui lòng xem qua."
+//-----Kill Feed---/,,,,,,,,,,,,
+kf_msg_join,joined,joined,joined,joined,,,,juntou,,,,joined
+//-----Quests---/,,,,,,,,,,,,
+qst_wm_title,Win the match,赢得比赛,赢得比赛,贏得比賽,,,,Ganhar a partida,,,,Thắng trận đấu
+qst_wm_desc,Win {0} battles,获得{0}场战斗胜利,获得{0}场战斗胜利,獲得{0}場戰鬥勝利,,,,Vença {0} batalhas,,,,Chiến thắng {0} trận chiến
+qst_kl_title,Kills,击杀敌人,击杀敌人,击杀敌人,,,,Mata,,,,Giết người
+qst_kl_desc,Kill {0} enemies,击杀{0}个敌人,击杀{0}个敌人,擊殺{0}個敵人,,,,Mate {0} inimigos,,,,Giết {0} kẻ thù
+qst_hs_title,Headshots,爆头,爆头,爆頭,,,,Headshots,,,,Bắn đầu
+qst_hs_desc,Scored {0} headshots,获得{0}次爆头,获得{0}次爆头,獲得{0}次爆頭,,,,Obteve {0} tiros na cabeça,,,,Nhận {0} ảnh chụp đầu
+qst_pop_progress,The progress will be update in: {0:D2}:{1:D2}:{2:D2},任务进度更新时间: {0:D2}:{1:D2}:{2:D2},任务进度更新时间: {0:D2}:{1:D2}:{2:D2},任務進度更新時間：{0:D2}:{1:D2}:{2:D2},,,,O progresso será atualizado em: {0:D2}: {1:D2}: {2:D2},,,,Tiến trình sẽ được cập nhật trong: {0: D2}: {1: D2}: {2: D2}
+qst_pk_title,Pickup,拾取,拾取,拾取,,,,Pegar,,,,Nhặt lên
+qst_pk_desc,Pickup {0} weapons,拾取{0}把武器,拾取{0}把武器,拾取{0}把武器,,,,Pegar {0} armas,,,,Nhận {0} vũ khí
+qst_mch_title,Play Match,比赛,比赛,比賽,,,,Jogar partida,,,,Chơi trận đấu
+qst_mch_desc,Play {0} matches,进行{0}比赛,进行{0}比赛,進行{0}比賽,,,,Jogue {0} partidas,,,,Chơi {0} trận đấu
+//-----Achievement---/,,,,,,,,,,,,
+ach_kl_desc,Kill {0} enemies,击杀{0}个敌人,击杀{0}个敌人,擊殺{0}個敵人,,,,Mate {0} inimigos,,,,Giết {0} kẻ thù
+ach_kl_gun_desc,Kill {0} enemies with {1}s,使用{1}击杀{0}个敌人,使用{1}击杀{0}个敌人,使用{1}擊殺{0}個敵人,,,,Mate {0} inimigos com {1},,,,Giết {0} kẻ thù bằng {1}
+ach_hds_desc,Kill {0} enemies with Headshot,爆头击杀{0}个敌人,爆头击杀{0}个敌人,爆頭擊殺{0}個敵人,,,,Mate {0} inimigos com Headshot,,,,Giết {0} kẻ thù bằng bắn đầu
+ach_hds_gun_desc,Kill {0} enemies with Headshot using {1}s,使用{1}爆头击杀{0}个敌人,使用{1}爆头击杀{0}个敌人,使用{1}爆頭擊殺{0}個敵人,,,,Mate {0} inimigos com Headshot usando {1},,,,Giết {0} kẻ thù bằng bắn đầu bằng cách sử dụng {1}
+ach_vic_desc,Achieve {0} victories in {1},在{1}中赢得{0}场比赛,在{1}赢得{0}场比赛,在{1}贏得{0}場比賽,,,,Alcance {0} vitórias em {1},,,,Đạt được {0} chiến thắng trong {1}
+ach_ui_crnt,CURRENT,进行中,进行中,進行中,,,,ATUAL,,,,HIỆN HÀNH
+ach_ui_done,DONE,已完成,已完成,已完成,,,,FEITO,,,,LÀM XONG
+//-----Window---/,,,,,,,,,,,,
+Shop,EQUIPMENT,装备,装备,裝備,,,,EQUIPAMENTO,,,,TRANG THIẾT BỊ
+Option,OPTIONS,设置,设置,設置,,,,OPÇÕES,,,,TÙY CHỌN
+PackStore,STORE,商城,商城,商城,,,,LOJA,,,,CỬA HÀNG
+PlayerInfo,PLAYER INFO,用户信息,用户信息,用戶信息,,,,DADOS DO JOGADOR,,,,THÔNG TIN NGƯỜI CHƠI
+LeadBoard,LEADERBOARD,排行榜,排行榜,排行榜,,,,PLACAR,,,,BẢNG LÃNH ĐẠO
+Skills,TALENTS,天赋,天赋,天賦,,,,TALENTOS,,,,TÀI NĂNG
+MapSelection,MAPS,地图,地图,地圖,,,,MAPAS,,,,BẢN ĐỒ
+Cases,CASES,补给箱,补给箱,補給箱,,,,CASOS,,,,HỘP
+Loadout,EQUIPMENT,装备,装备,裝備,,,,EQUIPAMENTO,,,,TRANG THIẾT BỊ
+Equipment,EQUIPMENT,装备,装备,裝備,,,,EQUIPAMENTO,,,,TRANG THIẾT BỊ
+Achievement,ACHIEVEMENT,成就,成就,成就,,,,REALIZAÇÃO,,,,THÀNH TÍCH
+Character,SKIN,皮肤,皮肤,皮膚,,,,PELE,,,,LÀN DA
+WeaponSkin,SKIN,皮肤,皮肤,皮膚,,,,PELE,,,,LÀN DA

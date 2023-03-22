@@ -1,0 +1,10 @@
+﻿[BuildInfo]
+AppVersion:1.3.25
+BuildNumber:1338
+BuildDate: 2022/10/28 16:33:36
+IsRetail: False
+IsUnityDevelopment: True
+CompanyName: Top Actions
+ProductName: Online Strike
+iPhoneBundleIdentifier: com.ta.online.strike.fps
+Revision:325

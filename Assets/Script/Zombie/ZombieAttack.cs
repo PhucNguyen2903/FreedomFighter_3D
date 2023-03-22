@@ -13,16 +13,16 @@ public class ZombieAttack : MonoBehaviour
 
     public virtual void OnAttack(int index)
     {
-        Player.Instance.PlayerHealth.TakeDamage(damage);
+        PlayerSingleton.Instance.PlayerHealth.TakeDamage(damage);
         //PlayerHealth.Instance.TakeDamage(damage);
         //playerHealth.TakeDamage(damage);
         if (index == 1)
         {
-            Player.Instance.playerUi.ShowLeftScratch();
+            PlayerSingleton.Instance.playerUi.ShowLeftScratch();
         }
         else
         {
-            Player.Instance.playerUi.ShowRightScratch();
+            PlayerSingleton.Instance.playerUi.ShowRightScratch();
         }
     }
 }

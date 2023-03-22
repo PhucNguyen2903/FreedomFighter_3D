@@ -35,7 +35,7 @@ public class BoomZombieAttack : ZombieAttack
         StartCoroutine(Wait());
         if (health != null )
         {
-            Player.Instance.PlayerHealth.TakeDamage(damage);
+            PlayerSingleton.Instance.PlayerHealth.TakeDamage(damage);
           
         }
     }

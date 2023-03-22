@@ -25,12 +25,17 @@ public class PlayerJump : MonoBehaviour
     void Update()
     {
 
+        
+            
+        
+    }
+
+   public void KeyJump()
+    {
         if (Input.GetKey(KeyCode.Space))
         {
             MovementJump();
         }
-            
-        
     }
 
     void MovementJump()

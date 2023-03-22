@@ -21,11 +21,20 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         
+        //float hinput = Input.GetAxis("Horizontal");
+        //float vinput = Input.GetAxis("Vertical");
+
+        //Vector3 direction = transform.right * hinput + transform.forward * vinput;
+        //characterController.SimpleMove(direction * movingSpeed);
+        
+    }
+
+    public void MoingBYKey()
+    {
         float hinput = Input.GetAxis("Horizontal");
         float vinput = Input.GetAxis("Vertical");
 
         Vector3 direction = transform.right * hinput + transform.forward * vinput;
         characterController.SimpleMove(direction * movingSpeed);
-        
     }
 }

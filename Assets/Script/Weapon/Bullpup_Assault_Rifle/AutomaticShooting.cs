@@ -15,6 +15,7 @@ public class AutomaticShooting : Shooting
 
     private float lastShot;
     private float interval;
+    public GunAmmo gunAmmo;
 
     // Start is called before the first frame update
     void Start()
@@ -24,6 +25,14 @@ public class AutomaticShooting : Shooting
 
     // Update is called once per frame
     void Update()
+    {
+        //if (Input.GetMouseButton(0))
+        //{
+        //    UpdateFiring();
+        //}
+    }
+
+    public void AutomatcShoot()
     {
         if (Input.GetMouseButton(0))
         {
@@ -42,6 +51,8 @@ public class AutomaticShooting : Shooting
 
     private void Shoot()
     {
+        bool isShooting = gunAmmo.isShooting();
+        if (!isShooting) return;
         anim.Play("Shoot", layer: -1, normalizedTime:0 );
         shootSound.Play();
         onShoot.Invoke();

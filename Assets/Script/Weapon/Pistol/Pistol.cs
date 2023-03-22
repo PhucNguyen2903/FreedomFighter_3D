@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using Photon.Pun;
 
 public class Pistol : Shooting
 {
@@ -11,6 +12,8 @@ public class Pistol : Shooting
     private float lastShot;
     private float interval;
     public int rpm;
+    public GunAmmo gunAmmo;
+    [SerializeField] PhotonView PV;
 
     private void Start()
     {
@@ -20,15 +23,27 @@ public class Pistol : Shooting
     void Update()
     {
         
+        //if (Input.GetMouseButtonDown(0))
+        //{
+        //    updateFiring();
+        //}
+
+    }
+
+    public void PistolButton()
+    {
+
         if (Input.GetMouseButtonDown(0))
         {
             updateFiring();
         }
-
     }
     private void Fire()
     {
-        anim.Play("Fire", layer: -1, normalizedTime: 0);
+        bool isShooting = gunAmmo.isShooting();
+        if (!isShooting) return;
+        //anim.Play("Fire", layer: -1, normalizedTime: 0);
+        PV.RPC("CallAnimFire", RpcTarget.All);
         fireSound.Play();
         onFire.Invoke();
     }
@@ -40,5 +55,11 @@ public class Pistol : Shooting
             Fire();
             lastShot = Time.time;
         }
+    }
+
+    [PunRPC]
+    public void CallAnimFire()
+    {
+        anim.Play("Fire", layer: -1, normalizedTime: 0);
     }
 }

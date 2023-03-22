@@ -9,7 +9,7 @@ public abstract class Spawner : SaiMono
 {
     [SerializeField] public Transform pool;
     [SerializeField] protected List<Transform> prefabs;
-    [SerializeField] protected List<Transform> poolObjs;
+    [SerializeField] public List<Transform> poolObjs;
 
    [SerializeField] public int count = 0;
 

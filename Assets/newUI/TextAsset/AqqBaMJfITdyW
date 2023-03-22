@@ -1,0 +1,77 @@
+﻿{
+  "Android": {
+    "itemlist": [
+      {
+        "icontext": "",
+        "iconurl": "https://d2qvq2ykykhl1a.cloudfront.net/icon-com-ta-archero-hero.jpg",
+        "lang": "zh-cn",
+        "name": "Archer Hero",
+        "platform": "android",
+        "promotionimageurl": "",
+        "promotiontext": "The archer heros, savior of world.",
+        "url": "https://play.google.com/store/apps/details?id=com.ta.archero.hero"
+      },
+      {
+        "icontext": "",
+        "iconurl": "https://d2qvq2ykykhl1a.cloudfront.net/icon-com-gun-black-ops.jpg",
+        "lang": "zh-cn",
+        "name": "Cover Strike",
+        "platform": "android",
+        "promotionimageurl": "https://d2qvq2ykykhl1a.cloudfront.net/promo-com-gun-black-ops.jpg",
+        "promotiontext": "Time to save the world!",
+        "url": "https://play.google.com/store/apps/details?id=com.gun.black.ops"
+      },
+      {
+        "icontext": "",
+        "iconurl": "https://d2qvq2ykykhl1a.cloudfront.net/icon-offline-strike-force.jpg",
+        "lang": "zh-cn",
+        "name": "FPS Offline Strike",
+        "platform": "android",
+        "promotionimageurl": "https://d2qvq2ykykhl1a.cloudfront.net/promo-com-gun-black-ops.jpg",
+        "promotiontext": "Be the last man standing.",
+        "url": "https://play.google.com/store/apps/details?id=com.ta.offline.strike.force"
+      },
+      {
+        "icontext": "",
+        "iconurl": "https://d2qvq2ykykhl1a.cloudfront.net/icon-cover-hunter.jpg",
+        "lang": "zh-cn",
+        "name": "Cover Hunter",
+        "platform": "android",
+        "promotionimageurl": "https://d2qvq2ykykhl1a.cloudfront.net/promo-cover-hunter.jpg",
+        "promotiontext": "Time to save the world!",
+        "url": "https://play.google.com/store/apps/details?id=com.bl.cod.black.ops"
+      },
+      {
+        "icontext": "",
+        "iconurl": "https://d2qvq2ykykhl1a.cloudfront.net/icon-com-ta-offline-bullet-force.jpg",
+        "lang": "zh-cn",
+        "name": "Bullet Strike",
+        "platform": "android",
+        "promotionimageurl": "https://d2qvq2ykykhl1a.cloudfront.net/promo-com-gun-black-ops.jpg",
+        "promotiontext": "Be the last man standing.",
+        "url": "https://play.google.com/store/apps/details?id=com.ta.offline.bullet.force"
+      },
+      {
+        "icontext": "",
+        "iconurl": "https://d2qvq2ykykhl1a.cloudfront.net/icon-com-bl-critial-strike.jpg",
+        "lang": "zh-cn",
+        "name": "Critical Action",
+        "platform": "android",
+        "promotionimageurl": "https://d2qvq2ykykhl1a.cloudfront.net/promo-com-bl-critical-strike.jpg",
+        "promotiontext": "Time to save the world!",
+        "url": "https://play.google.com/store/apps/details?id=com.bl.critical.strike"
+      },
+      {
+        "icontext": "",
+        "iconurl": "https://d2qvq2ykykhl1a.cloudfront.net/icon-com-war-strike.jpg",
+        "lang": "zh-cn",
+        "name": "Gun Strike Ops",
+        "platform": "android",
+        "promotionimageurl": "https://d2qvq2ykykhl1a.cloudfront.net/promo-com-war-strike.jpg",
+        "promotiontext": "Top fps game",
+        "url": "https://play.google.com/store/apps/details?id=com.gun.war.strike"
+      }
+    ],
+    "version": 37
+  }
+}

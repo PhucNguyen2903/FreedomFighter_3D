@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using Photon.Pun;
 
 public class Health : MonoBehaviour
 {
@@ -50,8 +51,11 @@ public class Health : MonoBehaviour
 
     }
 
+
+    [PunRPC]
     public void TakeDamage(int damage)
     {
+       
         Debug.Log("==================== Take Damage on Zombie health");
         if (IsDead) return;
         HealthPoint -= damage;

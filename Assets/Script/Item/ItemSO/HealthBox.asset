@@ -15,7 +15,7 @@ MonoBehaviour:
   id: 2
   itemName: HealthBox
   value: 50
-  count: 0
+  count: 5
   amount: 1
   icon: {fileID: 21300000, guid: 7c024f346a2d34249902e8a47874ca43, type: 3}
   itemType: 0
