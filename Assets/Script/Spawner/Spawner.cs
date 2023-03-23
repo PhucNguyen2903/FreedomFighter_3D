@@ -87,7 +87,7 @@ public abstract class Spawner : SaiMono
 
     public virtual void Despawn(Transform obj)
     {
-        this.poolObjs.Add(obj);
+        //this.poolObjs.Add(obj);
         obj.gameObject.SetActive(false);
         count++;
     }

@@ -78,6 +78,7 @@
     <Compile Include="Assets\Photon\PhotonChat\Demos\DemoChat\AppSettingsExtensions.cs" />
     <Compile Include="Assets\Script\Controller\ZombieController.cs" />
     <Compile Include="Assets\Script\Photon\PhotonChatManager.cs" />
+    <Compile Include="Assets\Script\Zombie\PoolZombie.cs" />
     <Compile Include="Assets\Script\Item\QuickItems.cs" />
     <Compile Include="Assets\Script\Zombie\RagdollSwitcher.cs" />
     <Compile Include="Assets\SMC Pack 1\Demo\DemoAssets\V_Text.cs" />

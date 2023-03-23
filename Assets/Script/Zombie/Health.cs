@@ -79,13 +79,12 @@ public class Health : MonoBehaviour
     {
         yield return new WaitForSeconds(5f);
         ZombieController.Instance.enemySpawner.Despawn(transform);
+        PoolZombie.Instance.ReturnPool(this.gameObject);
+
     }
 
     public void CheckNameZombieDie()
     {
-        
-        
-
         if (zombieName == "ZombieNormal")
         {
             itemSpawnerName = ZombieController.Instance.dropItemSpawner.newHealthBox;
@@ -109,12 +108,9 @@ public class Health : MonoBehaviour
     public void spawedItemOnDead()
     {
         CheckNameZombieDie();
-        if (itemSpawnerName == "") return;
-      
+        if (itemSpawnerName == "") return;    
         Transform newItem =  ZombieController.Instance.dropItemSpawner.Spawn(itemSpawnerName, transform.position, transform.rotation);
         newItem.gameObject.SetActive(true);
-       
-
     }
 
 }
