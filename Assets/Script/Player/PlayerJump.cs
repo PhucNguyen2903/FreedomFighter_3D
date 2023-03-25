@@ -14,23 +14,28 @@ public class PlayerJump : MonoBehaviour
     [SerializeField] private float jumpHeight = 5.0f;
     private bool _jumPressed = false;
     private float _gravityValue = -9.81f;
+    [SerializeField] Transform PlayerTransform;
+    [SerializeField] PlayerHealth playerhealth;
+    public bool isground;
+    public float heightTakedame;
 
     // Start is called before the first frame update
     void Start()
     {
         characterController = GetComponent<CharacterController>();
+        isground = characterController.isGrounded;
     }
 
     // Update is called once per frame
     void Update()
     {
 
-        
-            
-        
+
+
+
     }
 
-   public void KeyJump()
+    public void KeyJump()
     {
         if (Input.GetKey(KeyCode.Space))
         {
@@ -41,12 +46,12 @@ public class PlayerJump : MonoBehaviour
     void MovementJump()
     {
         _groundPlayer = characterController.isGrounded;
-        if (_groundPlayer) 
+        if (_groundPlayer)
         {
             _playerVelocity.y = 0.0f;
             OnJump();
         }
-        if(_jumPressed && _groundPlayer)
+        if (_jumPressed && _groundPlayer)
         {
             _playerVelocity.y += Mathf.Sqrt(jumpHeight * -0.1f * _gravityValue);
             _jumPressed = false;
@@ -61,6 +66,34 @@ public class PlayerJump : MonoBehaviour
         {
             _jumPressed = true;
         }
-          
+
+    }
+
+    public void FallDown()
+    {
+        //if (characterController.isGrounded) return;
+        //float maxHeight = 4.35f;
+        //float height = PlayerTransform.transform.position.y;
+        //if (height < maxHeight) return;
+        //int Dame = (int)(height - maxHeight) * 10;
+        //injuredFall(Dame, height);
+
+    }
+
+    void injuredFall(int Dame, float height)
+    {
+        //heightTakedame = height;
+        if (!canInjured(height)) return;
+        playerhealth.TakeDamage(Dame);
+        heightTakedame = 0;
+    }
+
+    bool canInjured(float height)
+    {
+        if (height <= heightTakedame)
+        {
+            return false;
+        }
+        return true;
     }
 }

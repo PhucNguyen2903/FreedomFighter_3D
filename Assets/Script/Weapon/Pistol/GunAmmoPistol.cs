@@ -7,6 +7,7 @@ public class GunAmmoPistol : GunAmmo
 {      
     public override void Reload()
     {
+        if (!PV.IsMine) return;
         if (!CanReload()) return;   
        // SetLoadAmmo();
         PV.RPC("CallAnim", RpcTarget.All);

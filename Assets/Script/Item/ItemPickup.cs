@@ -21,12 +21,10 @@ public class ItemPickup : MonoBehaviour
 
     public void Pickup()
     {
-        
-        InventoryManager.Instance.Add(items);
-        InventoryManager.Instance.UpdateListItem();
+        //InventoryManager.Instance.Add(items);
+        //InventoryManager.Instance.UpdateListItem();
+        Debug.Log("DespawnItem");
         ZombieController.Instance.dropItemSpawner.Despawn(transform);
-
-
     }
 
 

@@ -10,9 +10,9 @@ public class ZoombieCreatingDemo : ZombieManager
     public PhotonView PV;
     public PoolZombie poolZombie;
     public List<GameObject> zombieList1 = new List<GameObject>();
-   
 
-   
+
+
 
 
     private void Awake()
@@ -33,65 +33,29 @@ public class ZoombieCreatingDemo : ZombieManager
 
 
     [PunRPC]
-    void CreatingZombie1()
+    void CreatingZombie(string name)
     {
+        GameObject zombieObj = TakeZombieByName(name);
+        zombieObj.SetActive(true);
+        Health healthZombie = zombieObj.GetComponent<Health>();
+        healthZombie.zombieName = name;
+        zombieObj.transform.SetPositionAndRotation(CaveFirst.position, CaveFirst.rotation);
+        zombieObj.transform.SetParent(this.PoolLive);
+    }
 
-        for (int i = 0; i < 5; i++)
+    void CreatingTurnZombie(string name, int nums)
+    {
+        for (int i = 0; i < nums; i++)
         {
-            GameObject zombieObj = TakeZombieByName("ZombieNormal");
-            Debug.Log(zombieObj.name + i);
-            zombieObj.transform.SetPositionAndRotation(CaveFirst.position, CaveFirst.rotation);
-            zombieObj.SetActive(true);
-            zombieObj.transform.SetParent(this.PoolLive);
-
+            PV.RPC("CreatingZombie", RpcTarget.All, name);
         }
 
     }
-
-
-    [PunRPC]
-    void CreatingZombieTurn2()
-    {
-        for (int i = 0; i < 5; i++)
-        {
-            GameObject zombieObj = TakeZombieByName("ZombieAdvance");
-            Debug.Log(zombieObj.name + i);
-            zombieObj.SetActive(true);
-            zombieObj.transform.SetPositionAndRotation(CaveFirst.position, CaveFirst.rotation);
-            zombieObj.transform.SetParent(this.PoolLive);
-        }
-    }
-
-    [PunRPC]
-    void CreatingZombieTurn3()
-    {
-        for (int i = 0; i < 5; i++)
-        {
-            GameObject zombieObj = TakeZombieByName("ZombieBoom");
-            zombieObj.SetActive(true);
-            zombieObj.transform.SetPositionAndRotation(CaveFirst.position, CaveFirst.rotation);
-            zombieObj.transform.SetParent(this.PoolLive);
-        }
-
-    }
-
-    [PunRPC]
-    void CreatingZombieTurn4()
-    {
-        for (int i = 0; i < 5; i++)
-        {
-            GameObject zombieObj = TakeZombieByName("ZombieGhoul");
-            zombieObj.SetActive(true);
-            zombieObj.transform.SetPositionAndRotation(CaveFirst.position, CaveFirst.rotation);
-            zombieObj.transform.SetParent(this.PoolLive);
-        }
-    }
-
 
     IEnumerator WaitReady()
     {
         yield return new WaitForSeconds(10f);
-        PV.RPC("CreatingZombie1", RpcTarget.All);
+        CreatingTurnZombie("ZombieNormal",5);
     }
 
     public override void CreatingZombie()
@@ -100,23 +64,23 @@ public class ZoombieCreatingDemo : ZombieManager
 
         if (turn == 2 && turnComplete == 0)
         {
-            PV.RPC("CreatingZombie1", RpcTarget.All);
-            PV.RPC("CreatingZombieTurn2", RpcTarget.All);
+            CreatingTurnZombie("ZombieNormal", 5);
+            CreatingTurnZombie("ZombieAdvance", 5);
             turnComplete = 1;
         }
         else if (turn == 3 && turnComplete == 1)
         {
-            PV.RPC("CreatingZombie1", RpcTarget.All);
-            PV.RPC("CreatingZombieTurn2", RpcTarget.All);
-            PV.RPC("CreatingZombieTurn3", RpcTarget.All);
+            CreatingTurnZombie("ZombieNormal", 5);
+            CreatingTurnZombie("ZombieAdvance", 5);
+            CreatingTurnZombie("ZombieBoom", 5);
             turnComplete = 2;
         }
         else if (turn == 4 && turnComplete == 2)
         {
-            PV.RPC("CreatingZombie1", RpcTarget.All);
-            PV.RPC("CreatingZombieTurn2", RpcTarget.All);
-            PV.RPC("CreatingZombieTurn3", RpcTarget.All);
-            PV.RPC("CreatingZombieTurn4", RpcTarget.All);
+            CreatingTurnZombie("ZombieNormal", 5);
+            CreatingTurnZombie("ZombieAdvance", 5);
+            CreatingTurnZombie("ZombieBoom", 5);
+            CreatingTurnZombie("ZombieGhoul", 5);
             turnComplete = 3;
         }
         else if (turnComplete == 3)
@@ -134,7 +98,7 @@ public class ZoombieCreatingDemo : ZombieManager
     }
 
 
-   
+
 
 
 }

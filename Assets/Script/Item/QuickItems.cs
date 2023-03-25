@@ -38,17 +38,40 @@ public class QuickItems : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.F))
         {
-            //if (!PV.IsMine) return;
-            //PV.RPC("useItem5", RpcTarget.All);
-            InventoryItemController item5controller = item5.GetComponent<InventoryItemController>();
-            item5controller.UseItem();
+            InventoryItemController itemFcontroller = item5.GetComponent<InventoryItemController>();
+            if (!CanUseItemF(itemFcontroller)) return;
+            itemFcontroller.UseItem();
         }
 
         if (Input.GetKeyDown(KeyCode.G))
         {
-            InventoryItemController item5controller = item6.GetComponent<InventoryItemController>();
-            item5controller.UseItem();
+            InventoryItemController itemGcontroller = item6.GetComponent<InventoryItemController>();
+            if (!CanUseItemG(itemGcontroller)) return;
+            itemGcontroller.UseItem();
         }
+    }
+
+    bool CanUseItemG(InventoryItemController itemcontroller)
+    {
+        int numOfMag = itemcontroller.gunAmmo.numOfMag;
+        int magSize = itemcontroller.gunAmmo.magSize;
+        if (numOfMag < magSize *2)
+        {
+            return true;
+        }
+        return false;
+
+    }
+    bool CanUseItemF(InventoryItemController itemcontroller)
+    {
+        int Hp = itemcontroller.playerHealth.Hp;
+        int maxHP = itemcontroller.playerHealth.maxHP;
+        if (Hp < maxHP)
+        {
+            return true;
+        }
+        return false;
+
     }
 
 

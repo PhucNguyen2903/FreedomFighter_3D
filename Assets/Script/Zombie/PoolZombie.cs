@@ -8,7 +8,7 @@ public class PoolZombie : MonoBehaviour
     public static PoolZombie Instance => instance;
     public Transform PoolDie;
     public List<GameObject> PoolofZombieD = new List<GameObject>();
-    public List<GameObject> PoolofZombieReuse = new List<GameObject>();
+    public List<GameObject> PoolofZombieReuse;
 
 
     void Start()
@@ -17,7 +17,7 @@ public class PoolZombie : MonoBehaviour
     }
     protected virtual void Reset()
     {
-       
+
     }
 
     // Update is called once per frame
@@ -35,13 +35,26 @@ public class PoolZombie : MonoBehaviour
             return obj;
         }
         return null;
-      
+
     }
-    
+
     public GameObject GetPoolByName(string name)
     {
         foreach (GameObject item in this.PoolofZombieD)
         {
+            if (item.name == name)
+            {
+                return item;
+            }
+        }
+        return null;
+    }
+    public GameObject GetReuseByName(string name)
+    {
+        Debug.Log(name + "inGetReuse");
+        foreach (GameObject item in PoolofZombieReuse)
+        {
+            Debug.Log(item.name);
             if (item.name == name)
             {
                 return item;
@@ -63,11 +76,30 @@ public class PoolZombie : MonoBehaviour
     {
         this.PoolofZombieReuse.Add(gameObj);
     }
-
-    public void ReturnPool(GameObject gameObj)
+    public void GetInPool(GameObject gameObj)
     {
+        Debug.Log("InPoolllllllllllllllllllllllllllllllllllll");
         this.PoolofZombieD.Add(gameObj);
-        this.PoolofZombieReuse.Remove(gameObj);
     }
-    
+
+
+    public void ReturnPool(string name)
+    {
+        Debug.Log("NameZombie" + name + " :xx");
+        GameObject obj = GetReuseByName(name);
+        if (obj != null)
+        {
+            Debug.Log("NameZombiedifNull" + obj);
+            RemoveInReuse(obj);
+        }
+    }
+    public void RemoveInReuse(GameObject gameObj)
+    {
+        if (this.PoolofZombieReuse.Contains(gameObj))
+        {
+            GetInPool(gameObj);
+            this.PoolofZombieReuse.Remove(gameObj);
+        }
+    }
+
 }

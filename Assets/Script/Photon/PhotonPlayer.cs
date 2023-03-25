@@ -10,6 +10,7 @@ public class PhotonPlayer : MonoBehaviour
     public RotateByMouse rotateByMouse;
     public PlayerController playerController;
     public QuickItems quickitems;
+    public ItemLooter looter;
     public Camera camera;
     public AudioListener audioListener;
     public GunSwitcher gunSwitcher;
@@ -17,6 +18,7 @@ public class PhotonPlayer : MonoBehaviour
     public GameObject sniperCamera;
     public GameObject Canvas;
     public InventoryManager inventoryManager;
+
     public List<GameObject> Guntext = new List<GameObject>();
 
 
@@ -49,12 +51,14 @@ public class PhotonPlayer : MonoBehaviour
     {
         if (!this.photonView.IsMine) return;
         this.playerjump.KeyJump();
+        this.playerjump.FallDown();
         this.rotateByMouse.MouseRotating();
         this.playerController.MoingBYKey();
         this.gunSwitcher.GunSwitching();
         this.gunSwitcher.SetGunbutton();
         this.quickitems.QuickButton();
         this.inventoryManager.Inventorybutton();
+        this.looter.Looter();
         
     }
 }

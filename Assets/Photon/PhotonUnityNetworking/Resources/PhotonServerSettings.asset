@@ -69,6 +69,8 @@ MonoBehaviour:
   - TakeItemdata
   - useItem5
   - useItem6
+  - Rpc_SpawnItem
+  - CheckLooter
   DisableAutoOpenWizard: 1
   ShowSettings: 1
   DevRegionSetOnce: 1

@@ -11,6 +11,7 @@ public class StorageManager : ShopManager
 
     [SerializeField] Transform equipContent;
     [SerializeField] GameObject equipPrefab;
+    [SerializeField] ItemShop firstItem;
 
     public List<ItemShop> storageList = new List<ItemShop>();
     public List<ItemShop> equipedList = new List<ItemShop>();
@@ -22,6 +23,8 @@ public class StorageManager : ShopManager
         StorageManager.instance = this;
         SetupPlayerInfo();
         ShopUI();
+        equipedList.Add(firstItem);
+        EquipUI();
     }
 
 

@@ -35,7 +35,7 @@ public class GrenadeBullet : MonoBehaviour
 
     IEnumerator waiytoDestroy()
     {
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(0.3f);
         gameObject.SetActive(false);
     }
 

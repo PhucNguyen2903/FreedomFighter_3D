@@ -12,6 +12,7 @@ public class Health : MonoBehaviour
 
     public int maxHealthPoint;
     public Animator anim;
+    public PhotonView PV;
     public UnityEvent onDie;
     public UnityEvent<int, int> onHealthChanged;
     public UnityEvent onTakeDamge;
@@ -55,7 +56,7 @@ public class Health : MonoBehaviour
     [PunRPC]
     public void TakeDamage(int damage)
     {
-       
+
         Debug.Log("==================== Take Damage on Zombie health");
         if (IsDead) return;
         HealthPoint -= damage;
@@ -71,15 +72,15 @@ public class Health : MonoBehaviour
     {
         death++;
         StartCoroutine(WaittoDisableI());
-        spawedItemOnDead();
 
     }
 
     IEnumerator WaittoDisableI()
     {
+        spawedItemOnDead();
         yield return new WaitForSeconds(5f);
+        PoolZombie.Instance.ReturnPool(this.zombieName);
         ZombieController.Instance.enemySpawner.Despawn(transform);
-        PoolZombie.Instance.ReturnPool(this.gameObject);
 
     }
 
@@ -93,7 +94,7 @@ public class Health : MonoBehaviour
         {
             itemSpawnerName = ZombieController.Instance.dropItemSpawner.newHealthBox;
         }
-        else if(zombieName == "ZombieBoom")
+        else if (zombieName == "ZombieBoom")
         {
             itemSpawnerName = ZombieController.Instance.dropItemSpawner.bullet;
         }
@@ -101,15 +102,26 @@ public class Health : MonoBehaviour
         {
             itemSpawnerName = "";
         }
-        
-       
+
+
     }
 
     public void spawedItemOnDead()
     {
         CheckNameZombieDie();
-        if (itemSpawnerName == "") return;    
-        Transform newItem =  ZombieController.Instance.dropItemSpawner.Spawn(itemSpawnerName, transform.position, transform.rotation);
+        if (itemSpawnerName == "") return;
+        int random = Random.Range(0, 9);
+        if (random == 5)
+        {
+            PV.RPC("Rpc_SpawnItem", RpcTarget.All);
+        }
+
+    }
+
+    [PunRPC]
+    public void Rpc_SpawnItem()
+    {
+        Transform newItem = ZombieController.Instance.dropItemSpawner.Spawn(itemSpawnerName, transform.position, transform.rotation);
         newItem.gameObject.SetActive(true);
     }
 

@@ -10,6 +10,7 @@ public class FlameAmmo : GunAmmo
     [SerializeField] private AudioSource reloadSound;
     public override void Reload()
     {
+        if (!PV.IsMine) return;
         if (!CanReload()) return;
       //   SetLoadAmmo();
        // anim.Play("Reload", layer: -1, normalizedTime: 0);

@@ -58,6 +58,7 @@
   <ItemGroup>
     <Compile Include="Assets\Photon\PhotonRealtime\Demos\DemoLoadBalancing\ConnectAndJoinRandomLb.cs" />
     <Compile Include="Assets\Script\Zombie\BoomZombieAttack.cs" />
+    <Compile Include="Assets\Script\Weapon\Grenade_launcher\BulletPool.cs" />
     <Compile Include="Assets\Script\Zombie\GunRaycaster.cs" />
     <Compile Include="Assets\Script\Player\PlayerHealthBar.cs" />
     <Compile Include="Assets\Script\Weapon\Bullpup_Assault_Rifle\AutomaticShooting.cs" />

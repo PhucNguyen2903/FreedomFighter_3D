@@ -38,6 +38,9 @@ public class StorageItemController : ShopItemController
 
     public void OnClickEquip()
     {
+        if (CheckTypeItem(itemShop)) return;
+        int count = StorageManager.Instance.equipedList.Count;
+        if (count > 3) return;
         StorageManager.Instance.Equip(itemShop);
         StorageManager.Instance.EquipUI();
         Destroy(this.storageUIitem);

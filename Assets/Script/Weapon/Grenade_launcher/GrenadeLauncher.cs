@@ -48,11 +48,12 @@ public class GrenadeLauncher : Shooting
         //bullet.GetComponent<PhotonView>().ViewID = Random.Range(1001,9999);
         //bullet.transform.LookAt(aimPos);
         //bullet.GetComponent<Rigidbody>().AddForce(bullet.transform.forward * bulletSpeed, ForceMode.Impulse);
-        PV.RPC("RPC_AddProjectile",RpcTarget.All);
+        //PV.RPC("RPC_AddProjectile",RpcTarget.AllViaServer);
+        RPC_AddProjectile();
     }
+    
 
-
-    [PunRPC]
+   // [PunRPC]
     void RPC_AddProjectile()
     {
         GameObject bullet = Instantiate(bulletPrefab, firingPos.position, firingPos.rotation);

@@ -10,6 +10,7 @@ public class InventoryItemController : MonoBehaviour
     private static InventoryItemController instance;
     public static InventoryItemController Instance => instance;
     public PlayerHealth playerHealth;
+    [SerializeField] PlayerHealthBar healthBar;
     public GunAmmo gunAmmo;
     public QuickItems quickitem;
     public PhotonView PV;
@@ -51,6 +52,7 @@ public class InventoryItemController : MonoBehaviour
         {
             case Items.ItemType.Blood:
                 playerHealth.IncreaseHP(items.value);
+                healthBar.UpdateHealthValue(playerHealth.Hp,playerHealth.maxHP);
                 Debug.Log("use Blood..........");
                 break;
             case Items.ItemType.Bullet:
@@ -77,14 +79,18 @@ public class InventoryItemController : MonoBehaviour
         if (items.itemType == Items.ItemType.Blood)
         {
             var quickItem = quickitem.item5;
+            var quickItemIcon = quickItem.transform.Find("ItemIcon").GetComponent<Image>();
             var quickItemCountText = quickItem.transform.Find("CountItem").GetComponent<TextMeshProUGUI>();
+            quickItemIcon.sprite = items.icon;
             quickItemCountText.text = items.count.ToString();
             
         }
         if (items.itemType == Items.ItemType.Bullet)
         {
             var quickItem = quickitem.item6;
+            var quickItemIcon = quickItem.transform.Find("ItemIcon").GetComponent<Image>();
             var quickItemCountText = quickItem.transform.Find("CountItem").GetComponent<TextMeshProUGUI>();
+            quickItemIcon.sprite = items.icon;
             quickItemCountText.text = items.count.ToString();
         }
 
