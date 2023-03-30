@@ -22,6 +22,7 @@ public class ShopManager : MonoBehaviour
     private void Start()
     {
         ShopManager.instance = this;
+        FindPlayerInfo();
         SetupPlayerInfo();
         ShopUI();
     }
@@ -29,6 +30,15 @@ public class ShopManager : MonoBehaviour
     private void Update()
     {
         SetupPlayerInfo();
+    }
+
+
+
+    public void FindPlayerInfo()
+    {
+        var playerInfo = GameObject.Find("PlayerInfo");
+        PlayerInfo = playerInfo.GetComponent<PlayerInfo>();
+      
     }
     public virtual void ShopUI()
     {

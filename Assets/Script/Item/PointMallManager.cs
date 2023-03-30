@@ -18,6 +18,7 @@ public class PointMallManager : ShopManager
     private void Start()
     {
         PointMallManager.instance = this;
+        FindPlayerInfo();
         SetupPlayerInfo();
         ShopUI();
     }

@@ -2362,7 +2362,9 @@ MonoBehaviour:
   damage: 999
   boomingPrefab: {fileID: 19800006, guid: e0609132424a24844b1d53ad3d704fd9, type: 3}
   explosionRadius: 2
---- !u!114 &9001448811463090852
+  PV: {fileID: 9001448811463090852}
+  BoomZombieobj: {fileID: 9108172731663058586}
+--- !u!114 &1057596154672805533
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2371,21 +2373,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 9108172731663058586}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
+  m_Script: {fileID: 11500000, guid: 627855c7f81362d41938ffe0b1475957, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ObservedComponentsFoldoutOpen: 1
-  Group: 0
-  prefixField: -1
-  Synchronization: 3
-  OwnershipTransfer: 0
-  observableSearch: 2
-  ObservedComponents:
-  - {fileID: 2603800323898612024}
-  - {fileID: 1057596154672805533}
-  sceneViewId: 0
-  InstantiationId: 0
-  isRuntimeInstantiated: 0
+  m_SynchronizePosition: 1
+  m_SynchronizeRotation: 1
+  m_SynchronizeScale: 0
+  m_UseLocal: 1
 --- !u!114 &2603800323898612024
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2415,7 +2409,7 @@ MonoBehaviour:
     LayerIndex: 0
   - SynchronizeType: 0
     LayerIndex: 1
---- !u!114 &1057596154672805533
+--- !u!114 &9001448811463090852
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2424,10 +2418,18 @@ MonoBehaviour:
   m_GameObject: {fileID: 9108172731663058586}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 627855c7f81362d41938ffe0b1475957, type: 3}
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_SynchronizePosition: 1
-  m_SynchronizeRotation: 1
-  m_SynchronizeScale: 0
-  m_UseLocal: 1
+  ObservedComponentsFoldoutOpen: 1
+  Group: 0
+  prefixField: -1
+  Synchronization: 3
+  OwnershipTransfer: 0
+  observableSearch: 2
+  ObservedComponents:
+  - {fileID: 1057596154672805533}
+  - {fileID: 2603800323898612024}
+  sceneViewId: 0
+  InstantiationId: 0
+  isRuntimeInstantiated: 0

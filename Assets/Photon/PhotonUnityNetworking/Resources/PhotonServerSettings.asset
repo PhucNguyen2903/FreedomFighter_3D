@@ -71,6 +71,16 @@ MonoBehaviour:
   - useItem6
   - Rpc_SpawnItem
   - CheckLooter
+  - FindPlayerSingleton
+  - addList
+  - LoadLobby
+  - CreatingEffect
+  - TurnOnGameOverUIAfterWaiting
+  - NoticeName
+  - NoticeTime
+  - NoticeSecond
+  - NoticeTimeMinus
+  - DestroyPlayer
   DisableAutoOpenWizard: 1
   ShowSettings: 1
   DevRegionSetOnce: 1

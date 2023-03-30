@@ -43,6 +43,7 @@ public class ZombieMovement : MonoBehaviour
 
     private void Update()
     {
+        if (Player_Foot == null) return;
         float distance = Vector3.Distance(transform.position, Player_Foot.position);
             IsMoving = distance > reachingRadius;
 

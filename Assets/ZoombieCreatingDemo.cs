@@ -83,7 +83,12 @@ public class ZoombieCreatingDemo : ZombieManager
             CreatingTurnZombie("ZombieGhoul", 5);
             turnComplete = 3;
         }
-        else if (turnComplete == 3)
+        else if (turn == 5 && turnComplete == 3)
+        {
+            PlayerWin();
+            turnComplete = 4;
+        }
+        if (turnComplete == 4)
         {
             return;
         }

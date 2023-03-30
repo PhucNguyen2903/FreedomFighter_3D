@@ -27,14 +27,21 @@ public class PhotonRoom : MonoBehaviourPunCallbacks
     [SerializeField] GameObject FirstMenuPlayerPrefab;
     [SerializeField] GameObject PlayerPrefab;
     [SerializeField] SetPlayerInfo setPlayerinfo;
+    [SerializeField] UIManager UImanager;
 
     public static PhotonRoom instance;
     private void Awake()
     {
         PhotonRoom.instance = this;
         numofPlayerInput.text = "2";
+        //UImanager.OnclickBack();
+        InvokeRepeating(nameof(CallCursor),10f,1f);
     }
 
+    private void Start()
+    {
+        
+    }
 
     public virtual void Create()
     {
@@ -50,6 +57,11 @@ public class PhotonRoom : MonoBehaviourPunCallbacks
         roomOptions.MaxPlayers = (byte)int.Parse(numofPlayerInput.text);
         PhotonNetwork.CreateRoom(roomName, roomOptions);
 
+    }
+
+    public void CallCursor()
+    {
+        Cursor.visible = true;
     }
 
     public virtual void JoinRoom()
@@ -96,6 +108,7 @@ public class PhotonRoom : MonoBehaviourPunCallbacks
         if (PhotonNetwork.IsMasterClient)
         {
             PhotonNetwork.LoadLevel("ZoombieShooter");
+            //PhotonNetwork.AutomaticallySyncScene = false;
         }
         else
             Debug.LogWarning("You are not MasterClient");
@@ -227,7 +240,8 @@ public class PhotonRoom : MonoBehaviourPunCallbacks
             UIManager.Instnace.ObserverCallBack("RoomPopup");
             PlayerInfo.Instance.RemoveAllItemEquip();
             List<ItemShop> list = StorageManager.Instance.TakeEquipItemList();
-            PlayerInfo.Instance.SetITem(list);
+            List<ItemShop> storageList = StorageManager.Instance.TakeStorageItemList();
+            PlayerInfo.Instance.SetITem(list,storageList);
         }
         DestroyContent(ListPlayerContent);
         //foreach (Transform child in ListPlayerContent)
@@ -246,6 +260,25 @@ public class PhotonRoom : MonoBehaviourPunCallbacks
         }
        
        
+    }
+
+    public void ReturnFromGamePlayListPlayerUpdata()
+    {
+        DestroyContent(ListPlayerContent);
+        //foreach (Transform child in ListPlayerContent)
+        //{
+        //    Destroy(child.gameObject);
+        //}
+        foreach (Player p in PhotonNetwork.PlayerList)
+        {
+            GameObject playerNameUI = Instantiate(playerNamePrefab, ListPlayerContent);
+            playerNameUI.GetComponentInChildren<TextMeshProUGUI>().text = p.NickName;
+            if (p.NickName == PhotonNetwork.LocalPlayer.NickName)
+            {
+                playerNameUI.transform.Find("MeIcon").gameObject.SetActive(true);
+                AddPlayerName(p.NickName);
+            }
+        }
     }
 
     public override void OnLeftRoom()

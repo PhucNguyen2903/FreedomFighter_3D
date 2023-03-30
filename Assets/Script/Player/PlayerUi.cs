@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Photon.Pun;
 
 public class PlayerUi : MonoBehaviour
 {
@@ -9,4 +10,5 @@ public class PlayerUi : MonoBehaviour
 
     public void ShowLeftScratch() => leftScratch.Show();
     public void ShowRightScratch() => rightScratch.Show();
+
 }

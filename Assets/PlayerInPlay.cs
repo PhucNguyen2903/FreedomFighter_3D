@@ -6,27 +6,44 @@ using Photon.Realtime;
 using UnityEngine.UI;
 using TMPro;
 public class PlayerInPlay : MonoBehaviourPunCallbacks
-{ 
+{
+    private static PlayerInPlay instance;
+    public static PlayerInPlay Instance => instance;
+
     public float explosionRadius = 1000f;
     public List<int> playerViewID = new List<int>();
     public Transform PlayerInGameContent;
     public GameObject prefab;
-   // public GameObject[] playerObjects;
+    public GameObject playerResultPrefab;
+    public Transform playerResultContent;
+    public GameObject GameOverPopup;
+    public List<PlayerUIManager> gameoverPopup = new List<PlayerUIManager>();
+    public int numOfDead;
+    [SerializeField] GameObject playerListRoomInfoPopup;
+    public PhotonView PV;
+
+
 
     private void Awake()
     {
-    //    TakePlayerList();
-    //    UpdateUIPlayer();
-       StartCoroutine(waitUntil());
-       InvokeRepeating("UpdateUIPlayer", 15f, 1f);
+        PlayerInPlay.instance = this;
+
+        StartCoroutine(waitUntil());
+        InvokeRepeating("UpdateUIPlayer", 15f, 1f);
+        numOfDead = ZombieController.Instance.enemySpawner.count;
     }
 
+    private void Start()
+    {
+
+       
+    }
     private void Update()
     {
-        
+
     }
 
-   
+
 
 
 
@@ -36,8 +53,11 @@ public class PlayerInPlay : MonoBehaviourPunCallbacks
         CheckMap();
     }
 
+   
+
     public void CheckMap()
     {
+        TurnOnPlayerList();
         Collider[] colliders = Physics.OverlapSphere(transform.position, explosionRadius);
         if (colliders.Length < 1) return;
         Debug.Log("Run...............");
@@ -46,27 +66,114 @@ public class PlayerInPlay : MonoBehaviourPunCallbacks
             FindPlayer(colliders[i]);
         }
 
+        //PV.RPC("FindPlayerSingleton", RpcTarget.All);
     }
     public void FindPlayer(Collider colider)
     {
-       // PhotonView playerPV = colider.GetComponent<PhotonView>();
+        // PhotonView playerPV = colider.GetComponent<PhotonView>();
         PlayerHealth playerHealth = colider.GetComponent<PlayerHealth>();
         if (playerHealth != null)
         {
             PhotonView playerPV = colider.GetComponent<PhotonView>();
+            PlayerUIManager player = colider.GetComponent<PlayerUIManager>();
+
             if (playerPV != null)
             {
                 int viewID = playerPV.ViewID;
                 if (!playerViewID.Contains(viewID))
                 {
+                    gameoverPopup.Add(player);
+                    Debug.Log("AddPlayerSingleton: " + colider.GetComponent<PhotonView>().ViewID);
                     playerViewID.Add(viewID);
                 }
             }
         }
-       
-       
-       
+
     }
+
+    public void AddListGameoverPopup(PlayerUIManager player)
+    {
+              gameoverPopup.Add(player);
+    }
+
+    
+    public void CallPopupGameover()
+    {
+        PV.RPC("TurnOnGameOverUIAfterWaiting",RpcTarget.All);
+    }
+    
+    [PunRPC]
+    public void TurnOnGameOverUIAfterWaiting()
+    {
+        StartCoroutine(TurnOnGameOverUI());
+    }
+
+    public IEnumerator TurnOnGameOverUI()
+    {
+        yield return new WaitForSeconds(2f);
+        
+        foreach (var item in gameoverPopup)
+        {
+            UpdataGameOverUI(item);           
+            Debug.Log(item.scoreText.Score + "XXXXXXXXX");
+            Debug.Log(item.TakeName());
+            Debug.Log("itemcallitme" + item.TakeSecond());
+        }
+        TurnOffPlayerList();
+        GameOverPopup.SetActive(true);
+    }
+    public void UpdataGameOverUI(PlayerUIManager player)
+    {
+        GameObject playerResult = Instantiate(playerResultPrefab , playerResultContent);
+        player.timeCount.TimeStopStatus(true);
+        var NamePlayerResult = playerResult.transform.GetChild(0).GetComponent<TextMeshProUGUI>();
+        var RankPlayerResult = playerResult.transform.GetChild(1).GetComponent<TextMeshProUGUI>();
+        var TimePlayerResult = playerResult.transform.GetChild(2).GetComponent<TextMeshProUGUI>();
+        var ScorePlayerResult = playerResult.transform.GetChild(3).GetComponent<TextMeshProUGUI>();
+
+        NamePlayerResult.text = player.TakeName();
+        ScorePlayerResult.text = player.scoreText.Score.ToString();
+        TimePlayerResult.text =  string.Format("{0:00} : {1:00}", player.TakeMinus(), player.TakeSecond());
+        RankPlayerResult.text =  player.rank.ToString();
+    }
+
+    void TurnOffPlayerList()
+    {
+        playerListRoomInfoPopup.SetActive(false);
+    }
+    void TurnOnPlayerList()
+    {
+        playerListRoomInfoPopup.SetActive(true);
+    }
+
+    public void RankingPlayer()
+    {
+        List<int> playerListRanking = new List<int>();
+        
+        foreach (var item in gameoverPopup)
+        {
+            int playerScore = item.scoreText.Score;
+            playerListRanking.Add(playerScore);
+        }
+
+        playerListRanking.Sort();
+        playerListRanking.Reverse();
+
+        for (int i = 0; i < playerListRanking.Count; i++)
+        {            
+            foreach (var item in this.gameoverPopup)
+            {
+                int score = item.scoreText.Score;
+                if (score == playerListRanking[i])
+                {
+                    item.rank = i + 1;
+                }              
+            }
+
+        }
+    }
+
+
 
     public void UpdateUIPlayer()
     {

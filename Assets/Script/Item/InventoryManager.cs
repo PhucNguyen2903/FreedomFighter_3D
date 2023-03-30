@@ -155,7 +155,6 @@ public class InventoryManager : MonoBehaviour
             if (iteminlist.id == item.id)
             {
                 iteminlist.count += item.amount;
-
             }
 
         }

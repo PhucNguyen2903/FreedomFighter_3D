@@ -4,10 +4,24 @@ using UnityEngine;
 
 public class DropItemSpawner : Spawner
 {
+    private static DropItemSpawner instance;
+    public static DropItemSpawner Instance => instance;
     //public string healthBox = "HealthBox";
     public string newHealthBox = "NewHealthBox";
     public string bullet = "BulletBox";
-   
+    private void Awake()
+    {
+        if (instance == null)
+        {
+            instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+    }
+
 
     protected override void LoadPrefabs()
     {

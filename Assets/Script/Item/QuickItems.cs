@@ -13,6 +13,8 @@ public class QuickItems : MonoBehaviour
     public GameObject countItem6;
     public GameObject item5;
     public GameObject item6;
+    public GameObject EscPanel;
+    bool isActive = true;
 
 
     private void Awake()
@@ -49,13 +51,29 @@ public class QuickItems : MonoBehaviour
             if (!CanUseItemG(itemGcontroller)) return;
             itemGcontroller.UseItem();
         }
+
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            EscapeButton(isActive);
+
+        }
     }
+
+
+    public void EscapeButton( bool isACtive)
+    {
+        EscPanel.SetActive(isACtive);
+        Cursor.visible = isACtive;
+        isActive = !isActive;
+    }
+
+
 
     bool CanUseItemG(InventoryItemController itemcontroller)
     {
         int numOfMag = itemcontroller.gunAmmo.numOfMag;
         int magSize = itemcontroller.gunAmmo.magSize;
-        if (numOfMag < magSize *2)
+        if (numOfMag != null && numOfMag < magSize *2)
         {
             return true;
         }

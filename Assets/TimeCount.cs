@@ -7,11 +7,18 @@ public class TimeCount : MonoBehaviour
 {
     public TextMeshProUGUI timeText;
     public float timeCount;
-    int calTimeMinus;
-    int calTimeSecond;
+    public int calTimeMinus;
+    public int calTimeSecond;
+    bool timeStopstatus = false;
 
     private void Update()
     {
+        TimeRun();
+    }
+    
+    void TimeRun()
+    {
+        if (TimeStop()) return;
         timeCount += Time.deltaTime;
         UpdateTime();
     }
@@ -37,7 +44,19 @@ public class TimeCount : MonoBehaviour
         CalTime();
         timeText.text = calTimeMinus + " : " + calTimeSecond;
         timeText.text = string.Format("{0:00} : {1:00}", calTimeMinus, calTimeSecond);
-
-
     }
+
+    public void TimeStopStatus( bool timeStopValue)
+    {
+        if (timeStopstatus != timeStopValue)
+        {
+            timeStopstatus = timeStopValue;
+        }
+    }
+
+    public bool TimeStop()
+    {
+        return timeStopstatus;
+    }
+
 }

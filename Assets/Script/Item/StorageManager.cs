@@ -13,18 +13,28 @@ public class StorageManager : ShopManager
     [SerializeField] GameObject equipPrefab;
     [SerializeField] ItemShop firstItem;
 
-    public List<ItemShop> storageList = new List<ItemShop>();
-    public List<ItemShop> equipedList = new List<ItemShop>();
+    public List<ItemShop> storageList;
+    public List<ItemShop> equipedList;
 
 
 
     private void Awake()
     {
         StorageManager.instance = this;
+        FindPlayerInfo();
         SetupPlayerInfo();
         ShopUI();
-        equipedList.Add(firstItem);
+    }
+    private void Start()
+    {
+        equipedList = PlayerInfo.ListGun;
+        storageList = PlayerInfo.ListStorage;
+        if (equipedList.Count < 1)
+        {
+            equipedList.Add(firstItem);
+        }
         EquipUI();
+        
     }
 
 
@@ -84,9 +94,9 @@ public class StorageManager : ShopManager
 
             if (CheckTypeItem(item))
             {
-               itemShop.transform.GetChild(8).gameObject.SetActive(true);
-               var itemAmounttext = itemShop.transform.GetChild(8).GetComponent<TextMeshProUGUI>();
-               itemAmounttext.text = item.count.ToString();
+                itemShop.transform.GetChild(8).gameObject.SetActive(true);
+                var itemAmounttext = itemShop.transform.GetChild(8).GetComponent<TextMeshProUGUI>();
+                itemAmounttext.text = item.count.ToString();
             }
         }
 
@@ -116,6 +126,13 @@ public class StorageManager : ShopManager
         storageList.Remove(itemShop);
     }
 
+    public void Equipdata(ItemShop itemShop)
+    {
+        this.equipedList.Add(itemShop);
+        Debug.Log("EquipItemmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm");
+        Debug.Log("Number of items in equipedList: " + equipedList.Count);
+    }
+
     public void RemoveEquip(ItemShop itemShop)
     {
         equipedList.Remove(itemShop);
@@ -125,6 +142,11 @@ public class StorageManager : ShopManager
     public List<ItemShop> TakeEquipItemList()
     {
         return equipedList;
+    }
+     public List<ItemShop> TakeStorageItemList()
+    {
+        Debug.Log("takeStorageList");
+        return storageList;
     }
 
     public ItemShop TakeHealthBox()
@@ -136,7 +158,7 @@ public class StorageManager : ShopManager
                 return item;
             }
         }
-        return null;   
+        return null;
     }
     public ItemShop TakeBulletBox()
     {
@@ -175,7 +197,7 @@ public class StorageManager : ShopManager
         {
             CountDevideIteminList(item);
         }
-  
+
     }
 
     public void CountIteminList(ItemShop item)
@@ -196,7 +218,7 @@ public class StorageManager : ShopManager
             if (iteminlist.id == item.id)
             {
                 iteminlist.count -= 1;
-            
+
             }
 
         }

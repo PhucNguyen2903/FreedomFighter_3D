@@ -114,7 +114,17 @@ public class ZombieManager : MonoBehaviour
         {
             turn = 4;
         }
+        else if (numOfDeath > 49 && turnComplete == 3)
+        {
+            Debug.Log("Turn555555555555");
+            turn = 5;
+        }
+   
+    }
 
+    public void PlayerWin()
+    {
+        PlayerInPlay.Instance.CallPopupGameover();
     }
 
 

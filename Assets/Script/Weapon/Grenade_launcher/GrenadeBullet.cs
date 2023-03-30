@@ -10,6 +10,7 @@ public class GrenadeBullet : MonoBehaviour
     public float explosionRadius;
     public float explosionForce;
     public int damage;
+    public AudioSource BoomingAudio;
     public ScoreText scoreText;
 
     private List<Health> oldVictims = new List<Health>();
@@ -20,6 +21,7 @@ public class GrenadeBullet : MonoBehaviour
     public void OnCollisionEnter(Collision collision)
     {
         //Instantiate(explosionPrefab, transform.position, transform.rotation);
+        BoomingAudio.Play();
         PV.RPC("RPC_Prefab", RpcTarget.All);
         StartCoroutine(waiytoDestroy());
         //Destroy(gameObject);
@@ -30,6 +32,7 @@ public class GrenadeBullet : MonoBehaviour
     [PunRPC]
     public void RPC_Prefab()
     {
+        BoomingAudio.Play();
         Instantiate(explosionPrefab, transform.position, transform.rotation);
     }
 

@@ -111,6 +111,7 @@
     <Compile Include="Assets\Script\Weapon\MleeWeapon\MleeEffectTrigger.cs" />
     <Compile Include="Assets\Animated FPS Weapons Part 2\Scripts\LightFlickering.cs" />
     <Compile Include="Assets\Animated FPS Weapons Part 2\Scripts\PlayerMovement.cs" />
+    <Compile Include="Assets\Script\Player\PlayerUIManager.cs" />
     <Compile Include="Assets\Script\Item\DropItemSpawner.cs" />
     <Compile Include="Assets\SciFi Warehouse Kit\Demo\Scripts\PushPhysics.cs" />
     <Compile Include="Assets\JMO Assets\WarFX\Demo\Assets\WFX_Demo_Wall.cs" />

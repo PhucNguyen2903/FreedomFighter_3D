@@ -26,6 +26,7 @@ public class BlackMarketManager : ShopManager
     private void Start()
     {
         BlackMarketManager.instance = this;
+        FindPlayerInfo();
         SetupPlayerInfo();
         ShopUI();
         beginIma = gunImage.sprite;

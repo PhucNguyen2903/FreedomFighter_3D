@@ -68,6 +68,8 @@ MonoBehaviour:
   explosionRadius: 4
   explosionForce: 20
   damage: 40
+  BoomingAudio: {fileID: 82285970485482658, guid: 9b43267a080ff2c489213393f24f8e7b, type: 3}
+  scoreText: {fileID: 0}
 --- !u!136 &4651961787318314734
 CapsuleCollider:
   m_ObjectHideFlags: 0

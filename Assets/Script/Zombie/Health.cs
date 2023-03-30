@@ -122,6 +122,7 @@ public class Health : MonoBehaviour
     public void Rpc_SpawnItem()
     {
         Transform newItem = ZombieController.Instance.dropItemSpawner.Spawn(itemSpawnerName, transform.position, transform.rotation);
+        if (newItem == null) return;
         newItem.gameObject.SetActive(true);
     }
 
