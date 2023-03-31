@@ -9987,6 +9987,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   observerList: []
   Backbutton: {fileID: 0}
+  chatManager: {fileID: 812746227}
 --- !u!4 &984785479
 Transform:
   m_ObjectHideFlags: 0

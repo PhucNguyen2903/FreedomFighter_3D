@@ -107,8 +107,8 @@ public class PhotonRoom : MonoBehaviourPunCallbacks
         Debug.Log(transform.name + ": Start Game");
         if (PhotonNetwork.IsMasterClient)
         {
+            PhotonNetwork.AutomaticallySyncScene = true;
             PhotonNetwork.LoadLevel("ZoombieShooter");
-            //PhotonNetwork.AutomaticallySyncScene = false;
         }
         else
             Debug.LogWarning("You are not MasterClient");

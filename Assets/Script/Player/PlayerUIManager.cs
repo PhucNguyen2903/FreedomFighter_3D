@@ -21,9 +21,9 @@ public class PlayerUIManager : MonoBehaviourPunCallbacks
     }
     private void Start()
     {
-       
+
     }
-        
+
     public void OnClickHome()
     {
         if (PV.IsMine)
@@ -34,10 +34,21 @@ public class PlayerUIManager : MonoBehaviourPunCallbacks
 
     void HomeOnclick()
     {
-        //PhotonNetwork.AutomaticallySyncScene = false;
-        PhotonNetwork.LoadLevel("Lobby");
-        PV.RPC(nameof(DestroyPlayer),RpcTarget.Others);
-        Destroy(this.player);
+        if (PhotonNetwork.IsMasterClient)
+        {
+            PhotonNetwork.AutomaticallySyncScene = false;
+            PhotonNetwork.LoadLevel("Lobby");
+            PhotonNetwork.AutomaticallySyncScene = true;
+
+        }
+        else
+        {
+            PhotonNetwork.LoadLevel("Lobby");
+            PhotonNetwork.AutomaticallySyncScene = true;
+        }
+        PhotonNetwork.Destroy(this.player);
+        //PV.RPC(nameof(DestroyPlayer), RpcTarget.All);
+        //player.SetActive(false);
     }
 
     public void OnclickQuit()
@@ -49,7 +60,7 @@ public class PlayerUIManager : MonoBehaviourPunCallbacks
     [PunRPC]
     void LoadLobby()
     {
-        PhotonNetwork.LoadLevel("Lobby");      
+        PhotonNetwork.LoadLevel("Lobby");
     }
 
     [PunRPC]
@@ -57,7 +68,7 @@ public class PlayerUIManager : MonoBehaviourPunCallbacks
     {
         Name = PhotonNetwork.LocalPlayer.NickName;
     }
-    
+
     public string TakeName()
     {
         PV.RPC("NoticeName", RpcTarget.All);
@@ -68,7 +79,7 @@ public class PlayerUIManager : MonoBehaviourPunCallbacks
     {
         PV.RPC("NoticeTimeMinus", RpcTarget.All);
         return timeminus;
-      
+
     }
 
     [PunRPC]

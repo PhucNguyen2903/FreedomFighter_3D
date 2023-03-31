@@ -5,10 +5,15 @@ using UnityEngine;
 public class EnemySpawner : Spawner
 {
 
+    private void Awake()
+    {
+        count = 0;
+        Debug.Log(count + "XXXXXXXXXXX");
+    }
 
     protected override void LoadPrefabs()
     {
-        if (prefabs.Count > 0) return;
+        if (prefabs.Count == 0 ) return;
 
 
         Transform prefabObj = transform.Find("ZombiePrefabs");
@@ -47,5 +52,10 @@ public class EnemySpawner : Spawner
         RagdollSwitcher ragdoll = obj.gameObject.GetComponent<RagdollSwitcher>();
         ragdoll.DisableRagdoll();
 
+    }
+
+    public void Startgame()
+    {
+        count = 0;
     }
 }

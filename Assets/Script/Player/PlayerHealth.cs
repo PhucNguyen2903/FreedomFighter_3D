@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 using UnityEngine.Events;
+using Photon.Pun;
 
 public class PlayerHealth : MonoBehaviour
 {
@@ -59,9 +60,10 @@ public class PlayerHealth : MonoBehaviour
     private void Die()
     {
         Debug.Log("============ Player Die");
-        Time.timeScale = 0;
         onDie.Invoke();
         PopupGameOver.SetActive(true);
+        //PhotonNetwork.Destroy(this.gameObject);
+        //this.gameObject.SetActive(false);
         Cursor.lockState = CursorLockMode.Confined;
         Cursor.visible = true;
     }
@@ -70,4 +72,5 @@ public class PlayerHealth : MonoBehaviour
     {
         _hp += value;
     }
+
 }

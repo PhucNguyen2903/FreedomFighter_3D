@@ -5,6 +5,9 @@ using Photon.Pun;
 
 public class ZoombieCreatingDemo : ZombieManager
 {
+
+    private static ZoombieCreatingDemo instance;
+    public static ZoombieCreatingDemo Instance => instance;
     public GameObject prefab;
     public Transform PoolLive;
     public PhotonView PV;
@@ -17,9 +20,19 @@ public class ZoombieCreatingDemo : ZombieManager
 
     private void Awake()
     {
+        //if (instance == null)
+        //{
+        //    instance = this;
+        //    DontDestroyOnLoad(gameObject);
+        //}
+        //else
+        //{
+        //    Destroy(gameObject);
+        //}
         if (PV.IsMine)
         {
             StartCoroutine(WaitReady());
+            ZombieController.Instance.enemySpawner.Startgame();
         }
 
     }
@@ -36,6 +49,7 @@ public class ZoombieCreatingDemo : ZombieManager
     void CreatingZombie(string name)
     {
         GameObject zombieObj = TakeZombieByName(name);
+        if (zombieObj == null) return;
         zombieObj.SetActive(true);
         Health healthZombie = zombieObj.GetComponent<Health>();
         healthZombie.zombieName = name;
@@ -49,6 +63,7 @@ public class ZoombieCreatingDemo : ZombieManager
         {
             PV.RPC("CreatingZombie", RpcTarget.All, name);
         }
+
 
     }
 

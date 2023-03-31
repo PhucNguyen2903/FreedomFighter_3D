@@ -11,6 +11,7 @@ public class UIManager : MonoBehaviour
    
     public List<Observer> observerList = new List<Observer>();
     public GameObject Backbutton;
+    public PhotonChatManager chatManager;
     private void Awake()
     {
         UIManager.instance = this;
@@ -41,6 +42,7 @@ public class UIManager : MonoBehaviour
             ObserverCallBack("RoomPopup");
             PhotonRoom.instance.ReturnFromGamePlayListPlayerUpdata();
             PhotonRoom.instance.UpdatepPlayerListInFirstMenu();
+            chatManager.SetUserName(PhotonNetwork.LocalPlayer.NickName);
         }
         PlayerInfo.Instance.RemoveAllItemEquip();
         List<ItemShop> list = StorageManager.Instance.TakeEquipItemList();

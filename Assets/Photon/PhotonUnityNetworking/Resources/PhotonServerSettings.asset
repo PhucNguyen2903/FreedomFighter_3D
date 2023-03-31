@@ -81,6 +81,7 @@ MonoBehaviour:
   - NoticeSecond
   - NoticeTimeMinus
   - DestroyPlayer
+  - RPC_OnclickHome
   DisableAutoOpenWizard: 1
   ShowSettings: 1
   DevRegionSetOnce: 1

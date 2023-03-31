@@ -193,7 +193,7 @@ public class PlayerInPlay : MonoBehaviourPunCallbacks
                 float hPValue = (float)healthPoint / (float)MaxHealPoint;
                 GameObject UIObj = Instantiate(prefab, PlayerInGameContent);
                 UIObj.transform.GetChild(1).GetComponent<Image>().fillAmount = hPValue;
-                UIObj.transform.GetChild(2).GetComponent<TextMeshProUGUI>().text = "Player " + viewId;
+                UIObj.transform.GetChild(2).GetComponent<TextMeshProUGUI>().text = playerPV.Owner.NickName;    /*"Player " + viewId;*/
             }
         }
 

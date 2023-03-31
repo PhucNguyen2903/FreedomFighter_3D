@@ -5,6 +5,8 @@ using Photon.Pun;
 
 public class ZombieManager : MonoBehaviour
 {
+    private static ZombieManager instance;
+    public static ZombieManager Instance => instance;
     protected string zombieNormal = "ZombieNormal";
     protected string zombieAdvance = "ZombieAdvance";
     protected string zombieBoom = "ZombieBoom";
@@ -23,9 +25,15 @@ public class ZombieManager : MonoBehaviour
     private void Awake()
     {
 
-        //FirstTurn();
-        //ThirdTurn();
-        //FourTurn();
+        if (instance == null)
+        {
+            instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
 
     }
 
