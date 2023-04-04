@@ -23,15 +23,11 @@ public class PlayerJump : MonoBehaviour
     void Start()
     {
         characterController = GetComponent<CharacterController>();
-        isground = characterController.isGrounded;
     }
 
     // Update is called once per frame
     void Update()
     {
-
-
-
 
     }
 
@@ -71,29 +67,56 @@ public class PlayerJump : MonoBehaviour
 
     public void FallDown()
     {
-        //if (characterController.isGrounded) return;
-        //float maxHeight = 4.35f;
-        //float height = PlayerTransform.transform.position.y;
-        //if (height < maxHeight) return;
-        //int Dame = (int)(height - maxHeight) * 10;
-        //injuredFall(Dame, height);
+        float height = PlayerTransform.transform.position.y;
+        float maxHeight = 4.35f;
+        float heightOn = height - maxHeight;
+        bool onTop = OnTop(height);
+        isground = characterController.isGrounded;
+        if (heightOn > maxHeight && !isground && !onTop)
+        {
+            int Dame = (int)(height - maxHeight);
+            playerhealth.TakeDamage(Dame*30);
+            
+        }
 
+    }
+
+    public bool OnTop(float height)
+    {
+        if(height > 8.8)
+        {
+            return true;
+        }
+        return false;
     }
 
     void injuredFall(int Dame, float height)
     {
-        //heightTakedame = height;
-        if (!canInjured(height)) return;
         playerhealth.TakeDamage(Dame);
-        heightTakedame = 0;
+
+
+
+        //if (!canInjured(height)) return;
+        //heightTakedame = 0;
     }
 
     bool canInjured(float height)
     {
+        heightTakedame = height;
+
         if (height <= heightTakedame)
         {
             return false;
         }
         return true;
+    }
+
+
+    public void CheckGround()
+    {
+        if (characterController.isGrounded)
+        {
+            Debug.Log("Player are in the ground");
+        }
     }
 }

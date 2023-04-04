@@ -137,12 +137,17 @@ public class PlayerInPlay : MonoBehaviourPunCallbacks
         int playerScore = PlayerUImanager.scoreText.Score;
         int playertimeMinus = PlayerUImanager.TakeMinus();
         int playertimeSecond = PlayerUImanager.TakeSecond();
+
+        int playerMinus = TimeMinusset(playertimeMinus);
+        int playerSecond = TimeSecondSet(playertimeSecond);
+        int playerRank = RankerList(playerScore);
         Debug.Log(playerScore + " " + playertimeMinus + "  " + playertimeSecond + "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX");
 
         NamePlayerResult.text = playerPV.Owner.NickName;
         ScorePlayerResult.text = playerScore.ToString();
-        TimePlayerResult.text =  string.Format("{0:00} : {1:00}", playertimeMinus, playertimeSecond);
-        RankPlayerResult.text = PlayerUImanager.rank.ToString();
+        TimePlayerResult.text =  string.Format("{0:00} : {1:00}", playerMinus, playerSecond);
+
+        RankPlayerResult.text = playerRank.ToString();
     }
 
     void TurnOffPlayerList()
@@ -154,31 +159,55 @@ public class PlayerInPlay : MonoBehaviourPunCallbacks
         playerListRoomInfoPopup.SetActive(true);
     }
 
-    public void RankingPlayer()
+    public int RankerList(int score)
     {
-        List<int> playerListRanking = new List<int>();
-        
-        foreach (var item in gameoverPopup)
+        int count = 1;
+
+        foreach (var item in playerViewID)
         {
-            int playerScore = item.scoreText.Score;
-            playerListRanking.Add(playerScore);
-        }
-
-        playerListRanking.Sort();
-        playerListRanking.Reverse();
-
-        for (int i = 0; i < playerListRanking.Count; i++)
-        {            
-            foreach (var item in this.gameoverPopup)
+            PhotonView playerPV = PhotonView.Find(item);
+            PlayerUIManager PlayerUImanager = playerPV.gameObject.GetComponent<PlayerUIManager>();
+            int playerScore = PlayerUImanager.scoreText.Score;
+            if (score < playerScore)
             {
-                int score = item.scoreText.Score;
-                if (score == playerListRanking[i])
-                {
-                    item.rank = i + 1;
-                }              
+                count++;
             }
-
         }
+        Debug.Log(count);
+        return count;
+    }
+
+    public int TimeMinusset(int Minus)
+    {
+        foreach (var item in playerViewID)
+        {
+            PhotonView playerPV = PhotonView.Find(item);
+            PlayerUIManager PlayerUImanager = playerPV.gameObject.GetComponent<PlayerUIManager>();
+            int playertimeMinus = PlayerUImanager.TakeMinus();
+            if (Minus < playertimeMinus)
+            {
+                return playertimeMinus;
+            }
+        }
+
+        return Minus;
+
+    }
+    public int TimeSecondSet(int second)
+    {
+        foreach (var item in playerViewID)
+        {
+            PhotonView playerPV = PhotonView.Find(item);
+            PlayerUIManager PlayerUImanager = playerPV.gameObject.GetComponent<PlayerUIManager>();
+            int playertimeSecond = PlayerUImanager.TakeSecond();
+            if (second < playertimeSecond)
+            {
+                return playertimeSecond;
+            }
+        }
+
+        return second;
+
     }
 
 
