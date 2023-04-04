@@ -112,29 +112,37 @@ public class PlayerInPlay : MonoBehaviourPunCallbacks
     {
         yield return new WaitForSeconds(2f);
         
-        foreach (var item in gameoverPopup)
+        foreach (var item in playerViewID)
         {
             UpdataGameOverUI(item);           
-            Debug.Log(item.scoreText.Score + "XXXXXXXXX");
-            Debug.Log(item.TakeName());
-            Debug.Log("itemcallitme" + item.TakeSecond());
         }
         TurnOffPlayerList();
         GameOverPopup.SetActive(true);
     }
-    public void UpdataGameOverUI(PlayerUIManager player)
+    public void UpdataGameOverUI(int item)
     {
+        PhotonView playerPV = PhotonView.Find(item);
+        GameObject obj = playerPV.gameObject;
+        PlayerUIManager PlayerUImanager = playerPV.gameObject.GetComponent<PlayerUIManager>();
+
         GameObject playerResult = Instantiate(playerResultPrefab , playerResultContent);
-        player.timeCount.TimeStopStatus(true);
+
+        PlayerUImanager.timeCount.TimeStopStatus(true);
+
         var NamePlayerResult = playerResult.transform.GetChild(0).GetComponent<TextMeshProUGUI>();
         var RankPlayerResult = playerResult.transform.GetChild(1).GetComponent<TextMeshProUGUI>();
         var TimePlayerResult = playerResult.transform.GetChild(2).GetComponent<TextMeshProUGUI>();
         var ScorePlayerResult = playerResult.transform.GetChild(3).GetComponent<TextMeshProUGUI>();
 
-        NamePlayerResult.text = player.TakeName();
-        ScorePlayerResult.text = player.scoreText.Score.ToString();
-        TimePlayerResult.text =  string.Format("{0:00} : {1:00}", player.TakeMinus(), player.TakeSecond());
-        RankPlayerResult.text =  player.rank.ToString();
+        int playerScore = PlayerUImanager.scoreText.Score;
+        int playertimeMinus = PlayerUImanager.TakeMinus();
+        int playertimeSecond = PlayerUImanager.TakeSecond();
+        Debug.Log(playerScore + " " + playertimeMinus + "  " + playertimeSecond + "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX");
+
+        NamePlayerResult.text = playerPV.Owner.NickName;
+        ScorePlayerResult.text = playerScore.ToString();
+        TimePlayerResult.text =  string.Format("{0:00} : {1:00}", playertimeMinus, playertimeSecond);
+        RankPlayerResult.text = PlayerUImanager.rank.ToString();
     }
 
     void TurnOffPlayerList()

@@ -63,7 +63,13 @@ public class UIManager : MonoBehaviour
         yield return new WaitForSeconds(0.01f);
         //ObserverCallBack("FirstMenu");
         OnclickBack();
+        yield return new WaitForSeconds(1f);
+        if (PhotonNetwork.InRoom)
+        {
+            PhotonNetwork.LeaveRoom();
+        }
     }
+
 
 
 }

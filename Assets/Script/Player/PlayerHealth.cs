@@ -15,6 +15,7 @@ public class PlayerHealth : MonoBehaviour
     public int maxHP;
     public UnityEvent onDie;
     public UnityEvent onTakeDamage;
+    [SerializeField] PlayerUIManager playerUImanager;
     public GameObject PopupGameOver;
     public UnityEvent<int, int> onHealthChanged;
 
@@ -62,6 +63,7 @@ public class PlayerHealth : MonoBehaviour
         Debug.Log("============ Player Die");
         onDie.Invoke();
         PopupGameOver.SetActive(true);
+        StartCoroutine(WaitingUntilExit());
         //PhotonNetwork.Destroy(this.gameObject);
         //this.gameObject.SetActive(false);
         Cursor.lockState = CursorLockMode.Confined;
@@ -71,6 +73,12 @@ public class PlayerHealth : MonoBehaviour
     public void IncreaseHP( int value)
     {
         _hp += value;
+    }
+
+    IEnumerator WaitingUntilExit()
+    {
+        yield return new WaitForSeconds(2f);
+        playerUImanager.OnClickHome();
     }
 
 }

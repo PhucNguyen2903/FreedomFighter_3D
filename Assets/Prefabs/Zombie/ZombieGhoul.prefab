@@ -2312,6 +2312,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   explosionRadius: 200
+  playerHealth: {fileID: 0}
 --- !u!195 &6461336143175907577
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -2348,6 +2349,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   anim: {fileID: 6461336143175907573}
   damage: 15
+  zombieMovement: {fileID: 6461336143175907576}
 --- !u!114 &2516616081282537451
 MonoBehaviour:
   m_ObjectHideFlags: 0

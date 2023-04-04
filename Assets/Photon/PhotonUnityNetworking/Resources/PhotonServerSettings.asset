@@ -82,6 +82,7 @@ MonoBehaviour:
   - NoticeTimeMinus
   - DestroyPlayer
   - RPC_OnclickHome
+  - RPC_PlayerDieInRoom
   DisableAutoOpenWizard: 1
   ShowSettings: 1
   DevRegionSetOnce: 1

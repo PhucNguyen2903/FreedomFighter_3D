@@ -14,6 +14,7 @@ public class ItemPickup : MonoBehaviour
 
     private void Awake()
     {
+        StartCoroutine(WaitingUntilDespawn());
         item5 = QuickItems.Instance.item5;
         item6 = QuickItems.Instance.item6;
     }
@@ -24,6 +25,13 @@ public class ItemPickup : MonoBehaviour
         //InventoryManager.Instance.Add(items);
         //InventoryManager.Instance.UpdateListItem();
         Debug.Log("DespawnItem");
+        ZombieController.Instance.dropItemSpawner.Despawn(transform);
+    }
+
+
+    IEnumerator WaitingUntilDespawn()
+    {
+        yield return new WaitForSeconds(120f);
         ZombieController.Instance.dropItemSpawner.Despawn(transform);
     }
 

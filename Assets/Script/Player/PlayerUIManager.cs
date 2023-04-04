@@ -9,6 +9,10 @@ public class PlayerUIManager : MonoBehaviourPunCallbacks
     public PhotonView PV;
     public GameObject player;
     public GameObject PopupGameOver;
+
+    [SerializeField] List<GameObject> playerDieObjList = new List<GameObject>();
+    [SerializeField] CharacterController playerCharacterController;
+    [SerializeField] PlayerJump playerJump;
     public ScoreText scoreText;
     public TimeCount timeCount;
     public string Name;
@@ -39,7 +43,6 @@ public class PlayerUIManager : MonoBehaviourPunCallbacks
             PhotonNetwork.AutomaticallySyncScene = false;
             PhotonNetwork.LoadLevel("Lobby");
             PhotonNetwork.AutomaticallySyncScene = true;
-
         }
         else
         {
@@ -55,6 +58,24 @@ public class PlayerUIManager : MonoBehaviourPunCallbacks
     {
         if (!PV.IsMine) return;
         Application.Quit();
+    }
+
+
+    public void PlayerDieInRoom()
+    {
+        PV.RPC(nameof(DestroyPlayer), RpcTarget.Others);
+    }
+
+    [PunRPC]
+    public void RPC_PlayerDieInRoom()
+    {
+        foreach (GameObject item in this.playerDieObjList)
+        {
+
+            item.SetActive(false);
+        }
+        Destroy(playerJump);
+        Destroy(this.playerCharacterController);
     }
 
     [PunRPC]
@@ -103,7 +124,7 @@ public class PlayerUIManager : MonoBehaviourPunCallbacks
     void DestroyPlayer()
     {
         Destroy(this.player);
-        //PhotonNetwork.AutomaticallySyncScene = true;
+       
     }
 
 }

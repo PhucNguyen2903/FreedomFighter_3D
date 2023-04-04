@@ -2258,6 +2258,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   explosionRadius: 200
+  playerHealth: {fileID: 0}
 --- !u!114 &1473031174
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2360,6 +2361,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   anim: {fileID: 1473031171}
   damage: 999
+  zombieMovement: {fileID: 1473031173}
   boomingPrefab: {fileID: 19800006, guid: e0609132424a24844b1d53ad3d704fd9, type: 3}
   explosionRadius: 2
   PV: {fileID: 9001448811463090852}

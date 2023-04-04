@@ -7,8 +7,8 @@ public class EnemySpawner : Spawner
 
     private void Awake()
     {
-        count = 0;
-        Debug.Log(count + "XXXXXXXXXXX");
+        //count = 0;
+        //Debug.Log(count + "XXXXXXXXXXX");
     }
 
     protected override void LoadPrefabs()

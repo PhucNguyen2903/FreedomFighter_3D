@@ -1205,6 +1205,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   explosionRadius: 200
+  Player_Foot: {fileID: 0}
 --- !u!195 &1184667988
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -1240,6 +1241,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   anim: {fileID: 6413315303662573803}
+  zombieMovement: {fileID: 1184667987}
   damage: 10
 --- !u!114 &1520217576317290989
 MonoBehaviour:
@@ -1257,6 +1259,30 @@ MonoBehaviour:
   m_SynchronizeRotation: 1
   m_SynchronizeScale: 0
   m_UseLocal: 1
+--- !u!114 &4981826450838336637
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3035779487802349899}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObservedComponentsFoldoutOpen: 1
+  Group: 0
+  prefixField: -1
+  Synchronization: 3
+  OwnershipTransfer: 0
+  observableSearch: 2
+  ObservedComponents:
+  - {fileID: 1520217576317290989}
+  - {fileID: 8785504546150391409}
+  sceneViewId: 0
+  InstantiationId: 0
+  isRuntimeInstantiated: 0
 --- !u!114 &8785504546150391409
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1286,30 +1312,6 @@ MonoBehaviour:
     LayerIndex: 0
   - SynchronizeType: 0
     LayerIndex: 1
---- !u!114 &4981826450838336637
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3035779487802349899}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ObservedComponentsFoldoutOpen: 1
-  Group: 0
-  prefixField: -1
-  Synchronization: 3
-  OwnershipTransfer: 0
-  observableSearch: 2
-  ObservedComponents:
-  - {fileID: 1520217576317290989}
-  - {fileID: 8785504546150391409}
-  sceneViewId: 0
-  InstantiationId: 0
-  isRuntimeInstantiated: 0
 --- !u!1 &4245974629459587453 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 825951251313487976, guid: d58be77cba3adf54cb14b15052b86514, type: 3}

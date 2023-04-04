@@ -7,7 +7,7 @@ using Photon.Pun;
 
 public class ZombieMovement : MonoBehaviour
 {
-           Transform PlayerFoot;
+    Transform PlayerFoot;
     public Animator anim;
     public NavMeshAgent agent;
     public float reachingRadius;
@@ -15,7 +15,8 @@ public class ZombieMovement : MonoBehaviour
     public UnityEvent onDesternationReached;
     public UnityEvent onStartMoving;
     public float explosionRadius = 200;
-    Transform Player_Foot;
+    public Transform Player_Foot;
+    public PlayerHealth playerHealth;
 
 
 
@@ -37,6 +38,7 @@ public class ZombieMovement : MonoBehaviour
     }
     private void Awake()
     {
+        // InvokeRepeating(nameof(FindObject),20f,1f);
         FindObject();
     }
 
@@ -45,7 +47,7 @@ public class ZombieMovement : MonoBehaviour
     {
         if (Player_Foot == null) return;
         float distance = Vector3.Distance(transform.position, Player_Foot.position);
-            IsMoving = distance > reachingRadius;
+        IsMoving = distance > reachingRadius;
 
 
         if (IsMoving)
@@ -54,7 +56,7 @@ public class ZombieMovement : MonoBehaviour
             agent.SetDestination(Player_Foot.position);
             anim.SetBool("isWalking", true);
         }
-        else 
+        else
         {
             agent.isStopped = true;
             anim.SetBool("isWalking", false);
@@ -101,10 +103,13 @@ public class ZombieMovement : MonoBehaviour
         {
             PhotonView playerPhotonView = affectedObjects[i].gameObject.GetComponent<PhotonView>();
             PlayerSingleton Player = affectedObjects[i].gameObject.GetComponent<PlayerSingleton>();
-            if (playerPhotonView != null && Player != null)
+            PlayerHealth PlayerHealthComponent = affectedObjects[i].gameObject.GetComponent<PlayerHealth>();
+            if (playerPhotonView != null && Player != null && PlayerHealthComponent.Hp > 0)
             {
                 //Player_Foot = affectedObjects[i].gameObject.GetComponent<Player>().PlayerFoot;
-                 Player_Foot = Player.PlayerFoot;
+                Player_Foot = Player.PlayerFoot;
+                playerHealth = PlayerHealthComponent;
+                Debug.Log("Finding: " + playerPhotonView.ViewID);
             }
 
         }
