@@ -233,6 +233,8 @@
     <Compile Include="Assets\Script\Item\PointMallManager.cs" />
     <Compile Include="Assets\Script\Item\PointMallItemController.cs" />
     <Compile Include="Assets\Animated FPS Weapons Part 2\Scripts\Gun_Controller.cs" />
+    <Compile Include="Assets\Script\Zombie\BossZombieAttack.cs" />
+    <Compile Include="Assets\Script\Zombie\ZombieBossRightHand.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

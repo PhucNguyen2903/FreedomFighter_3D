@@ -2312,6 +2312,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   explosionRadius: 200
+  Player_Foot: {fileID: 0}
   playerHealth: {fileID: 0}
 --- !u!195 &6461336143175907577
 NavMeshAgent:
@@ -2323,7 +2324,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 2
+  m_Speed: 3
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120

@@ -70,7 +70,8 @@ public class ZoombieCreatingDemo : ZombieManager
     IEnumerator WaitReady()
     {
         yield return new WaitForSeconds(10f);
-        CreatingTurnZombie("ZombieNormal",5);
+        CreatingTurnZombie("ZombieNormal", 5);
+        //CreatingTurnZombie("ZombieBoss", 1);
     }
 
     public override void CreatingZombie()
@@ -100,13 +101,30 @@ public class ZoombieCreatingDemo : ZombieManager
         }
         else if (turn == 5 && turnComplete == 3)
         {
-            PlayerWin();
+            CreatingTurnZombie("ZombieNormal", 5);
+            CreatingTurnZombie("ZombieBoss", 4);
+            StartCoroutine(CreatingZombieAfterBoss());
             turnComplete = 4;
         }
-        if (turnComplete == 4)
+        else if (turn == 6 && turnComplete == 4)
+        {
+            PlayerWin();
+            turnComplete = 5;
+        }
+        else if (turnComplete == 5)
         {
             return;
         }
+
+    }
+
+    IEnumerator CreatingZombieAfterBoss()
+    {
+        yield return new WaitForSeconds(5f);
+        CreatingTurnZombie("ZombieNormal", 5);
+        CreatingTurnZombie("ZombieAdvance", 5);
+        CreatingTurnZombie("ZombieBoom", 5);
+        CreatingTurnZombie("ZombieGhoul", 5);
     }
 
 
@@ -116,6 +134,7 @@ public class ZoombieCreatingDemo : ZombieManager
         if (poolInpool != null) return poolInpool;
         return null;
     }
+
 
 
 

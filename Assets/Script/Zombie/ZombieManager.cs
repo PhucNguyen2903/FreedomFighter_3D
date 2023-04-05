@@ -15,12 +15,13 @@ public class ZombieManager : MonoBehaviour
     public int numOfDeath;
     public int turn = 1;
     public int turnComplete;
+    int numPlayerer; 
 
 
 
     private void Update()
     {
-        //CreatingZombie();
+       
     }
     private void Awake()
     {
@@ -109,7 +110,6 @@ public class ZombieManager : MonoBehaviour
     public virtual void CheckTurn()
     {
         numOfDeath = ZombieController.Instance.enemySpawner.count;
-
         if (numOfDeath > 4 && turnComplete == 0)
         {
             turn = 2;
@@ -124,11 +124,15 @@ public class ZombieManager : MonoBehaviour
         }
         else if (numOfDeath > 49 && turnComplete == 3)
         {
-            Debug.Log("Turn555555555555");
             turn = 5;
+        }
+        else if (numOfDeath > 78 && turnComplete == 4)
+        {
+            turn = 6;
         }
    
     }
+ 
 
     public void PlayerWin()
     {

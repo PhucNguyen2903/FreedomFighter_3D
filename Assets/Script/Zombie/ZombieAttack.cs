@@ -7,7 +7,7 @@ public class ZombieAttack : MonoBehaviour
     public Animator anim;
     public int damage;
     //public PlayerHealth playerHealth;
-    [SerializeField] ZombieMovement zombieMovement;
+    [SerializeField]public  ZombieMovement zombieMovement;
 
     public virtual void StartAttack() => anim.SetBool("isAttacking", true);
     public virtual void StopAttack() => anim.SetBool("isAttacking", false);

@@ -236,6 +236,12 @@ public class PlayerInPlay : MonoBehaviourPunCallbacks
 
     }
 
+    //public int TakeNumofPlayer()
+    //{
+    //    Debug.Log(playerViewID.Count + "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX");
+    //    return playerViewID.Count;
+    //}
+
 
     //public void UpdateUIPlayer()
     //{
