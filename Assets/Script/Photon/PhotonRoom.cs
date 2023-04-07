@@ -56,6 +56,7 @@ public class PhotonRoom : MonoBehaviourPunCallbacks
         RoomOptions roomOptions = new RoomOptions();
         roomOptions.MaxPlayers = (byte)int.Parse(numofPlayerInput.text);
         PhotonNetwork.CreateRoom(roomName, roomOptions);
+      
 
     }
 
@@ -221,6 +222,9 @@ public class PhotonRoom : MonoBehaviourPunCallbacks
         AddPlayerName(playerNickname);
         chatManager.SetUserName(PhotonNetwork.LocalPlayer.NickName);
         Debug.Log(PhotonNetwork.NickName + " are in lobby");
+        SoundController.Instance.StopSound(SoundName.Login);
+        SoundController.Instance.StopSound(SoundName.InRoom);
+        SoundController.Instance.PlaySound(SoundName.Lobby, true);
     }
 
     public override void OnCreatedRoom()
@@ -242,6 +246,8 @@ public class PhotonRoom : MonoBehaviourPunCallbacks
             List<ItemShop> list = StorageManager.Instance.TakeEquipItemList();
             List<ItemShop> storageList = StorageManager.Instance.TakeStorageItemList();
             PlayerInfo.Instance.SetITem(list,storageList);
+            SoundController.Instance.StopSound(SoundName.Lobby);
+            SoundController.Instance.PlaySound(SoundName.InRoom, true);
         }
         DestroyContent(ListPlayerContent);
         //foreach (Transform child in ListPlayerContent)

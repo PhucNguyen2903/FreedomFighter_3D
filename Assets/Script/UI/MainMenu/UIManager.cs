@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Photon.Pun;
 using System;
+using UnityEngine.UI;
 
 public class UIManager : MonoBehaviour
 {
@@ -12,6 +13,9 @@ public class UIManager : MonoBehaviour
     public List<Observer> observerList = new List<Observer>();
     public GameObject Backbutton;
     public PhotonChatManager chatManager;
+    [SerializeField] Toggle soundtoggle;
+    [SerializeField] Slider soundSlider;
+
     private void Awake()
     {
         UIManager.instance = this;
@@ -71,5 +75,14 @@ public class UIManager : MonoBehaviour
     }
 
 
+    public void OnclickToogleMusic()
+    {
+        SoundController.Instance.SoundUpdate(!soundtoggle.isOn);
+    }
+
+    public void OnvalueChangeSlider()
+    {
+        SoundController.Instance.SoundVolumeUpdate(soundSlider.value);
+    }
 
 }

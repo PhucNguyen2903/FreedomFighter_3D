@@ -72,6 +72,7 @@
     <Compile Include="Assets\Joystick Pack\Scripts\Joysticks\FixedJoystick.cs" />
     <Compile Include="Assets\Script\Item\StorageManager.cs" />
     <Compile Include="Assets\Joystick Pack\Scripts\Joysticks\VariableJoystick.cs" />
+    <Compile Include="Assets\Script\Zombie\ZombieBossRightHand.cs" />
     <Compile Include="Assets\Script\Player\PlayerUi.cs" />
     <Compile Include="Assets\Animated FPS Weapons Part 2\Scripts\WeaponSelection.cs" />
     <Compile Include="Assets\JMO Assets\WarFX\Demo\Assets\WFX_Demo.cs" />
@@ -222,6 +223,7 @@
     <Compile Include="Assets\Script\Player\PlayeSO.cs" />
     <Compile Include="Assets\Photon\PhotonChat\Demos\Common\TextToggleIsOnTransition.cs" />
     <Compile Include="Assets\Script\Weapon\Grenade_launcher\AmmoText.cs" />
+    <Compile Include="Assets\Script\Zombie\BossZombieAttack.cs" />
     <Compile Include="Assets\Script\Player\PlayerSingleton.cs" />
     <Compile Include="Assets\Script\Zombie\AutoFade.cs" />
     <Compile Include="Assets\Animated FPS Weapons Part 2\Scripts\Projectile.cs" />
@@ -233,8 +235,7 @@
     <Compile Include="Assets\Script\Item\PointMallManager.cs" />
     <Compile Include="Assets\Script\Item\PointMallItemController.cs" />
     <Compile Include="Assets\Animated FPS Weapons Part 2\Scripts\Gun_Controller.cs" />
-    <Compile Include="Assets\Script\Zombie\BossZombieAttack.cs" />
-    <Compile Include="Assets\Script\Zombie\ZombieBossRightHand.cs" />
+    <Compile Include="Assets\Script\Music\SoundController.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
